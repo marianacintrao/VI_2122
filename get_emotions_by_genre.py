@@ -1,5 +1,3 @@
-# -- a mariana é puta mas nao lhe digas -- #
-# -- princesa única talentosa amorosa -- #
 import pandas as pd
 
 song_emotion_df = pd.read_csv("datasets/tcc_ceds_music_clean.csv", delimiter=',', encoding=None)
@@ -7,7 +5,9 @@ genres_df = pd.read_csv("datasets/artist_genre.csv", delimiter=',', encoding=Non
 
 #-- remove irrelevant columns --#
 
-song_emotion_df.drop(['genre','len','age'], axis=1, inplace=True)
+song_emotion_df.drop(['len','age'], axis=1, inplace=True)
+
+song_emotion_df.rename(columns={'genre': 'main_genre'}, inplace=True)
 
 #-- join tables --#
 
@@ -17,40 +17,77 @@ genres_df = song_emotion_df.merge(genres_df, left_on='artist_name', right_on='ar
 
 genres_df.drop(['Unnamed: 0','artist_name','track_name','release_date','topic', 'lyrics'], axis=1, inplace=True)
 
+genres_df.rename(columns={'genre': 'specific_genre'}, inplace=True)
 
-genres_df['# numero de vezes que aparece'] = genres_df['genre'].map(genres_df['genre'].value_counts())
+genres_df['occurrences'] = genres_df['specific_genre'].map(genres_df['specific_genre'].value_counts())
 
 emotions = ['dating', 'violence', 'world/life', 'night/time', 'shake the audience',
     'family/gospel', 'romantic', 'communication', 'obscene', 'music', 'movement/places',
     'light/visual perceptions', 'family/spiritual', 'like/girls', 'sadness', 'feelings',
     'danceability', 'loudness', 'acousticness', 'instrumentalness', 'valence', 'energy']
     
+#-- get average values --#
+
 for emotion in emotions:
-    genres_df['sum'] = genres_df.groupby(['genre'])[emotion].transform('sum')
-    genres_df['avg_' + emotion] = genres_df['sum'] / genres_df['# numero de vezes que aparece']
+    genres_df['sum'] = genres_df.groupby(['specific_genre'])[emotion].transform('sum')
+    genres_df['avg_' + emotion] = genres_df['sum'] / genres_df['occurrences']
 
-genres_df.drop(['sum', '# numero de vezes que aparece'] + emotions, axis=1, inplace=True)
-genres_df.drop_duplicates(subset="genre", keep='first', inplace=True)
 
-genres_df.to_csv('emotions_by_genre.csv', index=False, header=True)
+genres_df.drop(['sum'] + emotions, axis=1, inplace=True)
+genres_df.drop_duplicates(subset="specific_genre", keep='first', inplace=True)
+genres_df.sort_values("occurrences", ascending=False, inplace=True)
 
-# """ vinhooooos """
-# # find the amout of wines per country
+#-- get correct super genre --#
 
-# output_df['# wines/country'] = output_df['country'].map(output_df['country'].value_counts())
+for index, row in genres_df.iterrows():
+    specific = row['specific_genre']
 
-# output_df['sum'] = output_df.groupby(['country'])['price'].transform('sum')
+    #-- rock --#
+    if "rock" in specific or "alt" in specific or "alternative" in specific or "indie" in specific:
+        genres_df.at[index, "main_genre"] = "rock"
 
-# output_df['avg price per country'] = output_df['sum'] / output_df['# wines/country']
+    #-- pop --#
+    if "pop" in specific or "lo-fi" in specific or "wave" in specific or "dance" in specific or "disco" in specific:
+        genres_df.at[index, "main_genre"] = "pop"
 
-# # delete irrelevant columns
+    #-- punk --#
+    if "punk" in specific:
+        genres_df.at[index, "main_genre"] = "punk"
 
-# output_df.drop(['# wines/country', 'sum', 'price', 'country'], axis=1, inplace=True)
+     #-- metal --#
+    if "metal" in specific or "djent" in specific:
+        genres_df.at[index, "main_genre"] = "metal"
 
-# output_df.drop_duplicates(subset="alpha-2", keep='first', inplace=True)
+    #-- folk --#
+    if "folk" in specific:
+        genres_df.at[index, "main_genre"] = "folk"
 
-# # sort by price
+    #-- country --#
+    if "country" in specific:
+        genres_df.at[index, "main_genre"] = "country"
 
-# output_df.sort_values('avg price per country', inplace=True)
+    #-- reggae --#
+    if "reggae" in specific:
+        genres_df.at[index, "main_genre"] = "reggae"
 
-# output_df.to_csv('G37-93737.csv', index=False, header=True)
+    #-- hip hop --#
+    if "rap" in specific or "hop" in specific or "trap" in specific:
+        genres_df.at[index, "main_genre"] = "hip hop"
+
+    #-- eletronic --#
+    if "electro" in specific or "techno" in specific or "edm" in specific:
+        genres_df.at[index, "main_genre"] = "eletronica"
+
+    #-- r&b --#
+    if "soul" in specific or "funk" in specific or "doo-wop" in specific or "blues" in specific:
+        genres_df.at[index, "main_genre"] = "r&b"
+
+    #-- jazz --#
+    if "jazz" in specific or "adult" in specific or "ambient" in specific:
+        genres_df.at[index, "main_genre"] = "jazz"
+
+    #-- religious --#
+    if "christian" in specific or "crist" in specific:
+        genres_df.at[index, "main_genre"] = "religious"
+
+genres_df.to_csv('emotions_by_specific_genre.csv', index=False, header=True)
