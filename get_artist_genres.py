@@ -1,15 +1,19 @@
 import spotipy
 import pandas as pd
 from spotipy.oauth2 import SpotifyClientCredentials
+#-- IMPORTANT --#
+''' for this script to work you have to have a credentials.py file in the same directory
+    with the following variables
+    cid = 'YOUR_SPOTIFY_API_CLIENT_ID'
+    secret = 'YOUR_SPOTIFY_API_CLIENT_SECRET'
+'''
+from credentials import cid
+from credentials import secret
 
 # Spotify API autentication
 
-cid = '15803248d84e4bff826bf5660bce5c7c'
-secret = 'aca7c361ab4d48a6973bf1465f656819'
 client_credentials_manager = SpotifyClientCredentials(client_id=cid, client_secret=secret)
 sp = spotipy.Spotify(client_credentials_manager = client_credentials_manager)
-
-last_read_index = 0
 
 #-- create new dataframe --#
 
