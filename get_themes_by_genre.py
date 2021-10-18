@@ -21,19 +21,19 @@ genres_df.rename(columns={'genre': 'specific_genre'}, inplace=True)
 
 genres_df['occurrences'] = genres_df['specific_genre'].map(genres_df['specific_genre'].value_counts())
 
-emotions = ['dating', 'violence', 'world/life', 'night/time', 'shake the audience',
+themes = ['dating', 'violence', 'world/life', 'night/time', 'shake the audience',
     'family/gospel', 'romantic', 'communication', 'obscene', 'music', 'movement/places',
     'light/visual perceptions', 'family/spiritual', 'like/girls', 'sadness', 'feelings',
     'danceability', 'loudness', 'acousticness', 'instrumentalness', 'valence', 'energy']
     
 #-- get average values --#
 
-for emotion in emotions:
+for emotion in themes:
     genres_df['sum'] = genres_df.groupby(['specific_genre'])[emotion].transform('sum')
     genres_df['avg_' + emotion] = genres_df['sum'] / genres_df['occurrences']
 
 
-genres_df.drop(['sum'] + emotions, axis=1, inplace=True)
+genres_df.drop(['sum'] + themes, axis=1, inplace=True)
 genres_df.drop_duplicates(subset="specific_genre", keep='first', inplace=True)
 genres_df.sort_values("occurrences", ascending=False, inplace=True)
 
@@ -90,4 +90,4 @@ for index, row in genres_df.iterrows():
     if "christian" in specific or "crist" in specific:
         genres_df.at[index, "main_genre"] = "religious"
 
-genres_df.to_csv('emotions_by_specific_genre.csv', index=False, header=True)
+genres_df.to_csv('themes_by_specific_genre.csv', index=False, header=True)
