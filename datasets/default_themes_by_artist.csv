@@ -1,0 +1,5414 @@
+artist_name,occurrences,theme_weight
+johnny cash,190,0.963346171
+ella fitzgerald,188,0.953443537
+dean martin,146,0.962577286
+willie nelson,131,0.966923641
+george jones,107,0.955846347
+elvis presley,97,0.955798855
+dolly parton,96,0.951374543
+waylon jennings,95,0.956869767
+george strait,92,0.961141315
+nina simone,82,0.965211579
+the beach boys,81,0.953542134
+eric clapton,78,0.965853024
+phish,75,0.949056896
+conway twitty,74,0.940019519
+marty robbins,74,0.942372336
+aretha franklin,71,0.944897923
+bob dylan,69,0.957667902
+merle haggard,68,0.968026717
+the beatles,66,0.892549615
+ray price,66,0.94798074
+alice cooper,65,0.947341811
+nat king cole,64,0.958802879
+frank zappa,63,0.927893575
+b.b. king,62,0.954629021
+santana,61,0.940570906
+louis armstrong,59,0.968359873
+green day,59,0.941932157
+billie holiday,55,0.953564675
+"earth, wind & fire",52,0.951782433
+tammy wynette,51,0.956524486
+tony bennett,51,0.972283509
+the dear hunter,49,0.958129656
+don gibson,49,0.935733557
+metallica,48,0.953791191
+ub40,48,0.962949887
+queen,47,0.948281415
+meshuggah,46,0.961304718
+the black keys,46,0.950041018
+dinah washington,46,0.951969185
+johnny mathis,45,0.955466515
+hank williams,45,0.959646562
+alan jackson,45,0.954047353
+alabama,43,0.962055554
+jethro tull,41,0.955246137
+sam cooke,41,0.95795054
+thin lizzy,40,0.955882469
+emmylou harris,40,0.968853289
+joe bonamassa,40,0.923121949
+ac/dc,40,0.896398502
+drake,39,0.965570248
+the fall,39,0.974347188
+slightly stoopid,39,0.933913607
+pink floyd,39,0.92485155
+the platters,38,0.972849074
+the rolling stones,38,0.94697276
+roy orbison,38,0.938016671
+iron maiden,38,0.930498275
+slayer,38,0.953712488
+bonnie raitt,38,0.937368216
+hank thompson,38,0.955096969
+blue öyster cult,37,0.973914996
+kenny chesney,37,0.954724299
+bad religion,37,0.949767344
+burning spear,37,0.960946753
+311,37,0.945352992
+loretta lynn,36,0.949327079
+electric light orchestra,36,0.942741833
+korn,36,0.926386623
+thee oh sees,36,0.966051321
+andy williams,36,0.965949918
+bob marley & the wailers,35,0.940684239
+wire,35,0.946904042
+the byrds,35,0.948730562
+muse,35,0.879614104
+michael franks,35,0.953768599
+sarah vaughan,35,0.93686701
+radiohead,34,0.911045487
+reba mcentire,34,0.978411289
+patsy cline,34,0.951363059
+steel pulse,34,0.941503526
+joe cocker,34,0.961858373
+jimmy cliff,34,0.955591666
+the cramps,34,0.943389551
+j.j. cale,34,0.958625414
+mötley crüe,34,0.946757859
+michael franti & spearhead,34,0.945114061
+judas priest,34,0.958893794
+the kinks,33,0.94875187
+breaking benjamin,33,0.915352582
+randy travis,33,0.967395233
+jean shepard,33,0.965783592
+the impressions,33,0.963073088
+sonic youth,33,0.966971454
+glen campbell,32,0.927006967
+peter tosh,32,0.946979591
+tim mcgraw,32,0.958279709
+doris day,32,0.976190614
+david bowie,32,0.951846344
+abba,31,0.944970559
+al green,31,0.9427769
+perry como,31,0.935063582
+michael jackson,31,0.95291711
+jj grey & mofro,31,0.926958264
+david allan coe,31,0.950392403
+black rebel motorcycle club,31,0.933702115
+kenny rogers,31,0.959764753
+"hank williams, jr.",31,0.95182289
+alice in chains,31,0.940538081
+rush,31,0.929967333
+the moody blues,31,0.969013765
+whitesnake,31,0.930716642
+system of a down,31,0.926224252
+the replacements,30,0.940840374
+miranda lambert,30,0.940815705
+etta james,30,0.950822417
+r.e.m.,30,0.958045792
+buddy guy,30,0.955403325
+deep purple,30,0.955891185
+three days grace,29,0.933422893
+megadeth,29,0.95440418
+al jarreau,29,0.951850248
+linda ronstadt,29,0.935747169
+dirty heads,29,0.935068594
+imagine dragons,29,0.895277942
+dennis brown,29,0.954746013
+robin trower,29,0.968894605
+gordon lightfoot,29,0.963166093
+ziggy marley & the melody makers,28,0.960720367
+tool,28,0.807806625
+chuck berry,28,0.949888581
+dwight yoakam,28,0.972603093
+lefty frizzell,28,0.945044396
+wailing souls,28,0.962982693
+gregory isaacs,28,0.930785162
+mariah carey,28,0.943524756
+chris ledoux,28,0.953886733
+don williams,28,0.956556424
+between the buried and me,28,0.952480125
+neil sedaka,28,0.965739975
+the black angels,28,0.96317751
+jim reeves,28,0.978816864
+ronnie milsap,28,0.966984909
+the white stripes,28,0.932372109
+widespread panic,28,0.962334462
+a tribe called quest,27,0.949178739
+little feat,27,0.954503477
+yes,27,0.950350844
+george benson,27,0.960782781
+bobby darin,27,0.971432817
+lil wayne,27,0.940017233
+kanye west,27,0.950934567
+dan fogelberg,27,0.96434293
+soja,27,0.934510811
+the allman brothers band,27,0.943283716
+misfits,27,0.948778383
+john mayer,26,0.91167811
+journey,26,0.950526617
+thievery corporation,26,0.951370628
+the smashing pumpkins,26,0.936997663
+kenny g,26,0.97585242
+rascal flatts,26,0.949899837
+pixies,25,0.953125668
+elton john,25,0.944580398
+otis redding,25,0.925862521
+diana krall,25,0.969825978
+the kingston trio,25,0.92742399
+the everly brothers,25,0.930505943
+the who,25,0.948285976
+siouxsie and the banshees,25,0.965338871
+john prine,25,0.95631615
+vince gill,25,0.947952516
+ray charles,25,0.94296552
+the doobie brothers,25,0.936683683
+bobby bare,25,0.961272458
+gary moore,25,0.938521632
+stan getz,25,0.932516107
+nazareth,25,0.960156829
+cage the elephant,25,0.950454858
+fall out boy,25,0.939401889
+the cure,25,0.946667003
+pepper,25,0.943339748
+the clash,24,0.895818757
+panic! at the disco,24,0.897250516
+the wood brothers,24,0.930281995
+tedeschi trucks band,24,0.937305026
+"harry connick, jr.",24,0.971691404
+x,24,0.953556056
+ricky nelson,24,0.947099661
+lucky dube,24,0.940407911
+vybz kartel,24,0.970588856
+chet baker,24,0.958172945
+pantera,24,0.960340303
+dr. john,24,0.936148251
+john lee hooker,24,0.954721651
+38 special,24,0.930095995
+rage against the machine,24,0.943401671
+the smiths,23,0.941838954
+donovan,23,0.95039238
+traffic,23,0.94502224
+ted nugent,23,0.959878695
+bing crosby,23,0.970948066
+deftones,23,0.898634503
+robert plant,23,0.924026067
+jason aldean,23,0.950690772
+queens of the stone age,23,0.932427975
+foo fighters,23,0.938944157
+cocteau twins,23,0.970611449
+billy joel,23,0.943761674
+jerry garcia,23,0.944188313
+bread,22,0.959445367
+the band,22,0.943053238
+twenty one pilots,22,0.904310682
+roxy music,22,0.92115518
+g. love & special sauce,22,0.924285145
+black uhuru,22,0.972497099
+john holt,22,0.948747917
+gary allan,22,0.936518926
+joe walsh,22,0.961547081
+todd rundgren,22,0.950915889
+warren zevon,22,0.948619928
+social distortion,22,0.923677893
+the supremes,22,0.931814555
+ozzy osbourne,22,0.942952543
+the monkees,22,0.93469107
+fleetwood mac,22,0.947719899
+nine inch nails,22,0.900580688
+jamiroquai,22,0.920164855
+ty segall,22,0.93355101
+ufo,22,0.957825505
+muddy waters,22,0.946724578
+bad company,21,0.950017061
+zz top,21,0.917184295
+red hot chili peppers,21,0.918208536
+jonny lang,21,0.950536735
+culture,21,0.953548106
+kenny wayne shepherd,21,0.910069106
+buddy holly,21,0.952084563
+connie francis,21,0.961158502
+one direction,21,0.938637601
+krokus,21,0.908816041
+guns n' roses,21,0.975959133
+little river band,21,0.943118672
+vern gosdin,21,0.967199913
+the police,21,0.929290201
+black sabbath,21,0.952603085
+frankie laine,21,0.972038526
+tracy lawrence,21,0.945366351
+godsmack,21,0.933450951
+wipers,21,0.965115292
+ballyhoo!,21,0.914666892
+iration,21,0.9517281
+harry nilsson,21,0.952360381
+carole king,21,0.917796987
+boney james,21,0.945729141
+the marshall tucker band,20,0.973804805
+skillet,20,0.900538196
+dave matthews band,20,0.948332473
+the movement,20,0.947592798
+neil diamond,20,0.964499057
+stevie nicks,20,0.961567145
+america,20,0.961309333
+jimi hendrix,20,0.955947963
+steely dan,20,0.952721447
+the animals,20,0.925333744
+julie london,20,0.941535385
+nancy sinatra,20,0.952915942
+"crosby, stills & nash",20,0.950016878
+cake,20,0.964719821
+van morrison,20,0.937106425
+creed,20,0.975947081
+jefferson airplane,20,0.96535838
+glenn miller,20,0.959865654
+nirvana,20,0.915717988
+all them witches,20,0.931423397
+bee gees,20,0.921146757
+badfinger,20,0.931347589
+"emerson, lake & palmer",20,0.973102724
+zac brown band,20,0.947262906
+the black crowes,20,0.945201931
+jackie wilson,20,0.95113756
+wings,20,0.956116354
+aerosmith,20,0.922517558
+kansas,20,0.972711289
+brenda lee,20,0.969781612
+the kills,20,0.897952509
+fats domino,20,0.873280055
+chevelle,20,0.925229569
+the birthday party,20,0.944219853
+judy garland,19,0.949084532
+dead moon,19,0.970667937
+tesseract,19,0.974428831
+donna summer,19,0.952096404
+eddie money,19,0.88944145
+stonewall jackson,19,0.954935608
+lester flatt,19,0.947418178
+chicago,19,0.968714791
+chris rea,19,0.970729738
+madonna,19,0.944124497
+the oak ridge boys,19,0.941011767
+the weeknd,19,0.939315504
+u2,19,0.949094229
+israel vibration,19,0.92401645
+peter frampton,19,0.95779286
+ricky skaggs,19,0.952485326
+xavier rudd,19,0.941280956
+mumford & sons,19,0.940864134
+lesley gore,19,0.909752844
+ziggy marley,19,0.932799205
+sublime,19,0.96594443
+king crimson,18,0.957424869
+genesis,18,0.964429001
+mac miller,18,0.967818741
+pearl jam,18,0.92361203
+billy bragg,18,0.957867203
+harry belafonte,18,0.966517524
+john anderson,18,0.965508761
+uncle tupelo,18,0.945165331
+mary j. blige,18,0.911588264
+"blood, sweat & tears",18,0.93273497
+the offspring,18,0.937464827
+heart,18,0.903695422
+the green,18,0.949216533
+xtc,18,0.967333556
+kate bush,18,0.917668865
+blink-182,18,0.931715483
+"crosby, stills, nash & young",18,0.935823604
+mikey dread,18,0.960696424
+sun ra,18,0.9333541
+staind,17,0.943857514
+carrie underwood,17,0.956468222
+neil young,17,0.944997482
+sizzla,17,0.957659803
+stick figure,17,0.916138456
+shania twain,17,0.944553076
+arctic monkeys,17,0.932996823
+dispatch,17,0.962345831
+tears for fears,17,0.960341059
+yellowman,17,0.940665102
+weezer,17,0.924274633
+kiss,17,0.923131539
+the cranberries,17,0.88733464
+toots & the maytals,17,0.944016947
+the cars,17,0.924937889
+foreigner,17,0.952229252
+kenny loggins,17,0.959340195
+phil collins,17,0.964925955
+modest mouse,17,0.971418212
+alborosie,17,0.979889849
+shinedown,17,0.919009329
+blues saraceno,17,0.878674464
+porter wagoner,17,0.968900123
+charley pride,17,0.934794061
+eric church,17,0.946656566
+keb' mo',17,0.96139544
+hank locklin,17,0.963765093
+bill evans,17,0.952001391
+the judds,17,0.90423704
+eagles of death metal,17,0.908188007
+minnie riperton,17,0.964427196
+paul simon,17,0.944191364
+stephen stills,17,0.965883598
+grand funk railroad,17,0.950901384
+jerry lee lewis,17,0.919170993
+delbert mcclinton,17,0.968895206
+hiroshima,16,0.951340861
+clint black,16,0.955044263
+whitney houston,16,0.963868485
+john mellencamp,16,0.956331816
+keith whitley,16,0.967326598
+lyle lovett,16,0.969948927
+oscar peterson,16,0.976666432
+luciano,16,0.956917476
+molly hatchet,16,0.921220281
+astrud gilberto,16,0.945807911
+bring me the horizon,16,0.924255202
+incubus,16,0.96286845
+jeff beck,16,0.927904129
+oingo boingo,16,0.942082146
+keith urban,16,0.942412075
+peggy lee,16,0.965519827
+trace adkins,16,0.96070799
+morcheeba,16,0.92069772
+my morning jacket,16,0.95907303
+faith hill,16,0.94613071
+easy star all-stars,16,0.945999888
+randy rogers band,16,0.93926783
+engelbert humperdinck,16,0.963979667
+diamond rio,16,0.966863398
+inxs,16,0.962015722
+depeche mode,16,0.967471637
+dierks bentley,16,0.958659809
+maze,16,0.907722487
+four tops,16,0.976472227
+carpenters,16,0.951986446
+blondie,16,0.957617959
+dusty springfield,16,0.924108594
+coldplay,16,0.92107431
+eddy arnold,16,0.940078825
+paul mccartney,16,0.958881182
+death from above 1979,16,0.971208617
+talking heads,16,0.959817696
+quincy jones,16,0.948016166
+louis prima,16,0.907759672
+lynyrd skynyrd,16,0.956538049
+the expendables,15,0.893487878
+echo & the bunnymen,15,0.917309754
+connie smith,15,0.964496921
+donny hathaway,15,0.952700823
+blossom dearie,15,0.975374214
+lukas nelson and promise of the real,15,0.976705066
+beastie boys,15,0.902572537
+blake shelton,15,0.954566974
+heartless bastards,15,0.903553457
+pat benatar,15,0.934904042
+post malone,15,0.975231046
+cher,15,0.95519527
+rebelution,15,0.922023495
+a perfect circle,15,0.927667601
+caravan palace,15,0.918098586
+sammy davis jr.,15,0.91644318
+firefall,15,0.956858916
+herbie hancock,15,0.894449692
+new order,15,0.979195837
+a day to remember,15,0.966474578
+the mavericks,15,0.959207715
+wiz khalifa,15,0.952221533
+manfred mann,15,0.933797781
+tanya tucker,15,0.930596837
+the gladiators,15,0.936632748
+marilyn manson,15,0.964635096
+the doors,15,0.968726212
+morphine,15,0.94560458
+death cab for cutie,15,0.940057476
+creedence clearwater revival,15,0.952650761
+travis tritt,15,0.96567545
+rival sons,15,0.922672656
+prince far i,15,0.958079855
+jon bellion,15,0.931100027
+wilco,15,0.957407967
+grateful dead,15,0.926425061
+basia,15,0.961736994
+cheap trick,15,0.88643809
+slave,15,0.9661568
+busta rhymes,14,0.937644946
+the mamas & the papas,14,0.956984535
+"""weird al"" yankovic",14,0.946326464
+dionne warwick,14,0.915554162
+uncle kracker,14,0.94481024
+carl smith,14,0.9596358
+steve miller band,14,0.921869478
+the avett brothers,14,0.953598976
+rise against,14,0.945597585
+average white band,14,0.94931371
+mose allison,14,0.962271035
+howlin' wolf,14,0.928421845
+george duke,14,0.960397294
+upchurch,14,0.966376163
+ten years after,14,0.93483221
+jamey johnson,14,0.969650378
+sticky fingers,14,0.927216806
+the neighbourhood,14,0.914421874
+susan tedeschi,14,0.950325428
+hank williams iii,14,0.973485605
+jerry vale,14,0.933953539
+black pistol fire,14,0.954630134
+bobby vinton,14,0.9651433
+linton kwesi johnson,14,0.902812461
+dave mason,14,0.945679896
+travis scott,14,0.951152844
+taj mahal,14,0.970978392
+ice cube,14,0.927687317
+lata mangeshkar,14,0.959445504
+j-kwon,14,0.956554009
+les paul,14,0.954281607
+peter gabriel,14,0.955673232
+jackson browne,14,0.948320021
+roger miller,14,0.956491749
+limp bizkit,14,0.924477785
+seether,14,0.910727553
+gramatik,14,0.983597305
+charlie rich,14,0.961836825
+the faceless,14,0.966307514
+lucinda williams,14,0.939759165
+foghat,14,0.916574558
+blues traveler,14,0.957375371
+three dog night,14,0.965901114
+céline dion,14,0.963599339
+jonas brothers,14,0.932809307
+tribal seeds,14,0.967780102
+clay walker,14,0.955074759
+nofx,14,0.961251515
+the meters,14,0.892470696
+soundgarden,14,0.914454239
+bobby vee,14,0.979179947
+brooks & dunn,14,0.980888523
+the dillinger escape plan,14,0.950132819
+capleton,14,0.960680344
+maxi priest,14,0.957360597
+poco,14,0.948716684
+joan baez,14,0.986117824
+simon & garfunkel,14,0.959816178
+bo diddley,13,0.956492418
+lavern baker,13,0.943502221
+bone thugs-n-harmony,13,0.871855135
+minutemen,13,0.950279044
+swans,13,0.96752262
+t. rex,13,0.983259808
+styx,13,0.983335817
+grace potter & the nocturnals,13,0.952215541
+the miracles,13,0.923916231
+jay reatard,13,0.944700108
+van halen,13,0.941640236
+tom petty,13,0.947560071
+primus,13,0.955181079
+das efx,13,0.897638498
+del shannon,13,0.912691901
+dion,13,0.916712781
+"albert hammond, jr.",13,0.958803166
+the outlaws,13,0.966319429
+juice newton,13,0.96487528
+voivod,13,0.900338051
+bachman-turner overdrive,13,0.962509049
+blackfoot,13,0.913150915
+bryan adams,13,0.897682073
+eek-a-mouse,13,0.951511246
+sugarland,13,0.979797831
+paramore,13,0.908323738
+gladys knight & the pips,13,0.91412797
+earl thomas conley,13,0.974932303
+the abyssinians,13,0.963138471
+taylor swift,13,0.950326197
+matisyahu,13,0.923587833
+eva cassidy,13,0.955342539
+groove armada,13,0.920264791
+rihanna,13,0.916795743
+hollywood undead,13,0.892656004
+demi lovato,13,0.945081548
+steve wariner,13,0.969121533
+joe sample,13,0.974421618
+pato banton,13,0.916886817
+jerry jeff walker,13,0.963147317
+the ethiopians,13,0.967687267
+john denver,13,0.964274555
+eagles,13,0.939966139
+shaggy,13,0.936425593
+devin townsend project,13,0.910171582
+hiatus kaiyote,13,0.94922161
+descendents,13,0.899661879
+gentle giant,13,0.979185597
+prince buster,13,0.956403569
+rod stewart,13,0.920400482
+desmond dekker,12,0.944312998
+dennis wilson,12,0.926326574
+mickey gilley,12,0.938423624
+the gun club,12,0.886814306
+the raconteurs,12,0.933798098
+parov stelar,12,0.926855844
+robert cray,12,0.968172298
+zero 7,12,0.985362161
+stevie ray vaughan,12,0.953680438
+john fogerty,12,0.928397187
+killswitch engage,12,0.971098895
+dorothy,12,0.956428057
+jack white,12,0.916100746
+the statler brothers,12,0.97762622
+anderson east,12,0.952028129
+no doubt,12,0.940249225
+thank you scientist,12,0.943355373
+hank snow,12,0.931406414
+the brian jonestown massacre,12,0.950122369
+aswad,12,0.966452008
+jefferson starship,12,0.97608534
+beth hart,12,0.936933516
+nicki minaj,12,0.965716428
+sanchez,12,0.94194883
+eddie rabbitt,12,0.916449749
+roberta flack,12,0.920640115
+cab calloway,12,0.933558317
+christafari,12,0.924059084
+prince,12,0.945932208
+dmx,12,0.8582659
+brantley gilbert,12,0.979392142
+leon redbone,12,0.935916298
+the velvet underground,12,0.969745466
+joy division,12,0.946745903
+natalie cole,12,0.924686501
+rufus,12,0.947401469
+ohio players,12,0.98145116
+gene vincent & his blue caps,12,0.90625326
+george harrison,12,0.970581668
+tower of power,12,0.941618051
+bruce springsteen,12,0.917978289
+nancy wilson,12,0.981063809
+the emotions,12,0.965285669
+james taylor,12,0.93270711
+jimmy durante,12,0.994283435
+avril lavigne,12,0.923870636
+kelly clarkson,12,0.926073284
+snoop dogg,12,0.911170985
+montgomery gentry,12,0.922642325
+björk,12,0.953033692
+collin raye,12,0.963292091
+trisha yearwood,12,0.971767654
+gillian welch,12,0.950485862
+groundation,12,0.940944008
+adele,12,0.945853919
+madeleine peyroux,12,0.94484432
+the holdup,12,0.968455967
+cross canadian ragweed,12,0.931847802
+pete rock & c.l. smooth,12,0.925776197
+steppenwolf,12,0.97009955
+cream,12,0.956540392
+leann rimes,12,0.963172227
+nightmares on wax,12,0.937742347
+john mayall & the bluesbreakers,12,0.967210939
+the yardbirds,12,0.935845103
+the charlie daniels band,12,0.963470809
+macka b,12,0.942867874
+slade,12,0.908798683
+nappy roots,12,0.906256654
+boz scaggs,12,0.961304886
+"peter, paul and mary",12,0.982419827
+the killers,12,0.959014728
+nick lowe,12,0.971256678
+violent femmes,12,0.926105819
+seals and crofts,12,0.959064536
+barry manilow,12,0.939245082
+krs-one,12,0.928165224
+joni mitchell,11,0.964545434
+alton ellis,11,0.970920918
+brad paisley,11,0.96426754
+atlanta rhythm section,11,0.938510214
+beres hammond,11,0.950331158
+hozier,11,0.991719055
+rob zombie,11,0.941458923
+ariana grande,11,0.94793573
+mighty diamonds,11,0.978647453
+sister rosetta tharpe,11,0.953307936
+johnny lee,11,0.942115263
+tom petty and the heartbreakers,11,0.940569008
+barrington levy,11,0.943169159
+the lumineers,11,0.946039345
+nitty gritty dirt band,11,0.969109784
+john hiatt,11,0.937268013
+cocoa tea,11,0.941654922
+percy sledge,11,0.933174835
+renaissance,11,0.964997438
+crystal gayle,11,0.957975988
+sonny james,11,0.974674077
+the pretty things,11,0.940172983
+james gang,11,0.930820154
+they might be giants,11,0.945128217
+chet atkins,11,0.979591649
+josh turner,11,0.921812887
+gary clark jr.,11,0.93984319
+big & rich,11,0.894630561
+the louvin brothers,11,0.982351087
+freddy fender,11,0.952535583
+ambrosia,11,0.941276397
+diamond & the psychotic neurotics,11,0.968646644
+gene clark,11,0.952864586
+casey donahew,11,0.954962197
+the j. geils band,11,0.89771843
+the brand new heavies,11,0.934133132
+carly simon,11,0.925556021
+russ,11,0.897087294
+the lemonheads,11,0.886079376
+ry cooder,11,0.971919714
+robert earl keen,11,0.958278026
+the derek trucks band,11,0.867843506
+morgan heritage,11,0.95794802
+popcaan,11,0.969603243
+50 cent,11,0.966041806
+daryl hall & john oates,11,0.970929186
+kings of leon,11,0.884357964
+orchestral manoeuvres in the dark,11,0.960991462
+albert collins,11,0.958247968
+vampire weekend,11,0.89282802
+count basie,11,0.933700495
+freddie king,11,0.948021698
+daryle singletary,11,0.930779133
+jay & the americans,11,0.96559266
+boston,11,0.921832275
+scorpions,11,0.9160001
+miles davis,11,0.874481564
+tracy chapman,11,0.928306642
+jah cure,11,0.945960616
+my chemical romance,11,0.96375002
+gorillaz,11,0.923175886
+john michael montgomery,11,0.952685821
+the flamingos,11,0.945269149
+wanda jackson,11,0.956146604
+rosemary clooney,11,0.973415842
+thelonious monk,11,0.989106133
+steve earle,11,0.967090629
+ricky van shelton,11,0.977583084
+the marvelettes,11,0.971225073
+mary wells,11,0.918736045
+jelly roll,10,0.961421965
+khalid,10,0.971737971
+cody jinks,10,0.973327947
+patti austin,10,0.936053428
+lady antebellum,10,0.951791384
+jeezy,10,0.964959864
+welshly arms,10,0.916922571
+grandson,10,0.807153133
+the ink spots,10,0.970817809
+luke bryan,10,0.961912463
+anita o'day,10,0.966054824
+johnny thunders,10,0.92194863
+jimmy dean,10,0.915879286
+fabolous,10,0.96282126
+aaron lewis,10,0.956722884
+the stooges,10,0.846675416
+eddie cochran,10,0.931775964
+nat king cole trio,10,0.942927415
+richard thompson,10,0.931162162
+cracker,10,0.955662027
+"bobby ""blue"" bland",10,0.906403129
+supersuckers,10,0.914122679
+the dells,10,0.98166576
+granger smith,10,0.950050299
+anthrax,10,0.961068073
+black flag,10,0.896544552
+florence + the machine,10,0.954752201
+motörhead,10,0.887040583
+dead kennedys,10,0.926570732
+hüsker dü,10,0.969988149
+shirley bassey,10,0.973292015
+def leppard,10,0.951031355
+ed sheeran,10,0.958834157
+kid cudi,10,0.943978608
+jane's addiction,10,0.941062363
+jah shaka,10,0.948880694
+ramones,10,0.849913168
+backstreet boys,10,0.965275484
+bob seger,10,0.965761708
+dion & the belmonts,10,0.922778661
+keith jarrett,10,0.943209661
+ajr,10,0.896930896
+ratt,10,0.904265366
+peter green,10,0.915009502
+damian marley,10,0.926072641
+silver jews,10,0.944927229
+bob james,10,0.923999023
+midnite,10,0.951931046
+jim croce,10,0.945410216
+passafire,10,0.934357456
+john brown's body,10,0.903185388
+thomas rhett,10,0.94683383
+tricky,10,0.943383867
+duran duran,10,0.934413593
+elvis costello & the attractions,10,0.961592088
+chris stapleton,10,0.990780925
+sarah mclachlan,10,0.97578028
+my bloody valentine,10,0.972936052
+ween,10,0.887215654
+mark wills,10,0.956742145
+the vines,10,0.91868803
+the pharcyde,10,0.942401919
+pete townshend,10,0.921034516
+nickelback,10,0.886238143
+johnny paycheck,10,0.95248156
+patty loveless,10,0.956654825
+wishbone ash,10,0.970838481
+old 97's,10,0.94768419
+graham nash,10,0.975481109
+the heavy,10,0.967240547
+dixie chicks,10,0.9800381
+free,10,0.946749176
+erasure,10,0.961699558
+cowboy junkies,10,0.982195871
+can,10,0.914754558
+mark chesnutt,10,0.953088396
+tenacious d,10,0.922527477
+jordan rakei,9,0.946219651
+lou rawls,9,0.953918881
+television,9,0.932501772
+ini kamoze,9,0.939896268
+beck,9,0.980529384
+traveling wilburys,9,0.960467905
+peter white,9,0.977243402
+nas,9,0.930067782
+fairport convention,9,0.923253404
+mavado,9,0.942575828
+tim buckley,9,0.959958222
+johnny clarke,9,0.968568755
+tame impala,9,0.924309618
+cody johnson,9,0.948008817
+the notorious b.i.g.,9,0.951909259
+link wray,9,0.92856427
+beyoncé,9,0.92059201
+killah priest,9,0.889605605
+mgmt,9,0.94889676
+the psychedelic furs,9,0.965749319
+suicidal tendencies,9,0.918815732
+horace andy,9,0.893351997
+the andrews sisters,9,0.894751883
+kathy mattea,9,0.98273217
+rickie lee jones,9,0.964282584
+the b-52's,9,0.93271127
+bon iver,9,0.866860155
+the manhattan transfer,9,0.902946354
+the youngbloods,9,0.952127008
+ken boothe,9,0.973176826
+k.t. oslin,9,0.962129522
+little anthony & the imperials,9,0.93402576
+mary chapin carpenter,9,0.944968311
+wayne wonder,9,0.954740729
+guy clark,9,0.977765886
+lee hazlewood,9,0.962235658
+love,9,0.918943712
+lady gaga,9,0.919499354
+ky-mani marley,9,0.955762032
+eddie kendricks,9,0.950415776
+johnnie taylor,9,0.946746181
+gerry rafferty,9,0.932616553
+trina,9,0.908548773
+the score,9,0.781464936
+the cadillacs,9,0.970259364
+tinariwen,9,0.981338635
+jimmy reed,9,0.962522577
+wolfmother,9,0.970138533
+hieroglyphics,9,0.97303394
+leon russell,9,0.912297501
+terror x crew,9,0.948558818
+sonny boy williamson ii,9,0.903183707
+brian eno,9,0.978811251
+galactic,9,0.956813774
+john cale,9,0.951861154
+johnny winter,9,0.936207961
+nujabes,9,0.959504755
+the outfield,9,0.893787902
+savoy brown,9,0.910508133
+young the giant,9,0.894922305
+the modern lovers,9,0.914512519
+derek & the dominos,9,0.934507818
+manfred mann's earth band,9,0.980105342
+warren haynes,9,0.958034609
+nahko and medicine for the people,9,0.951292141
+dave brubeck,9,0.974710599
+rory gallagher,9,0.935070629
+sweet,9,0.929422905
+lonestar,9,0.922041455
+john lennon,9,0.945458593
+john coltrane,9,0.964798845
+the shirelles,9,0.959461011
+martina mcbride,9,0.957828364
+rjd2,9,0.942710875
+wynton marsalis,9,0.964090824
+nanci griffith,9,0.948444743
+loggins & messina,9,0.952155047
+big bad voodoo daddy,9,0.911880948
+thirty seconds to mars,9,0.9070244
+melody gardot,9,0.957954729
+chris young,9,0.975889702
+bullet for my valentine,9,0.929812832
+dr. hook,9,0.935831168
+dj shadow,9,0.884603797
+led zeppelin,9,0.96329028
+smokey robinson & the miracles,9,0.899472989
+maroon 5,9,0.963987056
+white denim,9,0.969893976
+wax tailor,9,0.933660745
+janet jackson,9,0.931923498
+june carter cash,9,0.987611156
+indigo girls,9,0.972444482
+necrophagist,9,0.896537023
+mel mcdaniel,9,0.953368765
+odetta,9,0.962867736
+chris botti,9,0.968074296
+johnny horton,9,0.966338131
+the national,9,0.929226775
+childish gambino,9,0.964475955
+shabba ranks,8,0.94243402
+dan seals,8,0.92886267
+dizzy gillespie,8,0.956195817
+screamin' jay hawkins,8,0.972923024
+george shearing,8,0.961848884
+half pint,8,0.976814444
+gary numan,8,0.967908708
+unkle,8,0.937602036
+lee greenwood,8,0.961864664
+new edition,8,0.934025928
+justin bieber,8,0.904833461
+gloria estefan,8,0.872252306
+bonobo,8,0.952351715
+shinehead,8,0.98199217
+mudvayne,8,0.941462908
+john hartford,8,0.947749631
+the brothers four,8,0.972872875
+sawyer brown,8,0.952050853
+black rob,8,0.939479214
+albert king,8,0.966829995
+one drop,8,0.956194292
+pacific dub,8,0.931714112
+gaither vocal band,8,0.954043565
+toby keith,8,0.927873027
+sammy kershaw,8,0.975045675
+aaron tippin,8,0.979420829
+chronixx,8,0.947491833
+magic!,8,0.875863031
+koko taylor,8,0.916579878
+casting crowns,8,0.877826444
+chubby checker,8,0.955068039
+devin townsend,8,0.933893648
+whiskeytown,8,0.939859692
+barbra streisand,8,0.957107277
+montrose,8,0.943895396
+the blues brothers,8,0.918523991
+talk talk,8,0.97588056
+the mad lads,8,0.92740335
+dave koz,8,0.956759886
+dave van ronk,8,0.965987548
+the strokes,8,0.93921984
+duke ellington,8,0.968199406
+heavy d,8,0.93606004
+restless heart,8,0.930841671
+galaxie 500,8,0.980120543
+the flying burrito brothers,8,0.923853438
+theory of a deadman,8,0.938718741
+the soft boys,8,0.933951492
+the fixx,8,0.960184025
+paula abdul,8,0.889184944
+cyndi lauper,8,0.946071003
+pete rock,8,0.973235949
+black lips,8,0.948281303
+jimmy buffett,8,0.931272375
+alt-j,8,0.924965369
+mel tormé,8,0.989826144
+michael martin murphey,8,0.973999713
+townes van zandt,8,0.97538294
+needtobreathe,8,0.892513646
+the bellamy brothers,8,0.937505197
+the drifters,8,0.963157261
+bob wills,8,0.976615422
+g-eazy,8,0.960564509
+oasis,8,0.878455391
+the brothers johnson,8,0.940420352
+barbara mandrell,8,0.965077442
+gil scott-heron,8,0.950681129
+rosanne cash,8,0.929805789
+the wailers,8,0.960545445
+rainbow kitten surprise,8,0.91099127
+the record company,8,0.9201785
+the jam,8,0.949288604
+kacey musgraves,8,0.898618465
+humble pie,8,0.940458262
+brothers osborne,8,0.94971374
+the clovers,8,0.979431409
+beenie man,8,0.934593027
+joan armatrading,8,0.937943694
+paul anka,8,0.994274862
+a-ha,8,0.943841176
+jamie n commons,8,0.92194928
+tina turner,8,0.89642827
+camel,8,0.974400797
+david sanborn,8,0.903288216
+the fleetwoods,8,0.966191083
+royal blood,8,0.989672645
+pennywise,8,0.94308446
+stanley clarke,8,0.963096475
+sturgill simpson,8,0.941467629
+sum 41,8,0.950505516
+bruce cockburn,8,0.945367693
+pablo cruise,8,0.908343433
+shovels & rope,8,0.95456596
+phyllis hyman,8,0.931743302
+pet shop boys,8,0.933960782
+waka flocka flame,8,0.930169608
+the jeff healey band,8,0.92635362
+stone temple pilots,8,0.951225445
+the 1975,8,0.945319516
+the guess who,8,0.988699756
+florida georgia line,8,0.908339458
+faces,8,0.966064703
+static-x,8,0.957173856
+drive-by truckers,8,0.945941163
+buffalo springfield,8,0.941673866
+queensrÿche,8,0.96351702
+andy gibb,8,0.896643771
+pestilence,8,0.977314198
+ministry,8,0.973019112
+10cc,8,0.962570098
+chris knight,8,0.947804685
+dio,8,0.950708506
+benny goodman,8,0.961827843
+bazzi,7,0.980885926
+billie eilish,7,0.936339
+ben e. king,7,0.973911765
+yung joc,7,0.933419325
+chris montez,7,0.979268281
+jamie cullum,7,0.967786135
+olivia newton-john,7,0.94256848
+esperanza spalding,7,0.971307822
+al kooper,7,0.936488974
+con funk shun,7,0.93990706
+jerry reed,7,0.894271212
+pink martini,7,0.959770538
+emancipator,7,0.968987915
+captain beyond,7,0.905471048
+kris kristofferson,7,0.963461542
+tommy dorsey,7,0.972065045
+doug stone,7,0.964148613
+pat boone,7,0.977281092
+patti smith,7,0.922661578
+anne murray,7,0.938358864
+old crow medicine show,7,0.948399917
+jonathan butler,7,0.948553027
+lil wyte,7,0.951713516
+mc5,7,0.932886319
+hirie,7,0.845420337
+anita baker,7,0.893996994
+bryan ferry,7,0.972097215
+scott walker,7,0.992910337
+yellowcard,7,0.901629837
+billy walker,7,0.922662063
+aaron watson,7,0.969193844
+ocean alley,7,0.928770435
+eartha kitt,7,0.92811332
+mike love,7,0.945437806
+john hammond,7,0.942364523
+wynonna,7,0.910710592
+sufjan stevens,7,0.947534155
+bumpin uglies,7,0.984074911
+epmd,7,0.900682441
+lightnin' hopkins,7,0.951664397
+hot tuna,7,0.926684776
+uriah heep,7,0.943181614
+bert jansch,7,0.954434087
+john mayall,7,0.92412974
+black roots,7,0.969353275
+the hollies,7,0.978093687
+christopher cross,7,0.932604892
+leonard cohen,7,0.955068259
+the lovin' spoonful,7,0.970103365
+the turtles,7,0.974203931
+anthony b,7,0.938065127
+musical youth,7,0.933592331
+lorrie morgan,7,0.988939588
+the fabulous thunderbirds,7,0.964339152
+miley cyrus,7,0.919066517
+grace jones,7,0.973539671
+eraserheads,7,0.984652722
+third world,7,0.961796801
+gorilla zoe,7,0.874344926
+big mountain,7,0.948301739
+the stranglers,7,0.843220101
+the melodians,7,0.968418543
+creation rebel,7,0.948115606
+gang of four,7,0.946207078
+sara evans,7,0.908520391
+joe pass,7,0.946237865
+public image ltd.,7,0.946606471
+the zombies,7,0.971088152
+jack jones,7,0.97006161
+a$ap rocky,7,0.933525844
+chaka khan,7,0.938514788
+foster the people,7,0.899231887
+the righteous brothers,7,0.948835575
+grant green,7,0.946232483
+incognito,7,0.925422447
+flamin' groovies,7,0.955910904
+brett young,7,0.905981934
+moonchild,7,0.953829718
+corey smith,7,0.968887487
+donald byrd,7,0.900881149
+gucci mane,7,0.935914541
+carmen mcrae,7,0.921931498
+buck owens,7,0.86864308
+martha reeves & the vandellas,7,0.913695515
+turnpike troubadours,7,0.949045382
+richie spice,7,0.9763514
+joe diffie,7,0.949306182
+loudon wainwright iii,7,0.946362725
+the lacs,7,0.929885244
+current swell,7,0.972377241
+whiskey myers,7,0.929919216
+stephen marley,7,0.945277395
+gentleman,7,0.953989081
+midland,7,0.941492228
+carla thomas,7,0.906841106
+kodak black,7,0.964653586
+gary stewart,7,0.964936995
+sia,7,0.924553096
+mishka,7,0.916304002
+too rude,7,0.961062084
+sparks,7,0.935777741
+phyllis dillon,7,0.957075811
+katy perry,7,0.943276854
+mr. vegas,7,0.971196592
+yg,7,0.924285403
+boogie down productions,7,0.938794063
+"lee ""scratch"" perry",7,0.877972118
+the used,7,0.963375492
+have a nice life,7,0.947667099
+lifehouse,7,0.953977618
+the dead weather,7,0.955764183
+k.d. lang,7,0.986683385
+danzig,7,0.940665296
+the marcus king band,7,0.978456165
+huey lewis & the news,7,0.905458862
+sir charles jones,7,0.956412326
+sting,7,0.881385252
+simply red,7,0.938962886
+collective soul,7,0.970850877
+hootie & the blowfish,7,0.930326805
+3 doors down,7,0.93381036
+supertramp,7,0.95264088
+the goo goo dolls,7,0.974608287
+portishead,7,0.904580087
+black mountain,7,0.93848583
+wendell b,7,0.953221587
+the sheepdogs,7,0.940401126
+toto,7,0.973044617
+the chordettes,7,0.929035437
+tucka,7,0.979187066
+ghantasala,7,0.968014754
+sly & the family stone,7,0.925587025
+built to spill,7,0.947693267
+papa roach,7,0.937483871
+p!nk,7,0.957784109
+reignwolf,7,0.911397581
+george thorogood & the destroyers,7,0.895195329
+poison,7,0.878037237
+kid rock,7,0.931488615
+scientists,7,0.902785699
+tab benoit,7,0.973198855
+mazzy star,7,0.963416506
+marshall crenshaw,7,0.957981321
+sepultura,7,0.949445827
+pop evil,7,0.865037218
+"10,000 maniacs",7,0.931420166
+the subdudes,7,0.95197974
+cypress hill,7,0.897440305
+fiona apple,7,0.919967521
+interpol,7,0.941593235
+the ventures,7,0.95759985
+stone sour,7,0.903895112
+babyface,7,0.954885486
+rancid,7,0.884808088
+sammy hagar,7,0.951606202
+robert johnson,7,0.941477988
+jd mcpherson,7,0.897685483
+keith richards,7,0.91443018
+the jesus and mary chain,6,0.878386484
+aceyalone,6,0.935201316
+robert glasper experiment,6,0.954659653
+switchfoot,6,0.920468421
+lorne greene,6,0.954705729
+elmore james,6,0.964288795
+lil yachty,6,0.878798264
+outkast,6,0.991415565
+small faces,6,0.954047453
+samantha fish,6,0.940442194
+climax blues band,6,0.95987514
+blind melon,6,0.961997813
+haken,6,0.980513502
+fleet foxes,6,0.9141872
+dottie west,6,0.953634341
+the tymes,6,0.973320576
+lizz wright,6,0.962444118
+tesla,6,0.961975027
+aaliyah,6,0.849807712
+tom waits,6,0.922144141
+lead belly,6,0.953690529
+leo sayer,6,0.903633083
+gene autry,6,0.933584188
+brownie mcghee,6,0.953711497
+morrissey,6,0.966136919
+quality control,6,0.955988535
+fugazi,6,0.925840604
+solomon burke,6,0.942547523
+patti page,6,0.93358515
+skid row,6,0.955371451
+warren g,6,0.914880444
+counting crows,6,0.944749156
+the beautiful girls,6,0.991065851
+faith no more,6,0.971989436
+sons of the pioneers,6,0.968669965
+ryan bingham,6,0.903118528
+the cascades,6,0.930304491
+larry carlton,6,0.933601894
+swell maps,6,0.904351946
+ice-t,6,0.887994388
+the tubes,6,0.913608659
+david guetta,6,0.976320319
+the flaming lips,6,0.948097005
+pieces of a dream,6,0.984785483
+irma thomas,6,0.954896511
+scotty mccreery,6,0.948232774
+chance the rapper,6,0.952185274
+the hippy boys,6,0.901981492
+erroll garner,6,0.977908508
+the knack,6,0.894261906
+bon jovi,6,0.942514566
+bauhaus,6,0.973558695
+leon bridges,6,0.952877012
+marcia griffiths,6,0.931687668
+broken bells,6,0.923569631
+dokken,6,0.913795554
+abstract rude,6,0.967158295
+django reinhardt,6,0.985812054
+slim smith,6,0.956825172
+sonny & cher,6,0.895371074
+bts,6,0.989982985
+clinton fearon,6,0.938384795
+larkin poe,6,0.927969133
+the head and the heart,6,0.95759464
+air supply,6,0.856342311
+j. cole,6,0.964726493
+frankie paul,6,0.924227615
+joe bataan,6,0.96704768
+bunny wailer,6,0.90918019
+marvin sease,6,0.955087559
+greta van fleet,6,0.954947232
+jr. walker & the all stars,6,0.929342965
+yungblud,6,0.806060465
+sugar minott,6,0.930187142
+bill evans trio,6,0.939004031
+dire straits,6,0.972834445
+shirley horn,6,0.991761385
+vince staples,6,0.917344887
+garnett silk,6,0.932702816
+buju banton,6,0.926363945
+the arcs,6,0.927667422
+tanya stephens,6,0.969215564
+taylor mcferrin,6,0.91545039
+ritchie valens,6,0.865457031
+z.z. hill,6,0.948010603
+coolio,6,0.916080329
+the babys,6,0.919792621
+phoenix,6,0.912709741
+chase rice,6,0.964021955
+calvin harris,6,0.972830265
+pavement,6,0.898817681
+jimmy eat world,6,0.898088593
+shawn mendes,6,0.934576651
+kip moore,6,0.933617052
+vince guaraldi trio,6,0.946315742
+deodato,6,0.945977343
+big maybelle,6,0.911667041
+woody guthrie,6,0.812020533
+logic,6,0.970699696
+devo,6,0.975192044
+bounty killer,6,0.960130766
+heatwave,6,0.918590099
+kongos,6,0.856701559
+dan + shay,6,0.911099758
+bryson tiller,6,0.979648954
+halsey,6,0.928304506
+the dramatics,6,0.924507069
+brian hyland,6,0.955021161
+old dominion,6,0.973074017
+the paragons,6,0.993093231
+x ambassadors,6,0.989840267
+lana del rey,6,0.915705783
+the go-go's,6,0.879878966
+2pac,6,0.9497662
+night shield,6,0.911763099
+brand new,6,0.935069821
+the jayhawks,6,0.940573186
+live,6,0.868657271
+phil vassar,6,0.925497621
+st germain,6,0.981129246
+loverboy,6,0.915777675
+pure prairie league,6,0.958191828
+levon helm,6,0.94766771
+gyptian,6,0.918851323
+katastro,6,0.934558455
+anders osborne,6,0.929751515
+band of skulls,6,0.954242438
+insane clown posse,6,0.980601277
+george michael,6,0.948252946
+black joe lewis & the honeybears,6,0.956089137
+iron butterfly,6,0.972200501
+t-pain,6,0.935557117
+kitty wells,6,0.976426904
+slim thug,6,0.953819711
+sevendust,6,0.945486681
+the coasters,6,0.976833975
+john conlee,6,0.976165684
+koop,6,0.991577231
+little walter,6,0.937217294
+mc lyte,6,0.892812088
+dropkick murphys,6,0.959385574
+ann peebles,6,0.910078848
+april wine,6,0.986063105
+don henley,6,0.930812294
+asha bhosle,6,0.968173428
+shenandoah,6,0.967956853
+starset,6,0.954263755
+big daddy kane,6,0.899504231
+paul davis,6,0.901382517
+spoon,6,0.894263982
+the decemberists,6,0.937223978
+j. roddy walston & the business,6,0.913402228
+the partridge family,6,0.940674127
+gorguts,6,0.967688079
+iya terra,6,0.951773532
+gang starr,6,0.926809046
+pretenders,6,0.984127091
+phoebe snow,6,0.940321582
+the spits,6,0.96316259
+carl perkins,6,0.964133433
+barenaked ladies,6,0.92413433
+the lox,6,0.827703562
+son volt,6,0.901669655
+robert randolph & the family band,6,0.964822117
+rodney crowell,6,0.94232934
+lee roy parnell,6,0.949195244
+billy idol,6,0.94301823
+ike & tina turner,6,0.960106244
+dave edmunds,6,0.970218025
+justin timberlake,6,0.947656369
+sublime with rome,6,0.931268773
+barbara lewis,6,0.947730361
+saliva,6,0.903537686
+the blackbyrds,6,0.929629935
+graveyard,6,0.951465028
+sinéad o'connor,6,0.934712129
+raspberries,6,0.89719812
+the lettermen,6,0.973951614
+r. city,6,0.965427176
+roy buchanan,6,0.954175818
+six60,6,0.962840981
+fourplay,6,0.978843375
+will downing,6,0.937717101
+iris dement,6,0.97765378
+afi,6,0.973483679
+billy ray cyrus,6,0.975167654
+confederate railroad,6,0.958196031
+digable planets,6,0.951662269
+bent,6,0.986516942
+fortunate youth,6,0.904494944
+ray campi,6,0.975607347
+t-bone walker,6,0.980969717
+hanni el khatib,6,0.965708398
+michael bublé,6,0.983772347
+83,5,0.969141291
+coco montoya,5,0.966118681
+mack 10,5,0.915657262
+the maytals,5,0.940291816
+fine young cannibals,5,0.958320228
+the spencer davis group,5,0.988076521
+glass animals,5,0.809040079
+dinosaur jr.,5,0.916578652
+enrique iglesias,5,0.846163223
+black moon,5,0.933699617
+c.w. stoneking,5,0.888745963
+kane brown,5,0.876035042
+pat green,5,0.923776376
+matt maher,5,0.901618657
+lee ann womack,5,0.958702571
+drivin n cryin,5,0.922655505
+the new birth,5,0.890029546
+the upsetters,5,0.912434154
+ginuwine,5,0.937954233
+derrick morgan,5,0.995491848
+new kids on the block,5,0.937855131
+brian culbertson,5,0.92819401
+little texas,5,0.983262536
+godspeed you! black emperor,5,0.956442921
+nipsey hussle,5,0.950498013
+kevin gates,5,0.934728095
+kid ink,5,0.942808207
+*nsync,5,0.935694944
+meek mill,5,0.969630321
+rhett akins,5,0.979512325
+oscar peterson trio,5,0.964652323
+gary lewis & the playboys,5,0.873670084
+bruno mars,5,0.951577261
+everything but the girl,5,0.955662027
+amy grant,5,0.948806566
+tracy byrd,5,0.927007112
+sam smith,5,0.939421916
+blackstreet,5,0.879848171
+twisted sister,5,0.870647861
+big youth,5,0.924951796
+steve tyrell,5,0.935930587
+b.t. express,5,0.967740207
+karen dalton,5,0.92611304
+edie brickell & new bohemians,5,0.970334539
+bessie smith,5,0.903854824
+the highwaymen,5,0.983983387
+leroy smart,5,0.996310552
+max romeo,5,0.903427339
+cole swindell,5,0.968656071
+james ingram,5,0.906780456
+lorde,5,0.956274317
+cassandra wilson,5,0.885869493
+isaac hayes,5,0.955962081
+spice girls,5,0.867849423
+us3,5,0.904899616
+lemon jelly,5,0.918848978
+rodney carrington,5,0.995627569
+freddie mcgregor,5,0.987642616
+jodeci,5,0.835907224
+big bill broonzy,5,0.9701533
+xscape,5,0.963477015
+frankie valli,5,0.947126765
+the smithereens,5,0.946472797
+judee sill,5,0.994296566
+the carter family,5,0.978147438
+ghostface killah,5,0.883748277
+fat freddy's drop,5,0.941651253
+the california honeydrops,5,0.902850555
+helen reddy,5,0.98347356
+the duprees,5,0.934781866
+betty carter,5,0.975160126
+yoko ono,5,0.967496218
+stacey kent,5,0.991208752
+procol harum,5,0.993555637
+the ozark mountain daredevils,5,0.966831618
+naughty by nature,5,0.938385809
+sheryl crow,5,0.973439341
+vanilla ice,5,0.919529173
+ace of base,5,0.924533331
+jungle brothers,5,0.963434546
+david benoit,5,0.957549255
+darius rucker,5,0.939632001
+evans blue,5,0.956278599
+red,5,0.973860731
+artie shaw,5,0.948161434
+bobbie gentry,5,0.895399506
+burt bacharach,5,0.960470871
+lynn anderson,5,0.966610172
+dream theater,5,0.962898284
+bill haley & his comets,5,0.756821616
+crowded house,5,0.939986808
+swv,5,0.96011944
+robert palmer,5,0.963381928
+mott the hoople,5,0.955721189
+the cat empire,5,0.973023142
+michael w. smith,5,0.886462789
+todd snider,5,0.953700478
+mad season,5,0.910539306
+roy ayers ubiquity,5,0.945455802
+jake owen,5,0.9170115
+hunter hayes,5,0.929144276
+country joe & the fish,5,0.97967927
+justin townes earle,5,0.935852509
+cafe jazz deluxe,5,0.980357101
+loon,5,0.909512095
+lenny kravitz,5,0.944537021
+the marcels,5,0.965946469
+the parlor mob,5,0.978810931
+raekwon,5,0.915200358
+pam tillis,5,0.955788194
+chick corea,5,0.977427034
+ringo starr,5,0.965785738
+cymande,5,0.936902456
+gene pitney,5,0.978672291
+melanie martinez,5,0.92176294
+special ed,5,0.855761066
+rick braun,5,0.945656414
+machine gun kelly,5,0.961362851
+chris cornell,5,0.8938634
+elvin bishop,5,0.960984283
+gary puckett & the union gap,5,0.996358703
+gary wright,5,0.964143116
+krizz kaliko,5,0.965424265
+hole,5,0.967041054
+margo guryan,5,0.969759993
+a r i z o n a,5,0.949886136
+10 years,5,0.85426477
+chris cagle,5,0.923026055
+justin moore,5,0.982568681
+gregory porter,5,0.996119344
+josh abbott band,5,0.899674197
+cinderella,5,0.92981002
+alter bridge,5,0.928270407
+jason isbell and the 400 unit,5,0.945817036
+the crusaders,5,0.941687422
+t.g. sheppard,5,0.957084712
+badbadnotgood,5,0.960046292
+paul revere & the raiders,5,0.954354741
+bastille,5,0.936720468
+owen gray,5,0.975905302
+future,5,0.918217713
+akon,5,0.919755886
+louis jordan & his tympany five,5,0.985143901
+mountain,5,0.94551783
+charlie parker,5,0.953218816
+cliff richard,5,0.970353415
+escape the fate,5,0.986114366
+wookiefoot,5,0.937874508
+mat kearney,5,0.954729534
+johnny burnette,5,0.780712342
+passion pit,5,0.956147278
+jacob miller,5,0.991695972
+juvenile,5,0.962532313
+cas haley,5,0.881647473
+reo speedwagon,5,0.958508783
+crime mob,5,0.899546126
+nick wiz,5,0.955502091
+willie dixon,5,0.964127926
+dee dee sharp,5,0.925024037
+e-40,5,0.914087424
+kbong,5,0.907936945
+babe rainbow,5,0.962767723
+boyz n da hood,5,0.908957781
+snow patrol,5,0.904730371
+shelley fabares,5,0.925879504
+tomorrows bad seeds,5,0.95911724
+senses fail,5,0.960883201
+pat kelly,5,0.894104237
+josh white,5,0.93528887
+busy signal,5,0.953610166
+destiny's child,5,0.941750506
+pat travers,5,0.916445759
+flyleaf,5,0.952402631
+demarco,5,0.984962855
+arcade fire,5,0.895052662
+ruth brown,5,0.902785429
+puddle of mudd,5,0.920562505
+through the roots,5,0.939917671
+helen merrill,5,0.990376588
+blackhawk,5,0.972897295
+the cleaners from venus,5,0.96199473
+the human league,5,0.976590374
+rick springfield,5,0.937481677
+the shins,5,0.938383081
+al martino,5,0.993220177
+cal tjader,5,0.941356787
+yaz,5,0.920681494
+roy hamilton,5,0.921933136
+modern english,5,0.892528297
+rainbow,5,0.906228324
+bush,5,0.948519178
+shyne,5,0.898585997
+kings and comrades,5,0.878773527
+squeeze,5,0.991950344
+shakira,5,0.93431213
+nelly,5,0.883329512
+clarence carter,5,0.96700848
+lady saw,5,0.949482318
+lil' flip,5,0.920713908
+iggy pop,5,0.972841924
+the alan parsons project,5,0.950528095
+canned heat,5,0.94150246
+phantogram,5,0.869442984
+owl city,5,0.9445897
+crowder,5,0.914406752
+janis joplin,5,0.966258786
+the grace thrillers,5,0.959533784
+the paul butterfield blues band,5,0.94635265
+protoje,5,0.99553832
+falling in reverse,5,0.98299727
+lou reed,5,0.928220279
+cliff richard & the shadows,5,0.920692485
+taking back sunday,5,0.951640957
+mike pinto,5,0.977722886
+ashanti,5,0.86342597
+judy collins,5,0.935311457
+the dovells,5,0.949196289
+little richard,5,0.863971102
+allen toussaint,5,0.98260158
+fuel,5,0.932050169
+the itals,5,0.971056839
+tarrus riley,5,0.942781992
+selena gomez,5,0.984784232
+diana ross,5,0.940231405
+des rocs,5,0.990936515
+cornell campbell,5,0.970202036
+neko case,5,0.951948159
+onerepublic,5,0.943369326
+magic sam,5,0.892318484
+fred astaire,5,0.944359624
+coheed and cambria,5,0.926674449
+high school musical cast,5,0.932600769
+brook benton,5,0.876107576
+the searchers,5,0.899569007
+sumo,5,0.924634426
+jerry butler,5,0.917878979
+the feelies,5,0.963335701
+culture club,5,0.927807674
+death,4,0.968479614
+mike & the mechanics,4,0.919721144
+loose ends,4,0.855853383
+jonathan edwards,4,0.956233399
+new riders of the purple sage,4,0.922312299
+lil scrappy,4,0.92493253
+radio birdman,4,0.869970195
+paul hardcastle,4,0.935548084
+the supervillains,4,0.911566554
+big brother & the holding company,4,0.972027013
+sara bareilles,4,0.928103488
+labi siffre,4,0.981594803
+diane schuur,4,0.943598099
+captain & tennille,4,0.963380963
+for king & country,4,0.95438729
+konshens,4,0.958878818
+toni braxton,4,0.982264086
+tom t. hall,4,0.879910554
+candlebox,4,0.921983116
+rufus thomas,4,0.888041602
+japan,4,0.968594759
+ruby and the romantics,4,0.951985048
+j.b. lenoir,4,0.985197413
+suzanne vega,4,0.983491834
+nico,4,0.992816157
+naked eyes,4,0.950984962
+blur,4,0.895406906
+bob weir,4,0.947995206
+skindred,4,0.925457156
+the the,4,0.909388032
+mobb deep,4,0.876701513
+simple minds,4,0.95832848
+egypt central,4,0.963073159
+yusuf / cat stevens,4,0.837623033
+salt-n-pepa,4,0.927841227
+gram parsons,4,0.946583972
+bitty mclean,4,0.902402432
+nonpoint,4,0.926770445
+orleans,4,0.959981843
+johnny rivers,4,0.922023083
+don covay,4,0.985920789
+4 non blondes,4,0.978076748
+gin blossoms,4,0.940743095
+parker millsap,4,0.910514729
+mr. bungle,4,0.980676609
+annie lennox,4,0.960949638
+white zombie,4,0.940845339
+steve winwood,4,0.900274568
+flunk,4,0.979703283
+funkadelic,4,0.971896322
+darryl worley,4,0.904986515
+joe nichols,4,0.953818569
+strawberry alarm clock,4,0.974227954
+wade bowen,4,0.963847625
+katie melua,4,0.942762325
+fred neil,4,0.912302966
+matthew west,4,0.902562558
+collie buddz,4,0.972954049
+daughtry,4,0.96213398
+thousand foot krutch,4,0.887009794
+steve young,4,0.924956718
+big black,4,0.970347405
+giant panda guerilla dub squad,4,0.910410706
+suzi quatro,4,0.970947378
+tex williams,4,0.978114612
+slim harpo,4,0.923426985
+the delta saints,4,0.899052115
+lincoln durham,4,0.97346384
+ryan adams,4,0.964549396
+abc,4,0.970316015
+george hamilton iv,4,0.9678525
+jagged edge,4,0.971927106
+claude king,4,0.978641782
+die antwoord,4,0.823694311
+stetsasonic,4,0.927333051
+the bravery,4,0.955936878
+najee,4,0.979844543
+gene watson,4,0.947490994
+bukka white,4,0.973384242
+the monks,4,0.830878678
+silversun pickups,4,0.913576675
+tegan and sara,4,0.962348542
+craig morgan,4,0.967074511
+kurtis blow,4,0.911061865
+kevin sharp,4,0.930276858
+north mississippi allstars,4,0.963079779
+eddie vedder,4,0.777059541
+texas tornados,4,0.967610903
+billy dean,4,0.995432235
+audioslave,4,0.959172618
+professor longhair,4,0.890677652
+vera lynn,4,0.969716749
+classics iv,4,0.977150615
+patrick sweany,4,0.88289526
+atreyu,4,0.983761055
+the notting hillbillies,4,0.951826924
+johnny hates jazz,4,0.943026632
+men at work,4,0.977653386
+the sugarcubes,4,0.937644891
+kylie minogue,4,0.852852381
+12 stones,4,0.963708634
+marty stuart,4,0.901828919
+the kentucky headhunters,4,0.949090599
+soft cell,4,0.966330151
+james mcmurtry,4,0.926589371
+jahmiel,4,0.979223466
+spandau ballet,4,0.976222994
+unified highway,4,0.955350665
+highway 101,4,0.984956235
+steve oliver,4,0.95331912
+screeching weasel,4,0.855268804
+the pointer sisters,4,0.846040356
+margaret whiting,4,0.993476447
+n.w.a.,4,0.868322189
+black label society,4,0.881169879
+ll cool j,4,0.9381774
+lamb,4,0.926762452
+de la soul,4,0.978725093
+seasick steve,4,0.96212946
+jo stafford,4,0.967672611
+the chantels,4,0.959903575
+gene vincent,4,0.919142872
+belinda carlisle,4,0.970686418
+brad mehldau,4,0.985369626
+camp lo,4,0.952136844
+john berry,4,0.948098707
+tim hardin,4,0.94822988
+the skatalites,4,0.876641689
+the mills brothers,4,0.994208623
+willie clayton,4,0.953591939
+a flock of seagulls,4,0.981866596
+richard marx,4,0.932076055
+lil b,4,0.96415615
+peter cetera,4,0.860244464
+8ball & mjg,4,0.924842716
+terri clark,4,0.932333496
+sheena easton,4,0.863779419
+newsboys,4,0.969506619
+rick astley,4,0.864354664
+tash sultana,4,0.938542337
+box car racer,4,0.907164745
+trapt,4,0.918890085
+the desert rose band,4,0.985611604
+ernest tubb,4,0.911771652
+renee olstead,4,0.996721311
+kirk whalum,4,0.906770783
+them crooked vultures,4,0.891301681
+default,4,0.950273088
+status quo,4,0.909911582
+josé feliciano,4,0.891306814
+radio moscow,4,0.969465144
+iron & wine,4,0.926805171
+masicka,4,0.977673852
+bodeans,4,0.910226343
+dickey betts,4,0.946149261
+the gourds,4,0.962915575
+regina spektor,4,0.923642037
+lloyd banks,4,0.929095168
+ray lamontagne,4,0.891746859
+the fray,4,0.915720821
+gene chandler,4,0.915000444
+en vogue,4,0.955816925
+say anything,4,0.919946013
+head east,4,0.991443931
+mohammed rafi,4,0.979097988
+passion,4,0.871812123
+asleep at the wheel,4,0.901454377
+typical cats,4,0.918363743
+gilbert o'sullivan,4,0.996651034
+keyshia cole,4,0.947390987
+the black seeds,4,0.948976203
+janie fricke,4,0.870388371
+the foundations,4,0.984583776
+baillie & the boys,4,0.918078111
+snoop lion,4,0.900338851
+billie jo spears,4,0.987695962
+phil ochs,4,0.964756394
+special efx,4,0.988569118
+katchafire,4,0.887304662
+the gregg allman band,4,0.959096899
+orange juice,4,0.966805202
+johnny tillotson,4,0.986059255
+gregg allman,4,0.996513271
+john williamson,4,0.927548653
+the king khan & bbq show,4,0.917916732
+lone justice,4,0.940589867
+tommy bolin,4,0.927558161
+t.i.,4,0.952700287
+the skyliners,4,0.937150823
+usher,4,0.881696539
+marian mcpartland,4,0.960595745
+richard & linda thompson,4,0.939502261
+mission of burma,4,0.935232476
+sonny rollins,4,0.941450004
+bettye swann,4,0.981557545
+the von bondies,4,0.996182247
+josh groban,4,0.967776428
+dashboard confessional,4,0.966273664
+christopher martin,4,0.970346332
+mel tillis,4,0.976047771
+rare earth,4,0.957700869
+blockhead,4,0.900999555
+hannah montana,4,0.930587534
+the main ingredient,4,0.957813712
+the heptones,4,0.968908036
+christina aguilera,4,0.983323368
+eugene mcdaniels,4,0.971252247
+patra,4,0.900433157
+jon pardi,4,0.925227823
+faith evans,4,0.985168716
+tyler farr,4,0.92722787
+stephen bishop,4,0.963842229
+the dave clark five,4,0.99619883
+nice & smooth,4,0.92622044
+ms. lauryn hill,4,0.945421354
+super cat,4,0.991574488
+the gaylads,4,0.95143729
+montell jordan,4,0.909114259
+nashville cast,4,0.977688696
+the tennors,4,0.969778893
+the uniques,4,0.930783712
+blackbear,4,0.968866492
+ben rector,4,0.944078985
+ellie goulding,4,0.945607414
+big bub,4,0.944737361
+arc angels,4,0.99158011
+kesha,4,0.937854142
+robben ford & the blue line,4,0.988774336
+two door cinema club,4,0.933115763
+the pioneers,4,0.963306909
+the damned,4,0.987856967
+my darkest days,4,0.853683881
+elliott smith,4,0.982281307
+the ziggens,4,0.984253436
+car bomb,4,0.985644023
+lena horne,4,0.979348691
+ashes remain,4,0.907247675
+inner circle,4,0.856714788
+project pat,4,0.969552541
+glee cast,4,0.875395955
+leslie odom jr.,4,0.982141081
+fatback band,4,0.865848136
+the flesh eaters,4,0.926962335
+mother mother,4,0.90142404
+novelists,4,0.963983799
+fantastic negrito,4,0.912690134
+graham central station,4,0.851528408
+sister sledge,4,0.919744475
+commodores,4,0.883788896
+kadhja bonet,4,0.927655782
+alessia cara,4,0.907537688
+roy ayers,4,0.98545249
+daniel caesar,4,0.969683067
+art pepper,4,0.996252475
+jason isbell,4,0.984618202
+nai palm,4,0.945452474
+young money,4,0.971194565
+bill frisell,4,0.952079222
+the j.b.'s,4,0.887743224
+vic damone,4,0.971551434
+alanis morissette,4,0.968116564
+kofi,4,0.946705911
+the seeds,4,0.966178281
+junior wells,4,0.985182639
+willie bobo,4,0.960443085
+david axelrod,4,0.935955207
+kendrick lamar,4,0.922144659
+thompson twins,4,0.991728494
+big mama thornton,4,0.937977832
+the five keys,4,0.950783516
+survivor,4,0.918332419
+tetrack,4,0.910775085
+asia,4,0.948749526
+colin james,4,0.945178159
+capital letters,4,0.893306134
+frank ocean,4,0.944575519
+zedd,4,0.91782636
+avicii,4,0.960990793
+bryce vine,4,0.931970282
+bad brains,4,0.874068403
+eli young band,4,0.919745469
+saint motel,4,0.980844013
+yo la tengo,4,0.961201351
+days of the new,4,0.973942952
+set it off,4,0.990654264
+johnny hartman,4,0.990428722
+eric johnson,4,0.976185161
+tyga,4,0.966569054
+meat puppets,4,0.96061939
+manowar,4,0.901973284
+don carlos,4,0.963072037
+paul desmond,4,0.959446218
+christina perri,4,0.913762847
+ron gallo,4,0.928459461
+skeeter davis,4,0.914314093
+elvis costello,4,0.95022737
+bob andy,4,0.941034037
+the beatnuts,4,0.860827321
+blackface,4,0.975101088
+johnny ace,4,0.933565771
+98º,4,0.943018618
+jeremy camp,4,0.827543541
+pinchers,4,0.97948076
+lloyd price,4,0.987767213
+grouplove,4,0.942557354
+sly & robbie,4,0.934135609
+chad & jeremy,4,0.941969003
+the walker brothers,4,0.877744065
+august alsina,4,0.946161062
+frankie lymon,4,0.92107929
+james arthur,4,0.894630495
+kelsea ballerini,4,0.888039486
+chick webb,4,0.935114952
+the delmonas,4,0.990908495
+half•alive,4,0.905212312
+big sean,4,0.89087171
+goodbye june,4,0.913983828
+adam calhoun,4,0.983430094
+missy elliott,4,0.838824117
+bob welch,4,0.88304967
+deca,4,0.968737908
+laura nyro,4,0.963792773
+hiphop tamizha,4,0.914948603
+alec benjamin,4,0.890079136
+wu-tang clan,4,0.943991698
+long beach dub allstars,4,0.97332876
+colt ford,4,0.987755473
+jay z,4,0.970696214
+hopsin,4,0.891039015
+ingrid michaelson,4,0.866038076
+ronnie laws,4,0.936633986
+soen,4,0.919557896
+shakatak,4,0.981491441
+lee ritenour,4,0.989520778
+u.k.,4,0.99609733
+johnny mercer,4,0.907640409
+lee morgan,4,0.970036637
+lee brice,4,0.95909518
+maddie & tae,4,0.892126818
+randy houser,4,0.968600292
+britney spears,4,0.904730558
+deerhunter,4,0.953231644
+playboi carti,4,0.959489677
+robben ford,4,0.967168925
+the association,4,0.988797184
+guided by voices,4,0.960393872
+seeed,4,0.968381708
+brenda russell,4,0.97869913
+billy currington,4,0.942131068
+jimmy smith,4,0.944863289
+the budos band,4,0.97907103
+colbie caillat,4,0.873181646
+desmond cheese,4,0.966107142
+ashford & simpson,4,0.98647041
+ryan adams & the cardinals,4,0.93197373
+awolnation,4,0.954673198
+china crisis,4,0.967507771
+aminé,4,0.941182784
+great white,4,0.960949716
+the shouting matches,4,0.95715797
+the buggles,4,0.961906644
+testament,4,0.899233966
+the roots,4,0.854226754
+denis solee,4,0.959167611
+joe williams,4,0.968054648
+tyler bryant & the shakedown,4,0.920291172
+brian simpson,4,0.946672753
+caro emerald,4,0.876000493
+francesca battistelli,4,0.949671558
+allan holdsworth,4,0.972930961
+the box tops,4,0.904488132
+will.i.am,4,0.839869209
+earl klugh,4,0.940402289
+leon ware,4,0.960027967
+the ravens,3,0.976561305
+the gories,3,0.976325839
+brant bjork,3,0.813371146
+jeff lorber,3,0.990130469
+mike zito,3,0.988620236
+ray barretto,3,0.94580201
+jimmy page,3,0.915092671
+little eva,3,0.958114247
+hank ballard,3,0.959445435
+timi yuro,3,0.959007676
+denzel curry,3,0.974043249
+michael henderson,3,0.939111868
+ray bonneville,3,0.946746967
+russell dickerson,3,0.951433014
+the sonics,3,0.921454234
+coleman hawkins,3,0.965465901
+sonny clark,3,0.942031641
+ray wylie hubbard,3,0.960518693
+cannonball adderley,3,0.99490657
+kleeer,3,0.884766618
+seckond chaynce,3,0.885652111
+souls of mischief,3,0.945373446
+corleone,3,0.977864331
+mississippi john hurt,3,0.956917695
+will smith,3,0.929979203
+young mc,3,0.893737955
+ulver,3,0.970257844
+the modern jazz quartet,3,0.985935685
+paul wall,3,0.904515922
+lester young,3,0.959178801
+wilson pickett,3,0.992113905
+little big town,3,0.996313539
+tommy james & the shondells,3,0.947504032
+onyx,3,0.98485327
+wes montgomery,3,0.963421927
+zulú hip hop jam,3,0.960873417
+patrice rushen,3,0.95400048
+the blue stones,3,0.980868406
+moonshine bandits,3,0.947069626
+herbie mann,3,0.967382646
+yellowjackets,3,0.941105556
+david lee murphy,3,0.993251294
+neal mccoy,3,0.951892135
+steps ahead,3,0.943209843
+stoney larue,3,0.941130959
+shi 360,3,0.983267433
+sonny stitt,3,0.851917194
+the cowsills,3,0.911617629
+the keynotes,3,0.883999925
+dave grusin,3,0.988326335
+golden smog,3,0.908147934
+dock boggs,3,0.945471302
+dee clark,3,0.861545134
+deap vally,3,0.893100568
+michael brecker,3,0.971162926
+the neville brothers,3,0.93095029
+herb ellis,3,0.935883524
+frankie valli & the four seasons,3,0.986802689
+marlena shaw,3,0.979137402
+t-rock,3,0.901925916
+change,3,0.93908023
+walter trout,3,0.904661854
+etta jones,3,0.942789155
+hank mobley,3,0.945531563
+zoot sims,3,0.948020096
+riley green,3,0.986545232
+joe henderson,3,0.90881836
+deana carter,3,0.997074338
+soft machine,3,0.951324521
+tom scott,3,0.909024374
+jimmie rodgers,3,0.986144636
+frankie avalon,3,0.954451694
+the nerves,3,0.903879928
+jo dee messina,3,0.950414663
+chris smither,3,0.989692714
+champion jack dupree,3,0.949040172
+otis taylor,3,0.989538374
+brick,3,0.973069372
+dan auerbach,3,0.922198265
+leaders of the new school,3,0.937843765
+chuck mangione,3,0.978488
+eric b. & rakim,3,0.796710818
+weather report,3,0.977875904
+todd terry,3,0.997628501
+jimmie vaughan,3,0.938953184
+songs: ohia,3,0.995337669
+ahmad jamal,3,0.966032865
+goin' through,3,0.984129897
+georgie fame,3,0.94742058
+brett eldredge,3,0.947781718
+snowy white,3,0.921859327
+william clark green,3,0.926483638
+junior kimbrough,3,0.956072331
+little willie john,3,0.974802401
+night beats,3,0.863761397
+3rd bass,3,0.889123759
+bobby day,3,0.981779518
+mel waiters,3,0.958268751
+the reverend peyton's big damn band,3,0.989245268
+yusef lateef,3,0.962383423
+rayess bek,3,0.99712218
+artifacts,3,0.881171714
+vanilla fudge,3,0.927563114
+herman's hermits,3,0.979923744
+lndn drgs,3,0.964212137
+bobbi humphrey,3,0.984220194
+pistol annies,3,0.989540773
+spirit,3,0.948593101
+angelo debarre,3,0.955067801
+massacre,3,0.989223058
+"clarence ""gatemouth"" brown",3,0.937154179
+possessed by paul james,3,0.947621859
+easton corbin,3,0.892284995
+t. m. soundararajan,3,0.996773183
+the blackwater fever,3,0.954604757
+ted hawkins,3,0.997292583
+lonnie liston smith,3,0.928238587
+ronnie dunn,3,0.918559434
+benjamin booker,3,0.940278745
+esquivel!,3,0.942281801
+the robert cray band,3,0.941845299
+otis rush,3,0.930568997
+ted heath,3,0.958668752
+darlene love,3,0.972261287
+buddy knox,3,0.950594859
+pat metheny group,3,0.677257818
+blind faith,3,0.961604592
+the pack a.d.,3,0.915287154
+warren hill,3,0.988742111
+emerson drive,3,0.939743487
+mary lou williams,3,0.926520117
+the young rascals,3,0.986651689
+june christy,3,0.913721908
+van dyke parks,3,0.994836851
+cynic,3,0.968684174
+mandrill,3,0.82908914
+esther phillips,3,0.966201059
+laura fygi,3,0.927868929
+"bonnie ""prince"" billy",3,0.878658571
+doyle bramhall ii,3,0.931757685
+shawn james & the shapeshifters,3,0.970183302
+james cotton,3,0.963071482
+fontella bass,3,0.991565452
+king curtis,3,0.973981054
+denise lasalle,3,0.916719371
+weldon irvine,3,0.964576095
+jan & dean,3,0.961601025
+chuck willis,3,0.958082303
+dexter wansel,3,0.979828222
+little hurricane,3,0.98411294
+alex chilton,3,0.996679962
+dave rawlings machine,3,0.950202516
+joanne shaw taylor,3,0.919824259
+phil perry,3,0.961171559
+talib kweli,3,0.896704784
+jaco pastorius,3,0.922179436
+nate dogg,3,0.846247907
+carlos santana,3,0.909150478
+jessica andrews,3,0.996305102
+andy griggs,3,0.86900763
+public enemy,3,0.917749134
+jimmy johnson,3,0.934063607
+logan mize,3,0.92252622
+shedaisy,3,0.970012396
+blaze foley,3,0.96873812
+ella mae morse,3,0.932745831
+julianne hough,3,0.885885446
+the jones girls,3,0.958547144
+tiffany,3,0.856257798
+snow,3,0.943101189
+govana,3,0.961778761
+jah roots,3,0.872447916
+shane & shane,3,0.864122748
+chadwick stokes,3,0.948269411
+simplified,3,0.867881003
+ultravox,3,0.968206963
+zac efron,3,0.93134056
+mild high club,3,0.916817057
+hale,3,0.986899503
+we the kings,3,0.873558052
+the sound,3,0.780109561
+warrior king,3,0.984723613
+misty in roots,3,0.993411637
+junior kelly,3,0.857555951
+the cab,3,0.935130106
+elephant man,3,0.983546981
+jazmine sullivan,3,0.957883406
+graham parker,3,0.946209115
+bushman,3,0.976946302
+glen washington,3,0.973636258
+alpha blondy,3,0.905659937
+twista,3,0.914153216
+phil wickham,3,0.889953436
+julian marley,3,0.939034721
+miike snow,3,0.983503727
+wale,3,0.94102532
+the struts,3,0.861836585
+los cafres,3,0.978080475
+troy,3,0.934392395
+stone senses,3,0.955378114
+angels & airwaves,3,0.937300592
+gwen stefani,3,0.960032366
+dave matthews,3,0.871169668
+jesse royal,3,0.970743603
+me first and the gimme gimmes,3,0.963519023
+fruit bats,3,0.863985796
+hilary duff,3,0.924174253
+ludacris,3,0.907145334
+the growlers,3,0.908302806
+the cheetah girls,3,0.907581733
+the chiffons,3,0.936134049
+the walters,3,0.77677932
+keane,3,0.893173255
+natasha bedingfield,3,0.944769993
+hollie cook,3,0.967610905
+aaron kamm and the one drops,3,0.98584267
+paul westerberg,3,0.909987952
+rob thomas,3,0.919119511
+celtic woman,3,0.958397119
+the pussycat dolls,3,0.886260527
+john legend,3,0.975983697
+ying yang twins,3,0.84924366
+etana,3,0.932658713
+seedless,3,0.928386398
+sashamon,3,0.940991135
+chris brown,3,0.902962935
+hours eastly,3,0.969572667
+kari jobe,3,0.812550744
+david ball,3,0.984433096
+joe jackson,3,0.896026755
+carlene davis,3,0.843154053
+j. rawls,3,0.98905311
+mike will made-it,3,0.949635998
+tori kelly,3,0.97128347
+milky chance,3,0.890864423
+iggy azalea,3,0.994293713
+k camp,3,0.968403063
+derrick harriott,3,0.913975712
+bleachers,3,0.910225015
+5 seconds of summer,3,0.945943639
+sam hunt,3,0.920183508
+ty dolla $ign,3,0.941035048
+a great big world,3,0.97824749
+tiësto,3,0.861120545
+vance joy,3,0.988641198
+craig campbell,3,0.898730175
+jaymes young,3,0.954931027
+langhorne slim,3,0.922454136
+galantis,3,0.873955675
+kygo,3,0.952037279
+yo gotti,3,0.963436905
+alfa mist,3,0.993885075
+børns,3,0.911559213
+troye sivan,3,0.962812656
+axian,3,0.976538783
+nick hakim,3,0.976628599
+yazmin lacey,3,0.942717284
+sudan archives,3,0.858705744
+major lazer,3,0.923753564
+bahamas,3,0.772223963
+beach house,3,0.966147089
+little john,3,0.957602692
+neon trees,3,0.925649779
+sleeping with sirens,3,0.951153339
+trampled by turtles,3,0.939256527
+alpha & omega,3,0.981273601
+flo rida,3,0.948184547
+miguel,3,0.911683776
+andrew belle,3,0.959155251
+local natives,3,0.937688018
+trey songz,3,0.972979644
+junior reid,3,0.970889438
+barns courtney,3,0.89847251
+mad professor,3,0.97394103
+touré kunda,3,0.88795871
+king tubby,3,0.978010911
+the viceroys,3,0.962530239
+johnny osbourne,3,0.956281078
+wally warning,3,0.937980691
+papa san,3,0.910966453
+matt maeson,3,0.926909965
+singers and players,3,0.979317837
+bishop briggs,3,0.814420721
+walk the moon,3,0.938993878
+of monsters and men,3,0.885815382
+junior murvin,3,0.828754
+the congos,3,0.993399982
+cassadee pope,3,0.970185155
+the elovaters,3,0.982676132
+shenseea,3,0.940599879
+bluntone,3,0.991090449
+the all-american rejects,3,0.976523633
+the kooks,3,0.856445497
+corrosion of conformity,3,0.97913389
+catherine wheel,3,0.887974136
+firehouse,3,0.882987717
+too $hort,3,0.934374627
+level 42,3,0.997254621
+temple of the dog,3,0.949463018
+greensky bluegrass,3,0.99654701
+warrant,3,0.876030906
+prefab sprout,3,0.927999517
+starship,3,0.950399815
+winger,3,0.933487871
+michael bolton,3,0.942234124
+the last shadow puppets,3,0.905667127
+brandy,3,0.94426157
+toadies,3,0.977148095
+lagwagon,3,0.97075446
+jeff buckley,3,0.892660851
+stereolab,3,0.978724231
+common,3,0.920415738
+our lady peace,3,0.860251733
+ol' dirty bastard,3,0.920023486
+boyzone,3,0.90540785
+jewel,3,0.922650082
+big l,3,0.914429308
+bronski beat,3,0.995806545
+eels,3,0.876329421
+love and rockets,3,0.95882614
+helmet,3,0.992237185
+tony! toni! toné!,3,0.953465086
+mindless self indulgence,3,0.987764977
+the rapture,3,0.989626698
+the mars volta,3,0.981922329
+debbie gibson,3,0.910741413
+the proclaimers,3,0.931901933
+information society,3,0.94845969
+melissa etheridge,3,0.94355256
+adema,3,0.987187783
+mercyme,3,0.930721104
+bobby brown,3,0.925387056
+cold,3,0.973422013
+tobymac,3,0.939669503
+the seekers,3,0.933641808
+julee cruise,3,0.930279817
+kyuss,3,0.994892784
+the ocean blue,3,0.993822489
+crossfade,3,0.956300388
+jellyfish,3,0.970142101
+placebo,3,0.858913548
+the sundays,3,0.964776538
+mastodon,3,0.940972493
+james,3,0.924146106
+choking victim,3,0.976222589
+toad the wet sprocket,3,0.938932194
+fear factory,3,0.886727577
+boyz ii men,3,0.980676046
+pulp,3,0.880572424
+soul coughing,3,0.887042463
+foxy brown,3,0.971967663
+steel panther,3,0.955915209
+bad suns,3,0.96627032
+method man,3,0.833764781
+puscifer,3,0.970957604
+new found glory,3,0.940594876
+musiq soulchild,3,0.973835047
+eurythmics,3,0.981235916
+adam ant,3,0.98030603
+current joys,3,0.932744875
+berlin,3,0.919654876
+ben folds,3,0.936511464
+jaheim,3,0.977618462
+the west coast pop art experimental band,3,0.941550254
+king krule,3,0.885811814
+ja rule,3,0.926052508
+trick daddy,3,0.978783488
+blu cantrell,3,0.954722335
+diddy,3,0.92667176
+alicia keys,3,0.974788586
+fat joe,3,0.901717484
+hoobastank,3,0.889042721
+captain beefheart & his magic band,3,0.94217638
+quarterflash,3,0.843211488
+authority zero,3,0.896327221
+floetry,3,0.906122018
+sugarcult,3,0.975965307
+jason mraz,3,0.858357693
+the champs,3,0.955139933
+jennifer lopez,3,0.962790744
+the bouncing souls,3,0.969592306
+lionel richie,3,0.906462998
+lyres,3,0.889610202
+alison moyet,3,0.96584721
+maxwell,3,0.880594755
+mercyful fate,3,0.978419082
+quiet riot,3,0.836673147
+dru hill,3,0.905013268
+erykah badu,3,0.875135031
+three 6 mafia,3,0.951641495
+laura branigan,3,0.845864081
+ben folds five,3,0.927323912
+third eye blind,3,0.95373933
+billy ocean,3,0.85611074
+jermaine dupri,3,0.944415263
+gerry & the pacemakers,3,0.995196324
+sugar ray,3,0.921842335
+billy squier,3,0.881610303
+train,3,0.937429296
+you me at six,3,0.903888143
+monica,3,0.945149926
+tyrese,3,0.897959463
+buzzcocks,3,0.911083724
+chris tomlin,3,0.90770929
+dido,3,0.88922651
+the afters,3,0.947575909
+savage garden,3,0.952167845
+meat loaf,3,0.932039098
+the style council,3,0.937844088
+leaf beach,3,0.957628328
+mukesh,3,0.88284731
+the knitters,3,0.969647695
+swing republic,3,0.877929536
+holly dunn,3,0.973184951
+lauv,3,0.933628948
+nick drake,3,0.82384999
+nav,3,0.9409994
+lighter shade of brown,3,0.96843127
+h.e.r.,3,0.843775966
+bryan white,3,0.945852522
+heavy d & the boyz,3,0.972679107
+kool moe dee,3,0.928352949
+michael nesmith,3,0.968823352
+grandmaster melle mel,3,0.929815484
+chinese man,3,0.988592268
+candy dulfer,3,0.875935222
+cardi b,3,0.955858309
+jay soto,3,0.96347297
+dj jazzy jeff,3,0.924081286
+larry gatlin & the gatlin brothers,3,0.915332703
+pussycat,3,0.94996663
+the georgia satellites,3,0.995725618
+boozoo bajou,3,0.983500417
+suzy bogguss,3,0.922126936
+charley patton,3,0.902023843
+guts,3,0.968883569
+vildhjarta,3,0.989551913
+dean lewis,3,0.936305863
+proleter,3,0.962491987
+eldissa,3,0.966028145
+crazy p,3,0.88955658
+andrew gold,3,0.94706393
+goldfish,3,0.837519265
+de-phazz,3,0.92743763
+camila cabello,3,0.983170761
+migos,3,0.919042136
+robbie robertson,3,0.96416288
+john schneider,3,0.975272462
+lyre le temps,3,0.948712256
+yppah,3,0.935984652
+johnny rodriguez,3,0.986335709
+lowell george,3,0.855177509
+amazing rhythm aces,3,0.877290772
+slow pain,3,0.892819763
+janis ian,3,0.997076448
+the cinematic orchestra,3,0.977218045
+dillard & clark,3,0.940110632
+slim whitman,3,0.991697995
+canibus,3,0.885532933
+people under the stairs,3,0.995922242
+tom rush,3,0.948437095
+david cassidy,3,0.938934689
+jessi colter,3,0.995515067
+arlo guthrie,3,0.951705961
+the beau brummels,3,0.881590933
+new york dolls,3,0.912119422
+spoonie gee,3,0.955343631
+devin townsend band,3,0.935984144
+david houston,3,0.926274897
+sofa surfers,3,0.911233064
+hoyt axton,3,0.940802161
+the 5th dimension,3,0.996679152
+joe ely,3,0.869532244
+tory lanez,3,0.92148652
+eric carmen,3,0.937376144
+juliana aquino,3,0.968193633
+webb pierce,3,0.982339222
+charlie haden,3,0.963970057
+stéphane pompougnac,3,0.869364854
+supaman,3,0.982792944
+chuck loeb,3,0.864822623
+positive k,3,0.901274547
+blue six,3,0.996212121
+cantoma,3,0.955709027
+the band perry,3,0.924687289
+télépopmusik,3,0.995977122
+donny osmond,3,0.975598052
+wayman tisdale,3,0.951294279
+black noise,3,0.968020018
+al stewart,3,0.979387135
+romare,3,0.954005078
+soulive,3,0.937585917
+leprous,3,0.994236216
+smif-n-wessun,3,0.900346836
+ella mai,3,0.962606542
+swingrowers,3,0.97804347
+vic mensa,3,0.943303511
+hal ketchum,3,0.996891851
+kid loco,3,0.951236638
+mndsgn,3,0.828325314
+native construct,3,0.989002282
+louis the child,3,0.850744963
+the millennium,3,0.934113225
+snarky puppy,3,0.892280861
+rick trevino,3,0.923755648
+the bahama soul club,3,0.846327687
+jamie berry,3,0.976314383
+kamasi washington,3,0.974937343
+radney foster,3,0.908090082
+kehlani,3,0.90683795
+chill bump,3,0.869995406
+steve cole,3,0.964699297
+adelitas way,2,0.81193798
+danielle nicole,2,0.978811249
+michael mcdonald,2,0.971578105
+blackalicious,2,0.912595492
+dead meadow,2,0.9723633
+gota,2,0.908428858
+marc antoine,2,0.989254385
+the sugarhill gang,2,0.953718814
+janiva magness,2,0.963893353
+finger eleven,2,0.952841403
+tony yayo,2,0.877777471
+night ranger,2,0.977417702
+bernard allison,2,0.967717433
+joan jett & the blackhearts,2,0.764627601
+asheru and blue black of the unspoken heard,2,0.992082975
+earl king,2,0.821945937
+venom,2,0.964156635
+gene ammons,2,0.975831351
+soil,2,0.871690792
+the cold stares,2,0.90795761
+eazy-e,2,0.912178584
+mike stern,2,0.973817165
+grizzly bear,2,0.951239995
+sunny day real estate,2,0.99746517
+jaden,2,0.839788128
+tommy guerrero,2,0.993763157
+count basic,2,0.974428597
+kittie,2,0.996875
+john cafferty & the beaver brown band,2,0.982846445
+mike oldfield,2,0.99215761
+gina sicilia,2,0.996469214
+charlie hunter,2,0.975648941
+dream warriors,2,0.937734231
+roxanne shante,2,0.964073663
+the magpie salute,2,0.997299169
+freeman,2,0.981107465
+sidewalk prophets,2,0.937357387
+at the drive in,2,0.996526185
+soulfly,2,0.886761803
+3rd force,2,0.901605257
+joell ortiz,2,0.920171966
+bloodhound gang,2,0.680792141
+sex pistols,2,0.891118278
+kasabian,2,0.874816304
+mic geronimo,2,0.987177025
+foals,2,0.905825954
+jason gray,2,0.912165507
+tito puente,2,0.800431765
+tuck & patti,2,0.93208688
+biz markie,2,0.951120088
+grinderman,2,0.996979055
+"fear, and loathing in las vegas",2,0.902707588
+miri ben-ari,2,0.975484782
+cky,2,0.960600796
+aynsley lister,2,0.938788999
+gin wigmore,2,0.873094827
+lord finesse,2,0.928299262
+brooklyn funk essentials,2,0.996063102
+benny carter,2,0.951384903
+unknown mortal orchestra,2,0.925508663
+rakim,2,0.912290964
+skool 77,2,0.97431416
+parliament,2,0.997295852
+greyboy,2,0.988822904
+m.o.p.,2,0.926553461
+jake bugg,2,0.877564981
+david gilmour,2,0.981741281
+jim morrison,2,0.98495407
+maceo parker,2,0.941889339
+dinah shore,2,0.986113297
+baby boy da prince,2,0.887579321
+avail hollywood,2,0.96288407
+smokepurpp,2,0.865776776
+the dining rooms,2,0.985299468
+llorca,2,0.963889484
+mos def,2,0.898113046
+the stone foxes,2,0.967253999
+the herbaliser,2,0.961828255
+gerry mulligan,2,0.971582038
+dan hill,2,0.892451576
+franz ferdinand,2,0.892528195
+rae & christian,2,0.995607349
+lil baby,2,0.909872361
+tha alkaholiks,2,0.89001241
+twiddle,2,0.93487524
+freddie mercury,2,0.904640915
+pusha t,2,0.887252727
+mark knopfler,2,0.997027423
+jawbreaker,2,0.962335134
+gane rimatore,2,0.997357496
+the spaniels,2,0.995488722
+bigg robb,2,0.949528618
+third day,2,0.996994102
+wc,2,0.931676029
+black country communion,2,0.936717817
+blue states,2,0.993233083
+aaron shust,2,0.929559786
+the bones of j.r. jones,2,0.987369457
+machine head,2,0.997285609
+harry james,2,0.890522323
+susannah mccorkle,2,0.918825965
+the stone roses,2,0.89073868
+richard elliot,2,0.940244466
+rich mullins,2,0.99771167
+guster,2,0.917125078
+shyheim,2,0.885954944
+philip sayce,2,0.861038223
+nelson,2,0.895424653
+peace orchestra,2,0.951645685
+q-tip,2,0.886194816
+billy eckstine,2,0.838444549
+melvins,2,0.941735195
+type o negative,2,0.940983814
+afterlife,2,0.876228986
+brian hughes,2,0.870365414
+1000mods,2,0.954551315
+jon secada,2,0.922700955
+vintage trouble,2,0.996899256
+chris standring,2,0.956634308
+henrik freischlader,2,0.994374523
+l7,2,0.992987276
+down,2,0.995998287
+jackyl,2,0.986725023
+all that remains,2,0.928374061
+arrested development,2,0.9458316
+sweatshop union,2,0.870264233
+hazhe,2,0.930401102
+dc talk,2,0.965834872
+the almighty defenders,2,0.978908478
+the whispers,2,0.887964063
+(hed) p.e.,2,0.984090997
+marc reis,2,0.979149106
+the cult,2,0.998041155
+american football,2,0.984868421
+powerman 5000,2,0.912704549
+vendetta beats,2,0.922501518
+the devil and the almighty blues,2,0.975737364
+mod sun,2,0.921836469
+white lion,2,0.937714972
+killing joke,2,0.844070828
+the pogues,2,0.923821553
+exodus,2,0.983946891
+nuyorican soul,2,0.913387148
+the hooters,2,0.881602553
+j.j. fad,2,0.915091012
+steve perry,2,0.837794153
+saving abel,2,0.967451958
+the libertines,2,0.920814009
+kmfdm,2,0.994119782
+los lobos,2,0.826798512
+muddy magnolias,2,0.920938822
+seth walker,2,0.964252999
+stereo mc's,2,0.900443673
+jerry cantrell,2,0.927632947
+fats waller,2,0.941896349
+nitin sawhney,2,0.948144816
+v.i.c.,2,0.880676886
+fidlar,2,0.962311104
+butthole surfers,2,0.887625338
+charlie parr,2,0.99102205
+faster pussycat,2,0.953490748
+future islands,2,0.898638077
+laura story,2,0.97445949
+bombino,2,0.987183869
+mr. scruff,2,0.926889001
+james taylor quartet,2,0.996371611
+tosca,2,0.995248538
+roy hargrove,2,0.928756573
+paul taylor,2,0.983862711
+everlast,2,0.988259715
+supreme beings of leisure,2,0.985919274
+king diamond,2,0.972067169
+stryper,2,0.994939271
+kix,2,0.923341447
+joe corfield,2,0.977384269
+mase,2,0.891689433
+rend collective,2,0.940038231
+11 acorn lane,2,0.995215311
+milt jackson,2,0.946198987
+lone ranger,2,0.930924233
+dub syndicate,2,0.967024931
+arthur lyman,2,0.978211958
+jean-luc ponty,2,0.973047882
+diablo swing orchestra,2,0.88581937
+crumb,2,0.836154102
+cold war kids,2,0.843646845
+missio,2,0.770017463
+earl hines,2,0.89647299
+toyan,2,0.981780841
+big john patton,2,0.974400571
+ranking joe,2,0.946910702
+black slate,2,0.996358207
+chocolate milk,2,0.928086761
+peach pit,2,0.791764614
+thad jones,2,0.927642628
+tradition,2,0.927000722
+la lupe,2,0.982324282
+ne obliviscaris,2,0.995948753
+louie ramirez,2,0.955292292
+willie colón,2,0.99739249
+junior byles,2,0.974254087
+kenny burrell,2,0.900792382
+ramsey lewis,2,0.995935092
+agnostoi gnostoi,2,0.925136239
+the disciples,2,0.970761711
+atlantic five jazz band,2,0.936344486
+scientist,2,0.97948059
+diana king,2,0.801242406
+born jamericans,2,0.954737297
+cortex,2,0.970725465
+jacki-o,2,0.891589135
+jean carn,2,0.963783186
+vektor,2,0.996364538
+ramp,2,0.81309828
+tenth avenue north,2,0.905804352
+adam jensen,2,0.921703105
+lord echo,2,0.95001239
+ray brown,2,0.890099491
+jah stitch,2,0.974833597
+art farmer,2,0.940299086
+the twinkle brothers,2,0.954884193
+norman connors,2,0.937977033
+j.c. lodge,2,0.978065024
+eric lindell,2,0.968867874
+reks,2,0.945260289
+uneven structure,2,0.941271075
+tenor saw,2,0.843321597
+john mclaughlin,2,0.959382151
+badflower,2,0.82128543
+linval thompson,2,0.944100729
+jeru the damaja,2,0.867076443
+maynard ferguson,2,0.988589851
+asher d,2,0.987171053
+nate millyunz,2,0.962344472
+silk rhodes,2,0.917168571
+oscar jerome,2,0.931962516
+digitalluc,2,0.927117691
+omaure,2,0.99612312
+deeb,2,0.956892231
+tia ray,2,0.983870449
+charles lloyd,2,0.994178628
+marion meadows,2,0.965787263
+caligula's horse,2,0.959160309
+august greene,2,0.966608438
+buena vista social club,2,0.984593152
+lester nowhere,2,0.92390171
+ron carter,2,0.97698757
+chon,2,0.957979626
+pharoah sanders,2,0.904953798
+gabriel garzón-montano,2,0.996486135
+flofilz,2,0.985910669
+klischée,2,0.953520463
+leroyce,2,0.917903251
+ivan ave,2,0.981609404
+gary burton,2,0.98929237
+ken parker,2,0.94145154
+kandace springs,2,0.982300456
+wallows,2,0.907558835
+joya landis,2,0.961067659
+the procussions,2,0.932190251
+the electric swing circus,2,0.99569873
+tony williams,2,0.906913205
+lou donaldson,2,0.878349076
+dillinger,2,0.998219009
+joomanji,2,0.89968513
+junior m.a.f.i.a.,2,0.907591896
+boogie belgique,2,0.986796766
+nine,2,0.850007627
+dominic fike,2,0.709556024
+i dont know how but they found me,2,0.885668424
+the techniques,2,0.835166378
+u-roy,2,0.941346411
+jim hall,2,0.958679925
+jackie mittoo,2,0.936053731
+art tatum,2,0.997141999
+chris squire,2,0.982972267
+slakah the beatchild,2,0.986675138
+freddie hubbard,2,0.805337813
+goth babe,2,0.70003437
+stranger cole,2,0.917569032
+roberto roena y su apollo sound,2,0.923932492
+justin hinds,2,0.9853036
+natural vibrations,2,0.961503936
+highly suspect,2,0.90086158
+billy bi$hop,2,0.95454585
+vicente garcia,2,0.979276316
+brand nubian,2,0.912289214
+raging fyah,2,0.997205184
+positive,2,0.976963382
+rambutan jam band,2,0.994851258
+skalpel,2,0.944172026
+the bad plus,2,0.922600405
+aidonia,2,0.971855241
+chezidek,2,0.951216749
+swiss,2,0.964469291
+marcus johnson,2,0.928176954
+kabaka pyramid,2,0.857591471
+shrub,2,0.963597858
+sons of zion,2,0.917756263
+eliane elias,2,0.921484228
+hellyeah,2,0.933743262
+lake street dive,2,0.971959841
+kay starr,2,0.88065949
+wheeland brothers,2,0.958808461
+bedroom,2,0.919584236
+fattburger,2,0.979983896
+streetwize,2,0.994360568
+marcus miller,2,0.991447368
+nils,2,0.855420432
+tropidelic,2,0.8395738
+skip marley,2,0.929295855
+nostalgia 77,2,0.881998835
+the frightnrs,2,0.935036029
+large professor,2,0.991681035
+hip-hop wieners,2,0.880826975
+backini,2,0.936404317
+soel,2,0.944229801
+mr. lil one,2,0.985601713
+jackson c. frank,2,0.970963044
+night riots,2,0.915933961
+lionel hampton,2,0.948751311
+cass mccombs,2,0.874477304
+peabo bryson,2,0.870862668
+lovebug starski,2,0.864320186
+dj tomekk,2,0.968897978
+sindicato argentino del hip hop,2,0.98996419
+vulfpeck,2,0.977297505
+ronnie self,2,0.940030895
+rubén blades,2,0.9128089
+mfsb,2,0.995704334
+chronic law,2,0.981086983
+paul bley,2,0.96491682
+jada kingdom,2,0.965228714
+shag rock,2,0.929915341
+tessellated,2,0.97006699
+the hip abduction,2,0.977274971
+breakestra,2,0.966510512
+sara gazarek,2,0.99619033
+no vacation,2,0.942586943
+three legged fox,2,0.97170969
+grizfolk,2,0.99694944
+10 ft. ganja plant,2,0.982411936
+hunny,2,0.876122668
+i wayne,2,0.986970184
+badfish,2,0.932000417
+moon taxi,2,0.997400311
+bargain music,2,0.853876474
+trae tha truth,2,0.933736356
+dezarie,2,0.983266556
+ronnie foster,2,0.974986637
+keely smith,2,0.962227479
+cultura profética,2,0.968228037
+waldeck,2,0.994089502
+della reese,2,0.958664081
+ugly duckling,2,0.891698021
+montefiori cocktail,2,0.942439071
+summer salt,2,0.943150201
+stitchie,2,0.95812227
+hawk nelson,2,0.992433313
+pablo moses,2,0.955469231
+carol welsman,2,0.908455201
+nicole henry,2,0.900698311
+michael lington,2,0.941780493
+dj vadim,2,0.973327761
+lutan fyah,2,0.99434069
+nickodemus,2,0.923848788
+the four freshmen,2,0.99176752
+lincoln brewster,2,0.679588555
+nick colionne,2,0.979623589
+audiodub,2,0.980411633
+flox,2,0.975819468
+part one tribe,2,0.959318848
+echo movement,2,0.958528019
+spyro gyra,2,0.978675893
+john klemmer,2,0.950351173
+mungo's hi fi,2,0.985777178
+eddy grant,2,0.789683634
+woody shaw,2,0.952739166
+oli silk,2,0.989056846
+sdib,2,0.951388988
+boosie badazz,2,0.823167087
+ariel pink,2,0.909862638
+mo kalamity,2,0.969134196
+chuck fenda,2,0.987560814
+da'ville,2,0.979285338
+kris kross,2,0.901384025
+dread mar i,2,0.8431718
+belleruche,2,0.998226458
+delicatessen,2,0.933712959
+"grover washington, jr.",2,0.949407468
+nje,2,0.980473043
+alan lomax,2,0.974866817
+frank patterson,2,0.994360902
+frankie goes to hollywood,2,0.981675635
+red simpson,2,0.985829597
+alphaville,2,0.938936388
+mac davis,2,0.988619514
+charlie louvin,2,0.994496457
+wynn stewart,2,0.972849989
+ciara,2,0.91987419
+sonny terry,2,0.989862316
+rev. gary davis,2,0.997807017
+howard jones,2,0.782700076
+the bangles,2,0.995841996
+wham!,2,0.993050731
+propaganda,2,0.874575556
+the dream academy,2,0.948734843
+modern talking,2,0.956397938
+dj khaled,2,0.97825122
+strawberry switchblade,2,0.941669188
+wang chung,2,0.9693948
+arthur russell,2,0.909096468
+moby grape,2,0.968466852
+quicksilver messenger service,2,0.99710213
+french montana,2,0.91413274
+the chameleons,2,0.997086716
+wall of voodoo,2,0.94556909
+pirates of the mississippi,2,0.958446168
+bob mould,2,0.982064464
+steve goodman,2,0.827062591
+daniel o'donnell,2,0.995022038
+the motels,2,0.996519278
+foster & allen,2,0.99500612
+glenn frey,2,0.958907595
+billy joe shaver,2,0.972597284
+delaney & bonnie,2,0.941945815
+donna fargo,2,0.942935098
+george jones & tammy wynette,2,0.985036008
+lacy j. dalton,2,0.907913953
+silver,2,0.978747669
+the waterboys,2,0.904004471
+the kendalls,2,0.985059439
+the plimsouls,2,0.934759103
+michael hurley,2,0.984077841
+book of love,2,0.994172932
+yanni,2,0.980834494
+famous dex,2,0.986339344
+harry styles,2,0.895135254
+lisa stansfield,2,0.966127052
+prettymuch,2,0.990448603
+banes world,2,0.947752448
+hi-five,2,0.914938747
+rita ora,2,0.868953104
+jacquees,2,0.952209459
+the breeders,2,0.833287731
+yoke lore,2,0.817336102
+the cleftones,2,0.997309118
+the connells,2,0.884410091
+young thug,2,0.965923356
+slowdive,2,0.780339162
+the band camino,2,0.979522011
+hailee steinfeld,2,0.977971686
+daya,2,0.93635089
+charlie puth,2,0.915745212
+eric bellinger,2,0.998060816
+billy j. kramer,2,0.936062348
+smallpools,2,0.947692242
+mt. joy,2,0.933602669
+ruel,2,0.977235733
+saweetie,2,0.950943775
+bruce hornsby,2,0.880737906
+rich the kid,2,0.996665873
+metro boomin,2,0.911004538
+zayn,2,0.987402572
+noah kahan,2,0.961909112
+the communards,2,0.969886612
+the del-vikings,2,0.899468422
+samantha fox,2,0.80400044
+brian wilson,2,0.983167197
+the chainsmokers,2,0.937554114
+guy,2,0.93835401
+bebe rexha,2,0.914153546
+dua lipa,2,0.928838398
+a$ap ferg,2,0.977749925
+roxette,2,0.998235867
+pnb rock,2,0.973244481
+al b. sure!,2,0.977404375
+swing out sister,2,0.896643548
+skip james,2,0.954410488
+laurie anderson,2,0.962333798
+red foley,2,0.995150478
+eleven hundred springs,2,0.996339927
+david gates,2,0.995633971
+tony orlando & dawn,2,0.985438126
+the crickets,2,0.78396946
+kishore kumar,2,0.994575498
+bay city rollers,2,0.883986847
+bleu edmondson,2,0.776271082
+ace,2,0.863792352
+max stalling,2,0.924705508
+the wreckers,2,0.936245055
+the diamonds,2,0.956037234
+julio iglesias,2,0.922888588
+lobo,2,0.993518278
+trent tomlinson,2,0.908019018
+lindsey haun,2,0.886038592
+the be good tanyas,2,0.954780124
+chris de burgh,2,0.908969427
+randy crawford,2,0.845029645
+kenny nolan,2,0.991054649
+reckless kelly,2,0.981032383
+bette midler,2,0.900540277
+missing persons,2,0.995143964
+john martyn,2,0.927638808
+love and theft,2,0.995984279
+casey james,2,0.941627768
+colin blunstone,2,0.996933794
+corb lund,2,0.873754268
+argent,2,0.857886465
+thompson square,2,0.938272347
+twang and round,2,0.980147455
+glenn lewis,2,0.916953597
+lauren alaina,2,0.957142713
+jackson taylor & the sinners,2,0.997457678
+josh thompson,2,0.996092149
+stealers wheel,2,0.993845183
+odyssey,2,0.901522551
+crucifix,2,0.994954262
+james otto,2,0.983193518
+tech n9ne collabos,2,0.988476802
+emitt rhodes,2,0.928818669
+david nail,2,0.996172249
+smokie,2,0.939142351
+kyle park,2,0.984067528
+shooter jennings,2,0.996663837
+bow wow wow,2,0.79105188
+th' dudes,2,0.995607349
+roger creager,2,0.98480546
+lila mccann,2,0.947072135
+the teardrop explodes,2,0.994458128
+irene cara,2,0.832884799
+cold chisel,2,0.881952564
+paul brandt,2,0.996188445
+rockpile,2,0.959398827
+ty herndon,2,0.878856977
+josh gracin,2,0.980725791
+wayne hancock,2,0.973381287
+the tractors,2,0.995923633
+tom tom club,2,0.992872807
+suburban lawns,2,0.956019287
+cory morrow,2,0.934760644
+lonnie johnson,2,0.958584129
+blind boy fuller,2,0.947937254
+jimmy lafave,2,0.982194518
+alejandro escovedo,2,0.965657097
+haystak,2,0.943961141
+tubeway army,2,0.969695793
+kevin fowler,2,0.997979323
+elkie brooks,2,0.938091717
+nana mouskouri,2,0.995996485
+shaun cassidy,2,0.996479836
+the boys,2,0.99575725
+adam hood,2,0.967039974
+yellow magic orchestra,2,0.99368916
+rodney atkins,2,0.96916408
+jeff bates,2,0.885101334
+bubba sparxxx,2,0.970969183
+bonnie tyler,2,0.951306231
+mike mcclure,2,0.946882766
+okkervil river,2,0.928683726
+rhett miller,2,0.911687386
+the perrys,2,0.991170863
+jason boland & the stragglers,2,0.978529986
+joe purdy,2,0.852433802
+the dickies,2,0.8738872
+tevin campbell,2,0.88799953
+michael learns to rock,2,0.996752971
+charlie farley,2,0.956043046
+cut copy,2,0.859562356
+all time low,2,0.911139342
+edward sharpe & the magnetic zeros,2,0.959282682
+the calling,2,0.89355871
+eve,2,0.906403857
+the script,2,0.965917482
+shwayze,2,0.945637476
+the ting tings,2,0.929586678
+peter bradley adams,2,0.990207455
+atmosphere,2,0.970614922
+parachute,2,0.709852004
+gym class heroes,2,0.919309971
+travis,2,0.932341361
+amerie,2,0.97751932
+good charlotte,2,0.840748209
+rebel souljahz,2,0.959873125
+the tallest man on earth,2,0.859282853
+ok go,2,0.890425532
+the wombats,2,0.996002024
+jatin-lalit,2,0.90992561
+the xx,2,0.939905285
+cam’ron,2,0.948975292
+best coast,2,0.994333921
+taio cruz,2,0.876524392
+sick puppies,2,0.965047163
+will reagan,2,0.67673085
+westlife,2,0.969414149
+nickel creek,2,0.995696909
+goldfrapp,2,0.889437716
+big tymers,2,0.840427165
+avant,2,0.95062264
+bombay bicycle club,2,0.937038481
+jason walker,2,0.915352326
+real estate,2,0.737926532
+adam lambert,2,0.997722357
+generationals,2,0.831105601
+lmfao,2,0.998445335
+mýa,2,0.898213809
+jeremih,2,0.973410986
+basement jaxx,2,0.994227378
+anarbor,2,0.903981132
+peter bjorn and john,2,0.972337737
+amanda perez,2,0.954628542
+matthew sweet,2,0.944201024
+m. ward,2,0.899722876
+story of the year,2,0.926177736
+billy talent,2,0.948465407
+damien rice,2,0.99654587
+birdman,2,0.992296082
+dem franchize boyz,2,0.951335531
+hot chip,2,0.956199913
+bloc party,2,0.963480852
+saosin,2,0.997765047
+jesse mccartney,2,0.966178453
+rooney,2,0.972540764
+lindsay lohan,2,0.823615131
+jadakiss,2,0.962334172
+mike jones,2,0.965810211
+simple plan,2,0.871618507
+the game,2,0.988970118
+ashlee simpson,2,0.990626438
+fort minor,2,0.888998129
+bowling for soup,2,0.857624278
+cherish,2,0.986836113
+fergie,2,0.978505108
+transplants,2,0.975974864
+relient k,2,0.991438641
+rilo kiley,2,0.905028351
+britt nicole,2,0.937809467
+pinback,2,0.956873813
+mayday parade,2,0.926667727
+mark ronson,2,0.925371096
+ugk,2,0.924829146
+the distillers,2,0.897263941
+dj drama,2,0.948488543
+mario,2,0.962565952
+youngbloodz,2,0.973868695
+stacie orrico,2,0.895090241
+feist,2,0.881668661
+mika,2,0.900731899
+the black eyed peas,2,0.842405112
+band of horses,2,0.969457098
+garbage,2,0.905428919
+james morrison,2,0.969877343
+josé gonzález,2,0.970257274
+jason derulo,2,0.976336204
+flogging molly,2,0.996429718
+big time rush,2,0.851882522
+the presidents of the united states of america,2,0.983655339
+veruca salt,2,0.859163251
+oh wonder,2,0.88490565
+sponge,2,0.955914649
+changing faces,2,0.945537748
+scarface,2,0.969871707
+better than ezra,2,0.934741946
+hippo campus,2,0.919536537
+natalie merchant,2,0.820960448
+seven mary three,2,0.764388598
+craig mack,2,0.952984646
+the corrs,2,0.873886355
+mila j,2,0.979699193
+lil' kim,2,0.950130276
+belle & sebastian,2,0.987391591
+matchbox twenty,2,0.99771451
+the penguins,2,0.93769827
+donell jones,2,0.834197243
+local h,2,0.991571176
+little mix,2,0.987765202
+"clarence ""frogman"" henry",2,0.992432061
+marina,2,0.938422615
+greg brown,2,0.962695759
+slint,2,0.987864741
+lost kings,2,0.997881176
+wrabel,2,0.910290386
+saint etienne,2,0.997192657
+kapena,2,0.991087109
+brian mcknight,2,0.914105132
+sugar,2,0.978869475
+tito rojas,2,0.935636847
+dove cameron,2,0.965353582
+pj harvey,2,0.984612386
+glass tiger,2,0.972324954
+rae sremmurd,2,0.977270337
+fifth harmony,2,0.946490037
+the five satins,2,0.96095917
+big head todd and the monsters,2,0.996277701
+george ezra,2,0.905186023
+rich homie quan,2,0.902380311
+ryan stevenson,2,0.806233156
+isaiah rashad,2,0.98992149
+702,2,0.985405965
+face to face,2,0.959302709
+aimee mann,2,0.995723684
+pitbull,2,0.900752
+eve 6,2,0.94010147
+n.o.r.e.,2,0.933479111
+flume,2,0.995344466
+ricky martin,2,0.982664687
+brenda holloway,2,0.942070478
+mandisa,2,0.879294572
+ben howard,2,0.919580445
+beach fossils,2,0.800596701
+american authors,2,0.843297639
+yelawolf,2,0.851693634
+s club 7,2,0.934966647
+m2m,2,0.936894497
+big pun,2,0.958923389
+bow wow,2,0.976446995
+the drums,2,0.920268014
+the ready set,2,0.945260671
+go radio,2,0.927089761
+hoodie allen,2,0.947348351
+brandi carlile,2,0.914869259
+eagle-eye cherry,2,0.962273045
+jeff williams,2,0.954592821
+h-town,2,0.969669014
+redman,2,0.937269721
+somo,2,0.880333402
+o.t. genasis,2,0.95311976
+zhané,2,0.923608106
+silverchair,2,0.943061666
+eric paslay,2,0.888983201
+disclosure,2,0.955465291
+the verve,2,0.972826727
+aqua,2,0.975375819
+sixpence none the richer,2,0.876903544
+andy grammer,2,0.887607848
+steps,2,0.899142781
+diplo,2,0.972740584
+kyle,2,0.947317512
+zebrahead,2,0.867105429
+jess glynne,2,0.926542191
+parmalee,2,0.9710098
+hawthorne heights,2,0.933443819
+hound dog taylor,2,0.89717513
+stélios kazantzídis,2,0.975950911
+the crystals,2,0.945874088
+otis spann,2,0.870615622
+al hirt,2,0.958919272
+dave meniketti,2,0.996860572
+lou christie,2,0.906152555
+wilson meadows,2,0.991637121
+r.l. burnside,2,0.962116427
+lee dorsey,2,0.996869795
+tommy castro,2,0.985303454
+the easybeats,2,0.816621811
+張露,2,0.996687968
+the royal guardsmen,2,0.980405683
+michael burks,2,0.989583333
+oblivians,2,0.896497679
+shemekia copeland,2,0.924691924
+"beck, bogert, appice",2,0.888534605
+maren morris,2,0.908640663
+jimmy thackery and the drivers,2,0.88508924
+walker hayes,2,0.960878691
+son seals,2,0.970193242
+t.k. soul,2,0.996953731
+wilbert harrison,2,0.988315569
+shirley brown,2,0.966243344
+the tremeloes,2,0.936686097
+chris janson,2,0.975468007
+miriam makeba,2,0.995196324
+blind willie johnson,2,0.908949131
+the jon spencer blues explosion,2,0.890774842
+the moonglows,2,0.992412381
+the dubs,2,0.992598684
+canaan smith,2,0.927354515
+filmore,2,0.853583282
+peter and gordon,2,0.862320581
+the dirtbombs,2,0.947370173
+wicked lady,2,0.996992208
+julian sas,2,0.810065632
+billy joe royal,2,0.96263443
+the orlons,2,0.97393668
+big joe turner,2,0.858812105
+mandy moore,2,0.921341024
+them,2,0.957194213
+the shadows,2,0.942324878
+hasil adkins,2,0.86202786
+cactus,2,0.983872027
+mary hopkin,2,0.958209997
+toumani diabaté,2,0.996854142
+adam doleac,2,0.833868446
+love affair,2,0.949178524
+a. m. rajah,2,0.996536743
+eddie boyd,2,0.971695283
+jackie greene,2,0.994736842
+the cats,2,0.986268461
+the sweet inspirations,2,0.961484508
+the archies,2,0.7781932
+billy vaughn,2,0.949305103
+edgar winter,2,0.949088716
+the greenhornes,2,0.860861333
+"arthur ""big boy"" crudup",2,0.962318187
+john scofield,2,0.935872739
+booker t. & the m.g.'s,2,0.880055402
+memphis slim,2,0.92364995
+annette funicello,2,0.89246469
+dr. feelgood,2,0.936311658
+george thorogood,2,0.971450796
+high valley,2,0.937031624
+nappy brown,2,0.996727309
+the dixie cups,2,0.925972303
+lonnie mack,2,0.921568763
+rick derringer,2,0.985673324
+ali farka touré,2,0.915699756
+washington phillips,2,0.995394737
+tony joe white,2,0.979181828
+jimmy ruffin,2,0.93527355
+paul rodgers,2,0.998114071
+luke combs,2,0.987934364
+mud digger,2,0.878744309
+chris duarte,2,0.969165773
+corey stevens,2,0.988662164
+john farnham,2,0.839126673
+johnny burnette & the rock 'n' roll trio,2,0.955945869
+mick taylor,2,0.987419152
+walter wanderley,2,0.991724313
+the action,2,0.995690878
+the happenings,2,0.947283532
+redneck souljers,2,0.838206797
+"dave dee, dozy, beaky, mick & tich",2,0.971366702
+the saints,2,0.946995238
+johnnie ray,2,0.99168975
+dave davies,2,0.994617225
+ronnie hawkins,2,0.843779757
+left lane cruiser,2,0.979117993
+sonny landreth,2,0.930033168
+melanie,2,0.857353699
+republica,1,0.998388829
+the treacherous three,1,0.996328029
+randy vanwarmer,1,0.890358585
+najat al saghira,1,0.996904025
+zebra,1,0.996052632
+the wallflowers,1,0.973804992
+madness,1,0.99168975
+raydio,1,0.950483947
+sue thompson,1,0.958810935
+pudgee tha phat bastard,1,0.998372219
+d4l,1,0.876869075
+sad lovers & giants,1,0.985645932
+lupe fiasco,1,0.90913117
+millencolin,1,0.906327202
+jennifer love hewitt,1,0.701781647
+kim mitchell,1,0.713882576
+christine mcvie,1,0.933928772
+elastica,1,0.927679259
+vince guaraldi,1,0.977047928
+rania,1,0.960349884
+the flying lizards,1,0.750548182
+desiigner,1,0.964707214
+steve lawrence,1,0.991689751
+tommy shaw,1,0.979649328
+rex smith,1,0.978465675
+timothy b. schmit,1,0.988721804
+leif garrett,1,0.866221563
+the shangri-las,1,0.99757085
+superdrag,1,0.996411483
+duster,1,0.993135011
+metal church,1,0.997229917
+tonic,1,0.997607655
+triumph,1,0.931795318
+accept,1,0.938854792
+eden ahbez,1,0.995488722
+aldo nova,1,0.997607655
+the cardigans,1,0.996963563
+112,1,0.960761059
+semisonic,1,0.967607643
+swingin' utters,1,0.995215311
+the bobby fuller four,1,0.994906621
+total,1,0.998142415
+grandaddy,1,0.942640315
+paul & paula,1,0.935288037
+gino vannelli,1,0.855946649
+robbie dupree,1,0.980751867
+michael schenker group,1,0.84363122
+five for fighting,1,0.997368421
+sleater-kinney,1,0.839703383
+marty balin,1,0.930383334
+si zentner,1,0.859875067
+harvey danger,1,0.953896215
+terror squad,1,0.975477516
+edwin mccain,1,0.950598415
+chilliwack,1,0.979081028
+george baker selection,1,0.859497316
+smash mouth,1,0.888047878
+the time,1,0.913336761
+audio two,1,0.979553223
+anvil,1,0.995488722
+lighthouse family,1,0.70519519
+kc & the sunshine band,1,0.856767218
+jennifer lara,1,0.995614035
+malik turner,1,0.849471297
+angel witch,1,0.993135011
+pro,1,0.951535362
+jt money,1,0.904683368
+christian death,1,0.997493734
+goldfinger,1,0.997076023
+sleeq,1,0.942673945
+hanson,1,0.97836308
+vandenberg,1,0.996963563
+st,1,0.998097654
+wayne toups,1,0.954457995
+split enz,1,0.899101135
+dead obies,1,0.551040605
+ira ironstrings,1,0.91723328
+girlschool,1,0.993421053
+airplay,1,0.985048425
+newsong,1,0.996710526
+the dead milkmen,1,0.995732575
+blessid union of souls,1,0.977701664
+johnny van zant,1,0.976956236
+saxon,1,0.984309372
+mr. big,1,0.934303946
+yordano,1,0.976893509
+ndee naldinho,1,0.995488722
+eric burdon & the animals,1,0.99757085
+pepe aguilar,1,0.996963563
+o.g.c.,1,0.920888443
+babes in toyland ,1,0.994152047
+gwar,1,0.998695085
+steve vai,1,0.960526316
+extreme,1,0.996963563
+grand puba,1,0.811836348
+j-live,1,0.889958992
+obituary,1,0.994906621
+the blasters,1,0.770275527
+keith green,1,0.987854251
+the elgins,1,0.933339138
+mother love bone,1,0.967475561
+the left banke,1,0.994736842
+tasmin archer,1,0.997453311
+chanté moore,1,0.983121663
+shakespears sister,1,0.996963563
+rick price,1,0.927069039
+thunder,1,0.961463269
+swirlies,1,0.986842105
+kim carnes,1,0.965552609
+steven curtis chapman,1,0.996411483
+marčelo,1,0.955770231
+main one,1,0.993135011
+steelheart,1,0.997076023
+brotha lynch hung,1,0.998467041
+frank ifield,1,0.947543568
+crash test dummies,1,0.996710526
+stabbing westward,1,0.994555354
+school of fish,1,0.996411483
+trini lopez,1,0.997411562
+da youngsta's,1,0.756272216
+ned's atomic dustbin,1,0.965522142
+clemens,1,0.951034131
+karla bonoff,1,0.857140318
+the reverend horton heat,1,0.881297223
+porno for pyros,1,0.992105263
+terror fabulous,1,0.890609547
+sleep,1,0.973684209
+alberto vazquez,1,0.993421053
+clutch,1,0.994555353
+buffalo tom,1,0.99771167
+quicksand,1,0.996904025
+彭家麗,1,0.976250938
+dj quik,1,0.975777698
+damn yankees,1,0.926246782
+throwing muses,1,0.974628567
+pale saints,1,0.971028636
+del the funky homosapien,1,0.816305387
+biohazard,1,0.963882242
+tori amos,1,0.985861112
+the ronettes,1,0.995356037
+m people,1,0.961415901
+house of pain,1,0.998320269
+soul asylum,1,0.996567506
+queen latifah,1,0.943309081
+the queers,1,0.994360902
+giant,1,0.997229917
+henry paul band,1,0.881397527
+jonathan richman,1,0.997020854
+europe,1,0.995844875
+medicine,1,0.994360902
+murs,1,0.910353714
+yngwie malmsteen,1,0.994360902
+tlc,1,0.998661909
+mc duke,1,0.962337616
+honeymoon suite,1,0.960448962
+derek b,1,0.903175883
+jacques of s't'a,1,0.985645933
+da brat,1,0.997643362
+buczer,1,0.995844875
+candlemass,1,0.997277677
+stan bush,1,0.997532895
+danger danger,1,0.940025638
+shriekback,1,0.998225902
+keith sweat,1,0.936930281
+k kutta,1,0.998142415
+nnamdi ogbonnaya,1,0.980665896
+marillion,1,0.99777613
+soul for real,1,0.920793041
+the rembrandts,1,0.796014163
+selena,1,0.945875936
+skinny puppy,1,0.99757085
+lion,1,0.994736842
+quebonafide,1,0.858798274
+robin ward,1,0.916316857
+gowan,1,0.996904025
+k. s. chithra,1,0.770504102
+yung lean,1,0.790932849
+low,1,0.906550197
+heather nova,1,0.86393068
+mark slaughter,1,0.996411483
+evil ebenezer,1,0.996842105
+bad english,1,0.817994201
+sebadoh,1,0.996567505
+slaughter,1,0.860345145
+rahn harper,1,0.956969677
+w.a.s.p.,1,0.928819224
+betty everett,1,0.839056535
+lita ford,1,0.809299893
+helloween,1,0.73051873
+don mclean,1,0.973933957
+fredo,1,0.829217421
+the tokens,1,0.993421053
+seaweed,1,0.995215311
+fumez the engineer,1,0.983999386
+vinnie vincent invasion,1,0.997493734
+david lee roth,1,0.998074454
+bulletboys,1,0.987651609
+frank black,1,0.995488722
+britny fox,1,0.994152047
+kingdom come,1,0.868362
+the trashmen,1,0.995614035
+archers of loaf,1,0.765816344
+the four aces,1,0.87544313
+bill medley,1,0.997975708
+mf doom,1,0.878575463
+glenn medeiros,1,0.795318153
+killy,1,0.664223698
+mark lindsay,1,0.969072486
+tony dallara,1,0.747590723
+akinyele,1,0.913338355
+three houses down,1,0.954545081
+the bennies,1,0.973685522
+frankie j,1,0.935300855
+american hi-fi,1,0.646540499
+cursive,1,0.996491228
+channel live,1,0.878594457
+memphis bleek,1,0.767761777
+soom t,1,0.91399459
+foresta,1,0.992105263
+tribal theory,1,0.998050682
+skarra mucci,1,0.996842105
+talat mahmood,1,0.904634614
+liva weel,1,0.997678018
+schoolly d,1,0.904183117
+shawnna,1,0.927972992
+pj sin suela,1,0.728780913
+sir collins,1,0.885834565
+tone-loc,1,0.949348659
+mc hammer,1,0.78554314
+fu-schnickens,1,0.860948363
+da lench mob,1,0.981668136
+the ataris,1,0.971200259
+the expanders,1,0.877906211
+new kingston,1,0.985401143
+funkdoobiest,1,0.884115917
+mar haze,1,0.929287812
+kool g rap,1,0.810750569
+kiko bun,1,0.998452012
+rorystonelove,1,0.973764484
+starland vocal band,1,0.840106951
+robbie williams,1,0.857904337
+i-octane,1,0.998372219
+finch,1,0.800238061
+c-murder,1,0.950867077
+something corporate,1,0.943241756
+field mob,1,0.956784856
+ben kweller,1,0.744398155
+mirah,1,0.914335613
+the big bopper,1,0.995488722
+marty wilde,1,0.959724702
+aventura,1,0.997837058
+ronan keating,1,0.96341727
+nina,1,0.942142757
+los hermanos arriagada,1,0.997180451
+sven-bertil taube,1,0.975363942
+phantom planet,1,0.962107443
+sheck wes,1,0.924098343
+shah rule,1,0.692612453
+ras kass,1,0.953765771
+walshy fire,1,0.997020854
+sensi trails,1,0.967991111
+black sheep,1,0.840950613
+ms. jade,1,0.908905279
+roots of creation,1,0.994555354
+young monks,1,0.838370033
+jo mersa marley,1,0.731088648
+greyhound,1,0.93312532
+dave east,1,0.919186434
+dilated peoples,1,0.910260566
+zona ganjah,1,0.838298167
+freestyle,1,0.970047483
+sweet trip,1,0.996567506
+jon wayne and the pain,1,0.984038556
+afroman,1,0.894899242
+marlon asher,1,0.998205742
+tv on the radio,1,0.961337093
+brother ali,1,0.902487853
+pérez prado,1,0.93303621
+safety orange,1,0.741296796
+run–d.m.c.,1,0.894324078
+delinquent habits,1,0.889372801
+big k.r.i.t.,1,0.942671292
+b.o.b,1,0.97872033
+straylight run,1,0.996904025
+of montreal,1,0.994736842
+tomorrow people,1,0.926511703
+jaydayoungan,1,0.976920569
+kevin downswell,1,0.947522217
+jermaine edwards,1,0.978972337
+fantasia,1,0.956455804
+cali p,1,0.996240601
+planta e raiz,1,0.996328029
+animal collective,1,0.97368421
+midtown,1,0.929658716
+raven-symoné,1,0.798935074
+skillinjah,1,0.829814834
+clipse,1,0.934969136
+spawnbreezie,1,0.95446426
+dj muggs,1,0.902761232
+cassidy,1,0.716136266
+rob base & dj ez rock,1,0.856775813
+the postal service,1,0.947055612
+poor righteous teachers,1,0.938002941
+prodigy,1,0.884669197
+the format,1,0.997323818
+oscar lee,1,0.992822966
+jessica simpson,1,0.949940612
+the late ones,1,0.995844875
+salmonella dub,1,0.996842105
+tyron blackshit,1,0.918855127
+mystic roots,1,0.851913017
+girls aloud,1,0.710502807
+peach fur,1,0.996240601
+kameleba,1,0.986736715
+naâman,1,0.944264674
+ace hood,1,0.968049776
+nick cannon,1,0.957900361
+flipmode squad,1,0.954315349
+sol seed,1,0.988130313
+the knife,1,0.996963563
+baby bash,1,0.940874985
+kelis,1,0.980234317
+resinated,1,0.993421052
+digga d,1,0.796922521
+boom boom vibration,1,0.902958768
+bugle,1,0.99757085
+murphy lee,1,0.998405103
+giorgos papadopoulos,1,0.995951417
+jah9,1,0.997229917
+jah sun,1,0.899678047
+yeah yeah yeahs,1,0.855632009
+hot water music,1,0.980197158
+kid frost,1,0.796766811
+nicolette larson,1,0.575404466
+joe,1,0.996328029
+vitamin c,1,0.988244118
+gza,1,0.841798027
+the magnetic fields,1,0.994555354
+vertical horizon,1,0.700598745
+burton cummings,1,0.997020854
+case,1,0.981024632
+filter,1,0.885055599
+klaatu,1,0.996904025
+three plus,1,0.996328029
+smog,1,0.996567506
+big kuntry king,1,0.971756452
+marc anthony,1,0.956696884
+wifisfuneral,1,0.997076023
+the amboy dukes,1,0.963781321
+big boi,1,0.929626128
+shonlock,1,0.936652632
+jay chou,1,0.941733814
+lucy pearl,1,0.96365441
+reo cragun,1,0.832373747
+golden earring,1,0.924074116
+boris gardiner,1,0.99777613
+trillville,1,0.952778392
+group home,1,0.929321332
+everclear,1,0.910690163
+jill scott,1,0.990858202
+wheatus,1,0.997020854
+chxpo,1,0.986718337
+colin hay,1,0.98125421
+john sebastian,1,0.996904025
+the stills-young band,1,0.85065229
+jazz cartier,1,0.818163322
+citizen king,1,0.958411136
+wreckless eric,1,0.997643362
+silkk the shocker,1,0.768981384
+david gray,1,0.718186034
+boogie,1,0.908878802
+natalie imbruglia,1,0.998120301
+dreezy,1,0.943760413
+nicole,1,0.927665641
+mantovani,1,0.993421053
+ace frehley,1,0.826725527
+paul stanley,1,0.997229917
+less than jake,1,0.99777613
+mother's finest,1,0.995356037
+england dan,1,0.906508399
+generation x,1,0.870849216
+999,1,0.994152047
+marvelous 3,1,0.996567506
+angela bofill,1,0.956623512
+ian gomm,1,0.997020854
+baccara,1,0.949244884
+lit,1,0.961906333
+beanie sigel,1,0.951117938
+nada surf,1,0.660454198
+maria koterbska,1,0.961107605
+frank stallone,1,0.902925251
+the lillingtons,1,0.951754386
+luciano pavarotti,1,0.99757085
+d.ace,1,0.899212654
+walter egan,1,0.953754121
+norrie paramor,1,0.995614035
+rene liu,1,0.995732574
+young dro,1,0.952636036
+secret garden,1,0.937899204
+jonah jones,1,0.980263158
+saves the day,1,0.996904025
+stroke 9,1,0.858330527
+the microphones,1,0.904370765
+kaleidoscope,1,0.995215311
+the incredible string band,1,0.946886069
+thursday,1,0.92643621
+curren$y,1,0.855584422
+michelle branch,1,0.74019014
+the blues magoos,1,0.995356037
+the chambers brothers,1,0.998355263
+the strangeloves,1,0.970456016
+moving pictures,1,0.950746042
+gabrielle,1,0.996710526
+vandal,1,0.912449365
+nivea,1,0.963448461
+buffy sainte-marie,1,0.995488722
+grandmaster flash,1,0.975618377
+the dubliners,1,0.998185118
+ian & sylvia,1,0.996567506
+a*teens,1,0.75402936
+ultramagnetic mc's,1,0.751896971
+remy zero,1,0.830596395
+tom paxton,1,0.995065789
+sparklehorse,1,0.989473684
+black$tar,1,0.916483271
+ultimate spinach,1,0.996148909
+craig david,1,0.956245271
+8ball,1,0.94828534
+wild cherry,1,0.941242181
+lambchop,1,0.864129275
+rapsody,1,0.928160533
+stampeders,1,0.96758251
+cat power,1,0.958362267
+pradeep kumar,1,0.851710473
+carl thomas,1,0.961086571
+hustle gang,1,0.940517853
+rodríguez,1,0.975624624
+sr-71,1,0.997076023
+ebenezer,1,0.982101873
+3lw,1,0.835414434
+moneybagg yo,1,0.842501059
+6lack,1,0.998388829
+the avalanches,1,0.994555354
+mavis staples,1,0.99757085
+showbiz & a.g.,1,0.787895705
+smino,1,0.785716848
+kelly rowland,1,0.885306914
+pandora,1,0.906902188
+norman greenbaum,1,0.691833792
+groovie ghoulies,1,0.842202303
+rivermaya,1,0.996904024
+alien ant farm,1,0.99777613
+kirko bangz,1,0.966433261
+pete yorn,1,0.775849011
+shocking blue,1,0.911293255
+sweetwater,1,0.995356037
+broadcast,1,0.995215311
+kai winding,1,0.996640537
+prong,1,0.907169132
+the boomtown rats,1,0.962275483
+judah & the lion,1,0.976501507
+loving,1,0.922730692
+the frights,1,0.995951417
+sundara karma,1,0.903476163
+banners,1,0.997453311
+frankie cosmos,1,0.994736842
+coleman hell,1,0.750414297
+proof,1,0.913449285
+the revivalists,1,0.920444041
+magic city hippies,1,0.632891561
+turi,1,0.998264893
+jonny diaz,1,0.904943496
+moses gunn collective,1,0.992822966
+heather victoria,1,0.984364397
+abstract artform,1,0.954150287
+joywave,1,0.922855585
+the mowgli's,1,0.938300169
+homeshake,1,0.740014573
+the undertones,1,0.997894737
+red sun rising,1,0.927576673
+jordan feliz,1,0.892481473
+hollyn,1,0.895700718
+like a storm,1,0.921711111
+the garden,1,0.995488722
+the raincoats,1,0.994906621
+off broadway,1,0.997493734
+the electric prunes,1,0.990712074
+the buckinghams,1,0.996842105
+too close to touch,1,0.881084475
+snail mail,1,0.830184423
+we are messengers,1,0.997532895
+ra ra riot,1,0.923213349
+vhs collection,1,0.966855068
+nothing but thieves,1,0.931289955
+lp,1,0.804677833
+magic giant,1,0.851980033
+the motors,1,0.953351944
+marianne faithfull,1,0.995732575
+he is we,1,0.927501919
+mental as anything,1,0.996148909
+two feet,1,0.561603369
+hala,1,0.662133464
+lewis del mar,1,0.998026316
+ian hunter,1,0.934269942
+palace,1,0.925055283
+cemetery sun,1,0.998405104
+kaleo,1,0.925881515
+weathers,1,0.74770171
+kid bloom,1,0.872694154
+baron samedi,1,0.995951417
+diamond d,1,0.893772621
+kool keith,1,0.933977021
+capone-n-noreaga,1,0.887976711
+brent cobb,1,0.971812198
+the monochrome set,1,0.988721804
+morgan delt,1,0.934638237
+seafret,1,0.791729156
+smile empty soul,1,0.742162224
+car seat headrest,1,0.998839009
+stiv bators,1,0.952864325
+natalie grant,1,0.887700431
+wild nothing,1,0.984210526
+crispian st. peters,1,0.996328029
+girls at our best!,1,0.921384102
+'til tuesday,1,0.958918122
+josé josé,1,0.929504022
+tekilla,1,0.96940579
+harpers bizarre,1,0.891127183
+lex luthorz,1,0.902592921
+melody's echo chamber,1,0.919407474
+connan mockasin,1,0.974222249
+royal tailor,1,0.950236051
+demon hunter,1,0.996328029
+heaven 17,1,0.913003134
+gentlemen hall,1,0.729752096
+wavves,1,0.994360902
+chvrches,1,0.997411562
+sports,1,0.991689751
+strfkr,1,0.996842105
+makoto matsushita,1,0.996567505
+small black,1,0.963815789
+fun boy three,1,0.946327847
+nine lashes,1,0.814046791
+afu-ra,1,0.716891902
+frida,1,0.979509922
+a$ap mob,1,0.887731892
+xzibit,1,0.943032379
+haircut 100,1,0.996777658
+otherwise,1,0.87894819
+modern baseball,1,0.97578662
+the vandals,1,0.959173652
+a filial,1,0.997229917
+ali & gipp,1,0.844136997
+sin shake sin,1,0.862587936
+colony house,1,0.879190901
+like moths to flames,1,0.998405104
+dexys midnight runners,1,0.997368421
+marianas trench,1,0.875388419
+surf curse,1,0.995488721
+red cafe,1,0.960687494
+the war on drugs,1,0.813073741
+visage,1,0.996963563
+sonny bono,1,0.99368421
+together pangea,1,0.995732574
+george lam,1,0.996710526
+lecrae,1,0.953740182
+apogonoi tou omirou,1,0.986240769
+to paidi thavma,1,0.951821979
+inner wave,1,0.952361689
+dj nel'assassin,1,0.998142415
+the orwells,1,0.995065789
+angel olsen,1,0.927920861
+rac,1,0.995356037
+juan gabriel,1,0.993135011
+altered images,1,0.934921584
+bear hands,1,0.920584423
+the db's,1,0.841228083
+alvvays,1,0.854702311
+mondo rock,1,0.91149765
+the durutti column,1,0.996710526
+citizen way,1,0.886680549
+amber run,1,0.916680446
+dr. dog,1,0.99757085
+jona lewie,1,0.960428727
+the rascals,1,0.952554287
+umut ertek,1,0.94749946
+pastor troy,1,0.998372219
+funkmaster flex,1,0.860215129
+marmalade,1,0.961247325
+tyree cooper,1,0.960109019
+big star,1,0.997129187
+the brady bunch,1,0.893331968
+chico science,1,0.973563393
+heather b,1,0.998320269
+hell razah,1,0.95767248
+neanderthal youth,1,0.889913677
+erick sermon,1,0.977467211
+thundamentals,1,0.712725241
+dany dan,1,0.963785278
+oddisee,1,0.84627415
+sleeping wolf,1,0.811571169
+strawbs,1,0.994906621
+l.e.g.a.c.y.,1,0.988649736
+sabotaje mexica,1,0.986642338
+lil rob,1,0.998577525
+x-team,1,0.964468393
+dj laz,1,0.811032567
+don bigg,1,0.984609272
+lil cuete,1,0.943983979
+jackie deshannon,1,0.978559539
+sister fa,1,0.886768647
+chef ragoo,1,0.998074454
+mood ruff,1,0.998421053
+billy swan,1,0.974097504
+albert hammond,1,0.996640538
+planet asia & peanut butter wolf,1,0.994736842
+sentino,1,0.967335224
+hata proof records presents mr nava,1,0.984156856
+trip lee,1,0.91562571
+alive 'n kickin',1,0.996240601
+lindisfarne,1,0.996328029
+newcleus,1,0.887699803
+grandmaster flash & the furious five,1,0.942393857
+super sonic,1,0.954156198
+the fortunes,1,0.954714878
+hmd,1,0.967568474
+seth gueko,1,0.993927125
+illvibe,1,0.98249166
+lulu,1,0.974453208
+classified,1,0.987245467
+vanity fare,1,0.997277677
+tommy james,1,0.935062468
+"hamilton, joe frank & reynolds",1,0.94929633
+cormega,1,0.853957915
+remy ma,1,0.998467041
+the move,1,0.994152046
+pudgee,1,0.945853895
+jht,1,0.998245614
+triste janero,1,0.996640537
+santo & johnny,1,0.996328029
+sen kumpa,1,0.997129187
+zion i,1,0.86815179
+african underground,1,0.944055517
+shiffai,1,0.996842105
+tormento,1,0.998026316
+diafrix,1,0.998164015
+la fossa,1,0.968968962
+obie trice,1,0.997922437
+piotta,1,0.988721804
+the knocks,1,0.940596963
+i am they,1,0.807146458
+tungtvann,1,0.996640537
+prop dylan,1,0.998388829
+ceschi,1,0.995732574
+rita coolidge,1,0.931468885
+josh wilson,1,0.941678521
+flor,1,0.801569732
+dead prez,1,0.897820542
+s. p. balasubrahmanyam,1,0.997368421
+zayde wølf,1,0.920138356
+dreamers,1,0.795741141
+joe south,1,0.973387305
+soccer mommy,1,0.716335617
+tommy boyce,1,0.939024725
+hot chocolate,1,0.995488722
+cub sport,1,0.997866287
+razastarr,1,0.997744361
+coin,1,0.775531936
+melissa manchester,1,0.978494081
+bryce fox,1,0.833904259
+trainspotters,1,0.878358575
+temporex,1,0.538011696
+swimming tapes,1,0.997493734
+kid vishis,1,0.973810793
+rza,1,0.980174005
+the korgis,1,0.995488722
+jakob ogawa,1,0.889098357
+pato pooh,1,0.972112194
+fill black,1,0.998026316
+suicide,1,0.985645933
+the osmonds,1,0.982276279
+payo malo,1,0.990919178
+diaz,1,0.924371052
+dr. dre,1,0.982330363
+jim stafford,1,0.957607151
+more,1,0.996491228
+damos,1,0.940816324
+david essex,1,0.99757085
+steve harley,1,0.787267766
+gli inquilini,1,0.957832629
+frank t,1,0.991689751
+ohio express,1,0.897374766
+the lemon pipers,1,0.960835538
+penguin cafe orchestra,1,0.968421052
+graham parker & the rumour,1,0.976086056
+chris biscuit,1,0.932188307
+stezo,1,0.959841381
+the original squad,1,0.993927125
+einstein,1,0.94872038
+cor veleno,1,0.941664101
+twin shadow,1,0.822731733
+still woozy,1,0.995356037
+circa waves,1,0.91930372
+rob base,1,0.884463063
+big daddy weave,1,0.869592997
+slenderbodies,1,0.826202825
+unspoken,1,0.885680446
+young guns,1,0.997607655
+a.k.r.a.,1,0.993421052
+eyedea,1,0.923286349
+the boo radleys,1,0.935543926
+ugly casanova,1,0.99771167
+railroad earth,1,0.898132428
+robert john,1,0.993927125
+porcupine tree,1,0.894757752
+manic street preachers,1,0.900467383
+when in rome,1,0.957159078
+aspects,1,0.861102106
+yazz,1,0.997368421
+? & the mysterians,1,0.778306922
+sam brown,1,0.737234031
+the primitives,1,0.471352961
+boy meets girl,1,0.988385113
+climie fisher,1,0.921896635
+drowning pool,1,0.995614035
+beat happening,1,0.951074208
+ill niño,1,0.997837058
+metal carter,1,0.988721804
+papa m,1,0.996567506
+x-ray spex,1,0.830601987
+wayne fontana & the mindbenders,1,0.997837058
+tim hughes,1,0.993927125
+david pomeranz,1,0.879565625
+yndio,1,0.889512715
+mogwai,1,0.977443609
+blahzay blahzay,1,0.8874054
+flaw,1,0.783236195
+the specials,1,0.909299615
+twiztid,1,0.998355263
+the bats,1,0.995732575
+julian cope,1,0.998650472
+hammerfall,1,0.998452012
+chester bennington,1,0.995614035
+cutting crew,1,0.993135011
+velvet revolver,1,0.920030505
+emery,1,0.997744361
+the go-betweens,1,0.919696225
+the chills,1,0.743535418
+big country,1,0.950325762
+firehose,1,0.987854251
+the clean,1,0.993421052
+mud flow,1,0.984210526
+sandra,1,0.982093683
+john frusciante,1,0.997277677
+phil oakey,1,0.884394984
+jet,1,0.797559499
+johnny clegg,1,0.994360902
+electric six,1,0.672077331
+mark schultz,1,0.998001332
+freeway,1,0.958323277
+dead or alive,1,0.949464035
+guadalcanal diary,1,0.9517604
+the sounds,1,0.98066669
+big audio dynamite,1,0.99771167
+terence trent d'arby,1,0.919096909
+celldweller,1,0.948180355
+exposé,1,0.925850613
+hoodoo gurus,1,0.96792626
+living in a box,1,0.997949419
+the union underground,1,0.98307737
+nicole c. mullen,1,0.967956019
+fernando ortega,1,0.989473684
+gavin rossdale,1,0.973688649
+gravity kills,1,0.995732575
+wilson phillips,1,0.997411562
+d.o.c.,1,0.788959509
+ricardo montaner,1,0.997180451
+matt monro,1,0.910524076
+the cookies,1,0.998120301
+the mighty mighty bosstones,1,0.991689751
+nick cave & the bad seeds,1,0.869214337
+avalon,1,0.997411562
+ride,1,0.996148909
+bobby bloom,1,0.997493734
+great big sea,1,0.811623814
+world party,1,0.980155963
+michael johnson,1,0.840238194
+opeth,1,0.99122807
+martika,1,0.876850442
+master p,1,0.834185716
+the cyrkle,1,0.995844875
+504 boyz,1,0.903803653
+screaming trees,1,0.99771167
+necro,1,0.867356147
+the field mice,1,0.888232501
+alma cogan,1,0.939058171
+jars of clay,1,0.769130725
+electronic,1,0.997453311
+monster magnet,1,0.800835942
+mint condition,1,0.831628346
+geto boys,1,0.974678171
+teenage fanclub,1,0.997180451
+inoj,1,0.998405104
+billy woods,1,0.985645933
+blind guardian,1,0.998705781
+the church,1,0.941616776
+lords of the underground,1,0.865112019
+taylor dayne,1,0.995356037
+primer 55,1,0.768659245
+kim wilde,1,0.982396256
+marc almond,1,0.969122818
+bodyjar,1,0.997411562
+a.r. kane,1,0.993684211
+r.a. the rugged man,1,0.969977225
+jody watley,1,0.815042532
+the blue nile,1,0.996710526
+ariel rivera,1,0.886827763
+shawn colvin,1,0.794027592
+enuff z'nuff,1,0.992822966
+primo,1,0.995614035
+homeboy sandman,1,0.9154253
+chris webby,1,0.91831894
+jason donovan,1,0.998097654
+supergrass,1,0.966274464
+monica zetterlund,1,0.959212718
+deadsy,1,0.997180451
+mushroomhead,1,0.997866287
+daniel johnston,1,0.969328068
+željko bebek,1,0.997643362
+acid king,1,0.835753078
+alannah myles,1,0.839736197
+orgy,1,0.955075509
+helen shapiro,1,0.997922438
+kaveli,1,0.977722505
+pillar,1,0.998538012
+the cross movement,1,0.972982047
+kxng crooked,1,0.967590867
+blue stahli,1,0.585929355
+marine girls,1,0.830673812
+los bravos,1,0.991689751
+demis roussos,1,0.997076023
+agnetha fältskog,1,0.972224567
+masaki matsubara,1,0.942971785
+jamie grace,1,0.923369593
+the romantics,1,0.940371923
+gungor,1,0.996904025
+the jompson brothers,1,0.927631579
+billy fury,1,0.940629131
+red rockers,1,0.996491228
+blancmange,1,0.998120301
+harlem,1,0.992481202
+abhi the nomad,1,0.979433237
+brandon flowers,1,0.756507623
+civil twilight,1,0.923925685
+neon indian,1,0.925365957
+one ok rock,1,0.762611097
+the letter black,1,0.970625871
+audrey assad,1,0.951374962
+salma agha,1,0.990712074
+mime 871,1,0.940201176
+disciple,1,0.996148909
+andrew peterson,1,0.929938865
+enjoy,1,0.994906621
+we were promised jetpacks,1,0.99757085
+blackberry smoke,1,0.838685385
+memphis may fire,1,0.86903
+jacuzzi boys,1,0.8385832
+youth lagoon,1,0.846055311
+emphatic,1,0.763402077
+message to bears,1,0.990131579
+mkto,1,0.965062985
+the walkmen,1,0.994906621
+john waite,1,0.920040267
+vacationer,1,0.996491228
+green river ordinance,1,0.998452012
+the sandpipers,1,0.994360902
+st. lucia,1,0.997607655
+eisvoleas,1,0.996904025
+the menzingers,1,0.997807018
+elle king,1,0.977986863
+toe,1,0.997020854
+the veer union,1,0.998097654
+patty smyth,1,0.948743737
+zontanoi nekroi,1,0.965209623
+de leve,1,0.913895612
+113,1,0.972278162
+sektion kuchikäschtli,1,0.951353524
+dolla,1,0.963831776
+katy mcallister,1,0.988322548
+real life,1,0.997744361
+dawn richard,1,0.997807017
+bleubird,1,0.851970289
+bobaflex,1,0.787741939
+we as human,1,0.996904025
+bayside,1,0.997532895
+the airborne toxic event,1,0.964087008
+matt bianco,1,0.992105263
+joe budden,1,0.928553992
+doug e. fresh,1,0.957978795
+the maccabees,1,0.992481203
+restiform bodies,1,0.960914677
+midge ure,1,0.893193739
+feargal sharkey,1,0.998510427
+felt,1,0.993171899
+alexisonfire,1,0.998264893
+buckcherry,1,0.770484776
+plumb,1,0.827703571
+no mercy,1,0.970891502
+dorothy ashby,1,0.939853874
+the sword,1,0.988721804
+go west,1,0.958621804
+radioinactive,1,0.995215311
+priestess,1,0.996411483
+aqualung,1,0.913521201
+armand hammer,1,0.998205742
+kwest tha madd lad,1,0.988147392
+rehab,1,0.93005283
+styles p,1,0.998164015
+paul kelly,1,0.974179889
+thirteen senses,1,0.996842105
+bright eyes,1,0.983116699
+motion city soundtrack,1,0.996640537
+statik selektah,1,0.963040701
+goldlink,1,0.878694369
+kutless,1,0.95755898
+turbonegro,1,0.90271611
+the housemartins,1,0.998524348
+paul young,1,0.997807017
+jane wiedlin,1,0.997949419
+washed out,1,0.854466682
+the hives,1,0.930224714
+david crowder band,1,0.997129187
+the temper trap,1,0.867886078
+manchester orchestra,1,0.841282887
+the gaslight anthem,1,0.970243095
+bill callahan,1,0.933318094
+crash kings,1,0.89378856
+dimples d.,1,0.909372964
+anirudh ravichander,1,0.79501376
+mutemath,1,0.994360902
+red fang,1,0.996148909
+the knickerbockers,1,0.89534452
+the brobecks,1,0.996567506
+decyfer down,1,0.996904025
+limahl,1,0.995215311
+the alarm,1,0.972679965
+scritti politti,1,0.947102986
+david byrne,1,0.894980167
+tuff crew,1,0.998320269
+blood red shoes,1,0.995614035
+jukebox the ghost,1,0.998577525
+the getaway plan,1,0.997744361
+miami sound machine,1,0.881274608
+the real mckenzies,1,0.787745351
+arcadia,1,0.997411562
+lloyd cole and the commotions,1,0.997532895
+kalash,1,0.937819162
+we are scientists,1,0.997866287
+bobby rush,1,0.923522244
+scouting for girls,1,0.998524348
+soul majestic,1,0.94018649
+ali gatie,1,0.791999208
+marvin santiago,1,0.994736842
+ray brown trio,1,0.962134457
+the handsome family,1,0.996963563
+the talleys,1,0.995488722
+lyle mays,1,0.92338056
+wes montgomery trio,1,0.997532895
+buddy jewell,1,0.995844875
+slaid cleaves,1,0.978884958
+julian dash,1,0.995356037
+mickey newbury,1,0.996328029
+the crabb family,1,0.916253615
+the warren brothers,1,0.835845324
+bix beiderbecke,1,0.983189941
+jake hess,1,0.998864067
+jeffrey foucault,1,0.998185118
+gretchen wilson,1,0.923904225
+george howard,1,0.939759975
+the grass roots,1,0.968775076
+shankar,1,0.952697092
+ferlin husky,1,0.963845983
+al di meola,1,0.984210525
+jack greene,1,0.99368421
+barney kessel,1,0.990060771
+dan siegel,1,0.946151863
+mark collie,1,0.996148909
+mezzoforte,1,0.833032159
+dave alvin,1,0.990712074
+uzeb,1,0.997949419
+ray vega,1,0.917205436
+julie roberts,1,0.996240601
+lenny breau,1,0.932927178
+jim white,1,0.968363801
+calexico,1,0.980263158
+jeff carson,1,0.996842105
+branford marsalis,1,0.919018829
+cano estremera,1,0.926973938
+eddy raven,1,0.947516603
+eddie calvert,1,0.921052632
+cal smith,1,0.973525621
+barbara fairchild,1,0.996842105
+kenny dorham,1,0.997411562
+the brecker brothers,1,0.970871345
+rachelle ferrell,1,0.996640537
+galliano,1,0.97835261
+sherrié austin,1,0.957273397
+allison moorer,1,0.996640537
+curtis fuller,1,0.783138041
+garth brooks,1,0.979543803
+brass construction,1,0.990131579
+charlie robison,1,0.929319193
+wade hayes,1,0.970209994
+holly cole,1,0.996640537
+damien jurado,1,0.998225902
+cooder graw,1,0.925186814
+nocturnus,1,0.986842105
+bill gaither,1,0.9755199
+alex bugnon,1,0.991689751
+jeanne pruett,1,0.809990661
+rahsaan roland kirk,1,0.971701922
+faron young,1,0.954700834
+acoustic alchemy,1,0.9906696
+red garland trio,1,0.9290222
+bill monroe,1,0.995065789
+kid ory,1,0.953916661
+sonora ponceña,1,0.941822165
+doc watson,1,0.996240601
+billy gilman,1,0.979334066
+kenny kirkland,1,0.966581089
+greater vision,1,0.976163927
+hawkshaw hawkins,1,0.911988996
+lynda randle,1,0.997277677
+tommy mcclennan,1,0.99122807
+bomshel,1,0.983516328
+dean brody,1,0.941689391
+the band of heathens,1,0.700237584
+dawes,1,0.997020854
+big scoob,1,0.965045144
+freddy cole,1,0.858528534
+henri texier,1,0.997532895
+hayes carll,1,0.997323818
+don cherry,1,0.960917269
+ned doheny,1,0.967122788
+the felice brothers,1,0.997532895
+asha puthli,1,0.707148977
+ryan beaver,1,0.948854562
+kellie pickler,1,0.959399043
+matt mason,1,0.83954462
+jason michael carroll,1,0.997837058
+fania all stars,1,0.783881593
+return to forever,1,0.995488721
+bottleneck,1,0.998650472
+billy cobham,1,0.96809529
+ismael rivera y sus cachimbos,1,0.882779429
+jb and the moonshine band,1,0.858241758
+middle brother,1,0.968248157
+leroy hutson,1,0.926325113
+sarah jarosz,1,0.949823484
+the collingsworth family,1,0.890152466
+luke kaufman,1,0.917529793
+thieving birds,1,0.997453311
+rick wakeman,1,0.994360902
+jawga boyz,1,0.938615941
+steel magnolia,1,0.731615761
+bobby hutcherson,1,0.921052632
+jerrod niemann,1,0.95947543
+tarika blue,1,0.974309549
+ebo taylor,1,0.993421052
+roger alan wade,1,0.74071025
+brandon jenkins,1,0.928900378
+tito rodriguez,1,0.998142415
+tom browne,1,0.992105263
+john d. hale band,1,0.966589702
+steve swallow,1,0.856140351
+john phillips,1,0.721182122
+honeybrowne,1,0.970140859
+darrell scott,1,0.990832595
+gary bartz,1,0.983934171
+ernestine anderson,1,0.810896519
+harvey mason,1,0.926959058
+trick pony,1,0.945936979
+bernard wright,1,0.96483491
+herb alpert,1,0.964857461
+pleasure,1,0.995951417
+no justice,1,0.939080387
+mike bowling,1,0.98043211
+idris muhammad,1,0.993684211
+laura bell bundy,1,0.969108189
+blitzen trapper,1,0.848716429
+jim ford,1,0.955931084
+chatham county line,1,0.88415719
+azymuth,1,0.801546254
+hellbound glory,1,0.997411562
+gordon mote,1,0.994736842
+eilen jewell,1,0.848310007
+joanne brackeen,1,0.937812665
+buddy rich,1,0.986842105
+kingspade,1,0.841815696
+josh ritter,1,0.969951052
+steve holy,1,0.958811057
+steve howe,1,0.980263158
+johnny pacheco,1,0.997807017
+richard buckner,1,0.911376362
+dj krush,1,0.997180451
+ben tankard,1,0.996777658
+orbient,1,0.920545062
+jimmy sommers,1,0.927418705
+moe bandy,1,0.905795565
+merle haggard & the strangers,1,0.899402505
+cowboy,1,0.948298799
+dan penn,1,0.948128788
+doug sahm,1,0.996411483
+sleepytime gorilla museum,1,0.805291607
+keiko matsui,1,0.995065789
+kurt elling,1,0.993927125
+black oak arkansas,1,0.996240601
+kankick,1,0.998436686
+la sonora matancera,1,0.963480711
+"orlando ""cachaíto"" lópez",1,0.991689751
+ronny jordan,1,0.997277677
+quantic,1,0.997323818
+gotan project,1,0.996148909
+major boys,1,0.994152046
+dj food,1,0.993927125
+van zant,1,0.997076023
+sven van hees,1,0.971404648
+jimmy scott,1,0.953137344
+gary p. nunn,1,0.990712074
+the florida boys,1,0.994906621
+nrbq,1,0.943586044
+mink deville,1,0.630955096
+guru's jazzmatazz,1,0.95949842
+michael peterson,1,0.995732575
+dzihan & kamien,1,0.992105263
+club 1600,1,0.998481781
+deborah allen,1,0.995844875
+the mighty bop,1,0.969820851
+green on red,1,0.995844875
+david crosby,1,0.996904025
+commander cody and his lost planet airmen,1,0.87370143
+boxcar willie,1,0.967621265
+the browns,1,0.996777658
+stigmato inc,1,0.987854251
+plej,1,0.998283753
+slow train soul,1,0.982574338
+oi va voi,1,0.997076023
+little jimmy dickens,1,0.939058172
+dick curless,1,0.868416531
+son boricua,1,0.966149553
+jeannie seely,1,0.994555354
+richard bona,1,0.998164015
+the rh factor,1,0.865350038
+tord gustavsen trio,1,0.99122807
+regina carter,1,0.975403965
+johnny cooper,1,0.94352321
+marah,1,0.951188574
+keith jarrett trio,1,0.960746731
+sikth,1,0.996148908
+jazzanova,1,0.994736842
+cæcilie norby,1,0.790116163
+hippiehaus,1,0.994736842
+nils landgren,1,0.998120301
+monte la rue,1,0.759123093
+georg levin,1,0.830052717
+xploding plastix,1,0.992105263
+pain of salvation,1,0.995614035
+minus 8,1,0.997277677
+louie austen,1,0.934309678
+jazzamor,1,0.994152047
+ramblin' jack elliott,1,0.880388612
+michael manson,1,0.850699392
+tony allen,1,0.997453311
+grandpa jones,1,0.878503017
+the jordanaires,1,0.89794976
+norman brown,1,0.994152047
+sweethearts of the rodeo,1,0.899426646
+old & in the way,1,0.956223779
+buddy miller,1,0.992822966
+jan garbarek,1,0.949399969
+lennie tristano,1,0.970915064
+david kersh,1,0.954906442
+mcbride & the ride,1,0.995614035
+robbie fulks,1,0.997866287
+jimmy wakely,1,0.992822966
+lisa ekdahl,1,0.818291016
+the martins,1,0.886784347
+mark whitfield,1,0.992822966
+t. graham brown,1,0.996148909
+chely wright,1,0.939820407
+bob wills & his texas playboys,1,0.93287262
+lari white,1,0.99757085
+paul overstreet,1,0.991681316
+blue mitchell,1,0.870765097
+jestofunk,1,0.997744361
+alvino rey,1,0.928603849
+c.w. mccall,1,0.787416229
+mother earth,1,0.860380832
+kruder & dorfmeister,1,0.995065789
+les mccann,1,0.939697836
+mark o'connor,1,0.950014729
+alain caron,1,0.928742826
+freestyle fellowship,1,0.998716303
+roy clark,1,0.947803563
+mindy mccready,1,0.830634946
+luis arcaraz y su orquesta,1,0.994360902
+fred ho,1,0.99168975
+bill anderson,1,0.9647112
+sammi smith,1,0.995356037
+edge of sanity,1,0.997076023
+michel camilo,1,0.983874907
+doug supernaw,1,0.997229917
+"johnny ""hammond"" smith",1,0.992481203
+esbjörn svensson trio,1,0.944351729
+kashif,1,0.902663036
+pat metheny,1,0.973684211
+roger mcguinn,1,0.986644952
+floyd tillman,1,0.74840478
+nite flyte,1,0.99757085
+sir douglas quintet,1,0.938990463
+mulatu astatke,1,0.992105263
+fletcher henderson,1,0.958108744
+benny goodman trio,1,0.972567148
+ken mellons,1,0.890423111
+the rankin family,1,0.996052632
+slim dusty,1,0.984733173
+ronnie mcdowell,1,0.915776132
+justice system,1,0.896000459
+aim,1,0.937795354
+moodymann,1,0.879480978
+paddy reilly,1,0.962279004
+poncho sanchez,1,0.993927125
+shawn camp,1,0.894383006
+carlene carter,1,0.793869379
+blue rodeo,1,0.846627413
+bash & pop,1,0.940253729
+fred eaglesmith,1,0.997368421
+ray stevens,1,0.995844875
+joe dolan,1,0.997076023
+junior brown,1,0.997532895
+bob berg,1,0.964972228
+kelly willis,1,0.957806794
+biosphere,1,0.99122807
+gato barbieri,1,0.956552203
+kevin welch,1,0.944802321
+ernest ashworth,1,0.995951417
+memphis minnie,1,0.994152047
+scuzz twittly,1,0.817371824
+jon lucien,1,0.953435239
+moccasin creek,1,0.958447896
+linsey alexander,1,0.997493734
+otis clay,1,0.994906621
+josefus,1,0.959820761
+scott h. biram,1,0.950716212
+andy frasco & the u.n.,1,0.818178463
+ruthie foster,1,0.933892477
+"bernard ""pretty"" purdie",1,0.961416651
+lester davenport,1,0.95784838
+cookie & the cupcakes,1,0.829468336
+the yawpers,1,0.99757085
+debbie davies,1,0.997411562
+omar cunningham,1,0.989124356
+the london souls,1,0.793327741
+tyree neal,1,0.912194711
+louis jordan,1,0.907526934
+johnny maestro,1,0.989473684
+greenleaf,1,0.940640233
+kenny neal,1,0.932350607
+popa chubby,1,0.998355263
+bo carter,1,0.914240792
+kentucky thunder,1,0.996640537
+duke robillard,1,0.997277677
+the heavy eyes,1,0.99122807
+major lance,1,0.949965451
+charles brown,1,0.995215311
+king khan and the shrines,1,0.937224633
+carey bell,1,0.971845419
+jimmy mccracklin,1,0.935135125
+the go,1,0.889159095
+the nutmegs,1,0.995356037
+slim gaillard,1,0.426791669
+tinsley ellis,1,0.897509537
+keef hartley band,1,0.970439507
+larry davis,1,0.998001332
+the detroit cobras,1,0.967946308
+stan mosley,1,0.998933144
+nathan abshire,1,0.968134801
+lj echols,1,0.798141538
+walter wolfman washington,1,0.997949419
+cedric burnside,1,0.925702034
+the dictators,1,0.997323818
+ndidi o,1,0.998627002
+frankie lymon & the teenagers,1,0.694980228
+joe louis walker,1,0.96937792
+anthony gomes,1,0.985825677
+eric gales,1,0.998496241
+curtis salgado,1,0.997368421
+southern avenue,1,0.996963563
+the blues band,1,0.997180451
+bud powell,1,0.996567506
+mike bloomfield,1,0.994906621
+blackbird hill,1,0.993927125
+snooky pryor,1,0.967126095
+clyde mcphatter,1,0.887130757
+david peaston,1,0.936370781
+gary hoey,1,0.890204225
+the jive five,1,0.956690495
+earl hooker,1,0.995844875
+the vaughan brothers,1,0.95461743
+william clarke,1,0.989473684
+albert castiglia,1,0.785277687
+ronnie earl,1,0.776521744
+helen humes,1,0.943338979
+band of rascals,1,0.997837058
+little milton,1,0.958958803
+big yayo,1,0.997076023
+joe liggins,1,0.926701776
+sonny rhodes,1,0.985645933
+adam gussow,1,0.998001332
+john the conqueror,1,0.997949419
+five horse johnson,1,0.959758973
+latimore,1,0.789431894
+albert cummings,1,0.930820798
+reggie p,1,0.919707509
+lebrado,1,0.973656665
+richard hell,1,0.96465165
+pyeng threadgill,1,0.777407214
+lost sounds,1,0.984210526
+the hunches,1,0.672325976
+the muggs,1,0.908179882
+indigenous,1,0.994152047
+the mooney suzuki,1,0.995065789
+johnny temple,1,0.998812821
+eric bibb,1,0.978982883
+glen glenn,1,0.918530903
+little arthur duncan,1,0.985207998
+la keisha,1,0.932955313
+jimmy clanton,1,0.996491228
+jackie neal,1,0.941793354
+peggy scott-adams,1,0.996148909
+ash grunwald,1,0.983898761
+the open mind,1,0.884611536
+charlie gracie,1,0.993135011
+the atomic bitchwax,1,0.707801801
+floyd taylor,1,0.997180451
+the orioles,1,0.995065789
+chicken shack,1,0.894759311
+merl saunders,1,0.99833795
+bobby freeman,1,0.998614958
+archie bronson outfit,1,0.996411483
+patti drew,1,0.976188839
+jace everett,1,0.830752903
+danny bryant's redeyeband,1,0.996842105
+furry lewis,1,0.975491657
+geeshie wiley,1,0.997866287
+billy boy arnold,1,0.985034864
+mr. airplane man,1,0.994555354
+the spaceshits,1,0.958063999
+linda jones,1,0.941349899
+valley of the sun,1,0.932959691
+mark selby,1,0.801573348
+james leg,1,0.92628144
+robert belfour,1,0.998264893
+spooky tooth,1,0.900416574
+gino washington,1,0.997894737
+the harptones,1,0.959636347
+buddy whittington,1,0.849270095
+klass band brotherhood,1,0.949925646
+donnie ray,1,0.972445303
+7horse,1,0.980950256
+fatoumata diawara,1,0.996491228
+beans & fatback,1,0.996328029
+the earls,1,0.992105263
+methrone,1,0.982798618
+reigning sound,1,0.788881497
+carl sims,1,0.939355105
+the heartbeats,1,0.958778163
+the flying eyes,1,0.90617849
+bob log iii,1,0.996148909
+nick moss & the flip tops,1,0.951854885
+doyle bramhall,1,0.863816283
+holly golightly,1,0.996491228
+buddy johnson,1,0.958897691
+roscoe holcomb,1,0.879783344
+jessie hill,1,0.969274744
+ana popovic,1,0.9575403
+terry wright,1,0.995732575
+brother dege,1,0.996148909
+oli brown,1,0.998205741
+eden brent,1,0.99368421
+alvin lee,1,0.996640537
+the fleshtones,1,0.756458983
+ray noble,1,0.994152047
+worm,1,0.996148909
+chris lane,1,0.810939095
+lewis brice,1,0.954126642
+gábor szabó,1,0.994736842
+ashley monroe,1,0.981892075
+elvin jones,1,0.891657166
+colter wall,1,0.911206347
+terry callier,1,0.86964017
+eric ethridge,1,0.886954785
+mitchell tenpenny,1,0.998481781
+demun jones,1,0.991340096
+cale dodds,1,0.882957408
+morgan evans,1,0.966128761
+buddy brown,1,0.989221689
+katie noel,1,0.998120301
+jordan davis,1,0.794215319
+the don ellis orchestra,1,0.994906621
+pete rodriguez,1,0.997922438
+michael ray,1,0.886075193
+rudy vallee,1,0.994555354
+christie huff,1,0.996567506
+mongo santamaria,1,0.998372219
+tucker beathard,1,0.980052333
+mitch rossell,1,0.976309839
+ray fulcher,1,0.99833795
+muscadine bloodline,1,0.99757085
+caylee hammack,1,0.865560005
+charlie palmieri,1,0.94122436
+locash,1,0.942446964
+brandon ratcliff,1,0.95811265
+brandon lay,1,0.970960133
+levi hummon,1,0.956909907
+morgan wallen,1,0.956132641
+joe cuba sextet,1,0.997744361
+jameson rodgers,1,0.909640997
+mike ryan,1,0.988396817
+charles mingus,1,0.98245614
+dustin lynch,1,0.979995762
+frankie ballard,1,0.938201762
+ornette coleman,1,0.998205741
+alice coltrane,1,0.993421053
+micky & the motorcars,1,0.99368421
+jawga sparxxx,1,0.996491228
+nektar,1,0.991689751
+donna taggart,1,0.921052632
+cam,1,0.987385151
+phosphorescent,1,0.996842105
+gord bamford,1,0.870146808
+horace silver,1,0.931612716
+david fanning,1,0.953102903
+jon langston,1,0.805886999
+american aquarium,1,0.998164015
+gary bartz ntu troop,1,0.976866562
+bill le sage,1,0.765710528
+skitz kraven,1,0.912461536
+shotgun rider,1,0.954772634
+dirt rock empire,1,0.876924996
+raelynn,1,0.998538012
+sadao watanabe,1,0.995488722
+the band steele,1,0.997894736
+adam sanders,1,0.772849667
+drake white,1,0.929641889
+overtime,1,0.837461771
+a thousand horses,1,0.931369228
+chase bryant,1,0.850994308
+ty march.,1,0.965894308
+taylor acorn,1,0.957259475
+murphy elmore,1,0.982793343
+charles kelley,1,0.856782344
+mbest11x,1,0.958645314
+andrew hill,1,0.998205742
+jordan rager,1,0.971635476
+stan kenton,1,0.990712074
+the dave brubeck quartet,1,0.932793375
+the detroit emeralds,1,0.955211089
+taste,1,0.966582887
+sir lord baltimore,1,0.954087746
+arthur conley,1,0.94557853
+the electric flag,1,0.951145694
+blue cheer,1,0.910258419
+keith relf,1,0.998164014
+flower travellin' band,1,0.98245614
+paul jones,1,0.943189557
+"huey ""piano"" smith",1,0.995356037
+duane eddy,1,0.915145005
+clifford brown,1,0.997076023
+baby washington,1,0.960884629
+alexis korner's blues incorporated,1,0.743010068
+ben webster,1,0.842204249
+bang,1,0.995215311
+miles davis quartet,1,0.996777658
+tony scott,1,0.997744361
+rabbit muse,1,0.806501963
+mick fleetwood,1,0.954106445
+kevin coyne,1,0.998726655
+gerry mulligan quartet,1,0.906067401
+noro morales,1,0.995614035
+fenton robinson,1,0.954075132
+buck clayton,1,0.948843566
+the belmonts,1,0.997277677
+"johnny ""guitar"" watson",1,0.985923263
+luther johnson,1,0.996148909
+millie jackson,1,0.955970253
+dave bartholomew,1,0.93209111
+roy haynes,1,0.722229086
+big walter horton,1,0.754005699
+the turbans,1,0.997076023
+garnet mimms & the enchanters,1,0.998302207
+billy strayhorn,1,0.996328029
+seaforth,1,0.949018431
+eric dolphy,1,0.954984224
+tina brooks,1,0.90879327
+john king,1,0.997229917
+dexter gordon,1,0.968421052
+sam grow,1,0.905798701
+mason ramsey,1,0.885478094
+adam hambrick,1,0.951671942
+lil nas x,1,0.885110949
+max roach,1,0.964132444
+michel legrand,1,0.962808253
+blanco brown,1,0.976167861
+freddie roach,1,0.9692249
+danielle bradbery,1,0.998421053
+cold creek county,1,0.877864408
+stanley turrentine,1,0.998142415
+oliver nelson,1,0.963449115
+the olympics,1,0.966689536
+the silhouettes,1,0.77837119
+buster brown,1,0.997607655
+speckled red,1,0.998590226
+larry williams,1,0.952360057
+jimmy witherspoon,1,0.882901796
+teddy wilson,1,0.867327307
+red garland,1,0.964464834
+"eddie ""cleanhead"" vinson",1,0.99777613
+kenny drew,1,0.997922438
+mickey & sylvia,1,0.958783054
+lizzie miles,1,0.904386353
+piney brown,1,0.99771167
+john gurney,1,0.957422018
+jackson michelson,1,0.842319919
+dylan scott,1,0.997453311
+jack & jack,1,0.996842105
+meduza,1,0.825121608
+ease up,1,0.964918877
+mark rae,1,0.948498214
+selena gomez & the scene,1,0.977506117
+triston palma,1,0.906431081
+bim sherman,1,0.933374438
+alexandra stan,1,0.998245614
+jimmy riley,1,0.978557505
+the oh hellos,1,0.852844845
+jessie j,1,0.934147938
+flatsound,1,0.973779959
+the civil wars,1,0.726533058
+birdy,1,0.998283753
+anthony johnson,1,0.97380023
+jesse & joy,1,0.947368421
+new age steppers,1,0.874854006
+jai paul,1,0.802756929
+whispering lion,1,0.937628931
+lauren aquilina,1,0.805247712
+tennis,1,0.994360902
+milo greene,1,0.997129187
+danny brown,1,0.933665923
+santigold,1,0.836577176
+pomplamoose,1,0.997020854
+grimes,1,0.998205742
+emeli sandé,1,0.916113762
+hugh mundell,1,0.993421053
+lord huron,1,0.849060455
+travis porter,1,0.960796372
+brad knauber,1,0.893993054
+youngblood hawke,1,0.84350208
+pierce the veil,1,0.997866287
+j boog,1,0.935179422
+neck deep,1,0.965687512
+madilyn bailey,1,0.996842105
+olivia holt,1,0.968576443
+breathe carolina,1,0.845770155
+simon curtis,1,0.948101649
+reggae regular,1,0.997532895
+jahmel,1,0.979573084
+king general,1,0.988012855
+prince royce,1,0.995844875
+the jamaicans,1,0.963405134
+ijahman levi,1,0.958431195
+the bassies,1,0.987854251
+rita marley,1,0.962529079
+passenger,1,0.658097487
+the meditations,1,0.998355263
+kevin rudolf,1,0.964997046
+roots radics,1,0.99777613
+jamie foxx,1,0.998673153
+the downtown fiction,1,0.701586668
+lcd soundsystem,1,0.998602701
+beta radio,1,0.818505429
+cultural roots,1,0.92765905
+ludwig von 88,1,0.996052631
+mike posner,1,0.932829015
+thriller u,1,0.997129186
+craft spells,1,0.968581738
+dom kennedy,1,0.92947505
+forever the sickest kids,1,0.939878995
+travis barker,1,0.786779684
+lykke li,1,0.746332625
+junior delgado,1,0.99868421
+admiral bailey,1,0.969513613
+reel big fish,1,0.995065789
+blind pilot,1,0.985577273
+benjamin francis leftwich,1,0.876127774
+sleeping at last,1,0.995065789
+tune-yards,1,0.892005982
+victorious cast,1,0.91323636
+get scared,1,0.892462266
+julia sheer,1,0.80947563
+i-roy,1,0.934596131
+justin hinds & the dominoes,1,0.947466024
+azealia banks,1,0.921304302
+aronchupa,1,0.933261414
+rixton,1,0.99887218
+clean bandit,1,0.997323818
+alex & sierra,1,0.998074454
+james bay,1,0.650545667
+schoolboy q,1,0.990816836
+jessie ware,1,0.781236171
+don drummond,1,0.950133767
+tommy mccook,1,0.927600538
+paloma faith,1,0.997949419
+revolver cannabis,1,0.947368421
+travis atreo,1,0.904633936
+rupaul,1,0.995951417
+vinyl theatre,1,0.737560475
+adam levine,1,0.912362726
+eric morris,1,0.994152047
+ella henderson,1,0.910735593
+mujo,1,0.969545562
+dirty loops,1,0.884796356
+cyrille aimee,1,0.920050303
+nicki parrott,1,0.762444264
+juju rogers,1,0.93386051
+reel people,1,0.905016388
+devaloop,1,0.994736842
+ødyssee,1,0.948200428
+meghan trainor,1,0.99833795
+henace,1,0.99771167
+trevor hall,1,0.993927125
+the comet is coming,1,0.916845482
+potatohead people,1,0.985645933
+shafiq husayn,1,0.989650268
+seven lions,1,0.921615513
+glen adams,1,0.91652486
+magic man,1,0.997894737
+atlas genius,1,0.890507645
+the paper kites,1,0.996710526
+partynextdoor,1,0.946609043
+fitz and the tantrums,1,0.997532895
+lee perry & the upsetters,1,0.879664809
+the revolutionaries,1,0.969382274
+steve aoki,1,0.952920288
+sonreal,1,0.941446827
+johnnyswim,1,0.844810987
+zendaya,1,0.710250973
+chastity belt,1,0.954946066
+prince far 1,1,0.982456121
+tryhardninja,1,0.998264893
+our last night,1,0.983418989
+rhye,1,0.913175487
+foxygen,1,0.752752977
+augustus pablo,1,0.986603728
+tom odell,1,0.819408226
+the reggae boys,1,0.804295861
+mitski,1,0.973742829
+wild cub,1,0.997744361
+rudy mills,1,0.98245614
+sanna nielsen,1,0.816896794
+majid jordan,1,0.911409849
+lindsey stirling,1,0.960526316
+aurora,1,0.937636669
+juicy j,1,0.968999891
+rittz,1,0.84910696
+dustin tebbutt,1,0.934071312
+shy glizzy,1,0.982064088
+danny gokey,1,0.903063823
+woodkid,1,0.965648508
+new politics,1,0.92111767
+natalia kills,1,0.988522184
+mutabaruka,1,0.996491228
+black veil brides,1,0.929573556
+têtes raides,1,0.997922438
+duane stephenson,1,0.928185813
+tami chynn,1,0.892851789
+nelly furtado,1,0.79181836
+cute is what we aim for,1,0.936035144
+toko tasi,1,0.733321116
+the red jumpsuit apparatus,1,0.953078588
+ranking dread,1,0.966864856
+alexi murdoch,1,0.997678019
+matchbook romance,1,0.996904025
+pressure,1,0.997411562
+the icicle works,1,0.826357531
+alaine,1,0.99368421
+fidel nadal,1,0.995356037
+this providence,1,0.997076023
+natural incense,1,0.948915361
+rick ross,1,0.998001332
+diego roots,1,0.965444247
+petey pablo,1,0.926506251
+fantan mojah,1,0.997678018
+secondhand serenade,1,0.9127351
+the last goodnight,1,0.903672388
+mad cobra,1,0.922559716
+steven & coconuttreez,1,0.893994917
+mattafix,1,0.979384056
+missy higgins,1,0.996963563
+pretty ricky,1,0.997922437
+scissor sisters,1,0.976076967
+bag of toys,1,0.761127142
+beirut,1,0.996411483
+jordin sparks,1,0.975430332
+cartel,1,0.997368421
+brick & lace,1,0.998388829
+la secta allstar,1,0.996411483
+thom yorke,1,0.951849598
+quietdrive,1,0.941764512
+judy mowatt,1,0.996777658
+josh heinrichs,1,0.97776703
+riddim,1,0.996710526
+anberlin,1,0.987056843
+staylefish,1,0.967297206
+james blunt,1,0.982968912
+the skints,1,0.951835435
+barefoot truth,1,0.963589162
+"nas & damian ""jr. gong"" marley",1,0.990534131
+serani,1,0.872213466
+gappy ranks,1,0.941568088
+anna nalick,1,0.883807683
+sig ragga,1,0.982717989
+tessanne chin,1,0.89817685
+wolf parade,1,0.998302207
+raheem devaughn,1,0.825369461
+o.a.r.,1,0.81016249
+imogen heap,1,0.942776592
+huey,1,0.870030605
+ali campbell,1,0.997678019
+gotye,1,0.904365472
+anti-flag,1,0.995951417
+michael wong,1,0.997807017
+letoya,1,0.829356139
+sister hazel,1,0.998388829
+grin department,1,0.997532895
+"tito ""el bambino""",1,0.916538296
+gentleman's dub club,1,0.948009249
+voxtrot,1,0.998577525
+michael prophet,1,0.996328029
+silverstein,1,0.996963562
+bubaseta,1,0.85622636
+chapter 11,1,0.998164015
+the mountain goats,1,0.983937223
+j. holiday,1,0.998320268
+long beach shortbus,1,0.984150808
+jay sean,1,0.963734066
+hellogoodbye,1,0.997277677
+cham,1,0.858023161
+kolohe kai,1,0.997180451
+ashley tisdale,1,0.99777613
+danity kane,1,0.750473485
+carolina liar,1,0.860384147
+indio i,1,0.996240601
+majek fashek,1,0.998524348
+fever ray,1,0.845655228
+the academy is...,1,0.830971389
+"sergio vega ""el shaka""",1,0.969351898
+pitch black,1,0.880307969
+los pericos,1,0.987854251
+delroy wilson,1,0.996777658
+terry linen,1,0.981924387
+bibio,1,0.992822966
+a rocket to the moon,1,0.878907666
+kaskade,1,0.99368421
+ballyhoo,1,0.932061115
+boys like girls,1,0.985383082
+lily allen,1,0.916603379
+schuyler fisk,1,0.915348529
+herbs,1,0.708068969
+richie stephens,1,0.914392663
+warpaint,1,0.796400639
+noah and the whale,1,0.996411483
+keri hilson,1,0.898367264
+metric,1,0.863007192
+tony curtis,1,0.934898655
+mad lion,1,0.997866287
+general levy,1,0.921580514
+dave collins,1,0.891604243
+sammy dread,1,0.998283753
+david cook,1,0.998320269
+2 pistols,1,0.902680214
+joe dukie & dj fitchie,1,0.933840676
+lloyd brown,1,0.996148909
+the-dream,1,0.930518405
+blue foundation,1,0.994906621
+the bird and the bee,1,0.981514824
+parokya ni edgar,1,0.917330983
+metro station,1,0.865293481
+batch,1,0.979433325
+unity pacific,1,0.994555354
+leona lewis,1,0.99833795
+kora,1,0.977443609
+september,1,0.641297046
+holy piby,1,0.984210525
+antidoping,1,0.995951417
+fly my pretties,1,0.876215046
+deer tick,1,0.982373098
+m.i.a.,1,0.75466706
+errol dunkley,1,0.996842105
+mikey spice,1,0.997949419
+the radioactive sago project,1,0.995215311
+webbie,1,0.998577525
+eric hutchinson,1,0.918173803
+empire of the sun,1,0.785131227
+everton blender,1,0.994555354
+paper lace,1,0.998481781
+atomic rooster,1,0.997493734
+rich boy,1,0.926510641
+nesian mystik,1,0.904512305
+mims,1,0.983833024
+jon mclaughlin,1,0.973595851
+timbaland,1,0.943930398
+glen hansard,1,0.96666935
+tropical depression,1,0.99757085
+kalimba,1,0.984244841
+moose dawa,1,0.997493734
+ajmw,1,0.84090966
+klim,1,0.976935375
+sophie milman,1,0.995951417
+chelsea cutler,1,0.893128008
+jessie reyez,1,0.758182203
+eric darius,1,0.838143657
+maggie lindemann,1,0.998436686
+gail jhonson,1,0.902440206
+rex orange county,1,0.899300902
+the rippingtons,1,0.921052632
+nicola conte,1,0.998705781
+dennis lloyd,1,0.938962419
+georgia anne muldrow,1,0.917259873
+ancient astronauts,1,0.925098774
+sza,1,0.953620769
+jessy j,1,0.93615295
+jhene aiko,1,0.989270005
+origin,1,0.943865209
+brenda boykin,1,0.934679214
+zuco 103,1,0.749583057
+alfonso ponticelli,1,0.948034426
+rodney hunter,1,0.997744361
+kina grannis,1,0.853416528
+jackiem joyner,1,0.91915399
+gary smith,1,0.980263158
+jay rock,1,0.998245614
+olivia o'brien,1,0.956418468
+sinne eeg,1,0.995356037
+paolo fresu,1,0.927631579
+zara larsson,1,0.996777658
+susie arioli,1,0.994736842
+ansel elgort,1,0.998510427
+ethel waters,1,0.836086583
+jp cooper,1,0.965606524
+club des belugas,1,0.996842105
+susan wong,1,0.996052631
+davido,1,0.950923231
+saint privat,1,0.881775419
+james tw,1,0.997411562
+jehro,1,0.952504254
+cindy bradley,1,0.962236186
+adani & wolf,1,0.843563507
+terrace martin,1,0.962348023
+helen kane,1,0.725100481
+bebo best,1,0.996777658
+wildcookie,1,0.994360902
+ry cooder & v.m. bhatt,1,0.933479304
+algorythmik,1,0.960526316
+fredrik kronkvist,1,0.99757085
+beyond creation,1,0.986842105
+jazz spastiks,1,0.994736842
+the shaolin afronauts,1,0.995488722
+gabin,1,0.794657693
+ibrahim maalouf,1,0.977005872
+kool&klean,1,0.995065789
+lack of afro,1,0.970657372
+phora,1,0.927576734
+darren rahn,1,0.881558022
+nekta,1,0.930225698
+benny berigan,1,0.960091818
+dirty honkers,1,0.990712074
+christian scott atunde adjuah,1,0.929588253
+shigeto,1,0.905155279
+kim waters,1,0.9446683
+sound nomaden,1,0.998320269
+illenium,1,0.997607655
+paul motian,1,0.996904025
+nikki yanofsky,1,0.998001332
+gretchen parlato,1,0.994906621
+charli xcx,1,0.970638605
+second date,1,0.961662544
+julia michaels,1,0.980263158
+jane monheit,1,0.996842105
+niykee heaton,1,0.905454053
+joyner lucas,1,0.902261475
+yonderboi,1,0.954352704
+runaway june,1,0.965361367
+robert glasper,1,0.884876555
+clairo,1,0.7375367
+sola rosa,1,0.695511923
+finneas,1,0.997975708
+no blues,1,0.901468975
+ann hampton callaway,1,0.997837058
+tito nieves,1,0.95515208
+notd,1,0.897016369
+darondo,1,0.976346231
+88rising,1,0.894907287
+megan thee stallion,1,0.943721911
+gianni & kyle,1,0.99849624
+sunn 0))),1,0.986842105
+karin krog,1,0.996904025
+kids see ghosts,1,0.930399018
+candiria,1,0.93084052
+quo vadis,1,0.996963563
+sporto kantès,1,0.993135011
+amp fiddler,1,0.892105263
+bunk johnson,1,0.978955539
+mabel,1,0.998436686
+why don't we,1,0.964375142
+brad mehldau trio,1,0.995732575
+emanon,1,0.998264893
+anthony wonsey trio,1,0.977443609
+dreamville,1,0.897855563
+labrinth,1,0.996328029
+naomi scott,1,0.977289492
+susumu yokota,1,0.718078378
+fennesz,1,0.960315389
+lanco,1,0.844376845
+pewdiepie,1,0.997129186
+paul brown,1,0.993135011
+tinashe,1,0.875619231
+pacha massive,1,0.881577727
+alesso,1,0.998120301
+au/ra,1,0.954286909
+ike quebec,1,0.971743975
+nils landgren funk unit,1,0.995065789
+surfaces,1,0.997643362
+eric marienthal,1,0.972886345
+rico nasty,1,0.969247024
+seeb,1,0.998388829
+jid,1,0.963902315
+abbey lincoln,1,0.960568498
+bob baldwin,1,0.957749595
+the juju orchestra,1,0.980083323
+gypsy swing revue,1,0.996328029
+lollo meier,1,0.948257158
+the bamboos,1,0.994152047
+euge groove,1,0.968630962
+alif tree,1,0.996328029
+walter beasley,1,0.96011961
+cyne,1,0.898685405
+moka only,1,0.910311534
+visioneers,1,0.980862335
+naoki kenji,1,0.939313326
+ayokay,1,0.98651833
+girl in red,1,0.940627951
+medeski scofield martin & wood,1,0.964632281
+quavo,1,0.970686121
+marc moulin,1,0.997129187
+jojo effect,1,0.996777658
+malene mortensen,1,0.990131579
+scott grooves,1,0.752791069
+radio citizen,1,0.983740285
+electronic swing orchestra,1,0.996777658
+jonathan fritzén,1,0.97368421
+john surman,1,0.998001332
+skizzy mars,1,0.902973193
+roberto musci,1,0.977889914
+awon,1,0.977035616
+twice,1,0.997744361
+kiefer,1,0.813941216
+charlotte dos santos,1,0.667025752
+steve kuhn,1,0.996240601
+roy woods,1,0.903352487
+jaared,1,0.774690536
+disperse,1,0.992105263
+minthaze,1,0.905386882
+allie x,1,0.976249805
+josé james,1,0.992105263
+el michels affair,1,0.992105263
+carly rae jepsen,1,0.907897808
+lando chill,1,0.92177035
+ezra collective,1,0.979377655
+terence blanchard,1,0.951606766
+maple syrup,1,0.996411483
+hidden spheres,1,0.691729324
+pete josef,1,0.996963563
+smokey joe & the kid,1,0.922894813
+sheppard,1,0.890664617
+willow,1,0.983992709
+mike stud,1,0.973046924
+suff daddy,1,0.998421053
+seamus blake,1,0.86848296
+don philippe,1,0.846699917
+anomaly,1,0.940344466
+annella,1,0.938799548
+lil dicky,1,0.986842105
+marc e. bassy,1,0.987715229
+catherine russell,1,0.997975708
+jon batiste,1,0.830955217
+magnus lindgren,1,0.936311633
+dramadigs,1,0.997368421
+nestor torres,1,0.958996263
+wolfgang lohr,1,0.996411483
+misterwives,1,0.914284995
+braxton cook,1,0.952584923
+riley richard,1,0.921052632
+masayoshi takanaka,1,0.997453311
+walt weiskopf,1,0.978322886
+emapea,1,0.945687786
+sam gendel,1,0.934757205
+fetty wap,1,0.996842105
+dj grumble,1,0.794907109
+joey alexander,1,0.96617259
+drwn.,1,0.960516747
+ol' burger beats,1,0.98647806
+action bronson,1,0.896589647
+owane,1,0.996240601
+ardhito pramono,1,0.95566319
+bill charlap trio,1,0.996328029
+children of zeus,1,0.998320269
+jitwam,1,0.908754374
+oofoe,1,0.987963966
+danny black,1,0.996567506
+deorro,1,0.920848801
+san holo,1,0.993684211
+rudemanners,1,0.978784117
+musicmusicmusic,1,0.906921977
+abstract orchestra,1,0.998283753
+sons of kemet,1,0.857237367
+melodiesinfonie,1,0.975725323
+jazzotron,1,0.937895049
+pisk,1,0.992356789
+r+r=now,1,0.899167607
+belly,1,0.986013632
+sly5thave,1,0.851623426
+lany,1,0.977205429
+astrid s,1,0.954695924
+jon kennedy,1,0.973684211
+timeflies,1,0.913990006
+grupo maximo grado,1,0.888778213
+gryffin,1,0.923116954
+parov stelar trio,1,0.984210526
+solange,1,0.961480766
+skeewiff,1,0.94744242
+jan lundgren trio,1,0.996148909
+legado 7,1,0.998510427
+christian mcbride,1,0.952887457
+scale the summit,1,0.903387797
+jonathan kreisberg,1,0.946422646
+alice russell,1,0.911299094
+dj cam quartet,1,0.995065789
+ab-soul,1,0.89077199
+toni romiti,1,0.997975708
+polkadot cadaver,1,0.995732574
+dj harrison,1,0.997368421
+mr.b the gentleman rhymer,1,0.966480882
+maucoli,1,0.998510427
+sabrina carpenter,1,0.867225276
+alice francis,1,0.81166034
+jeff loomis,1,0.995844875
+martin garrix,1,0.864332047
+lukas graham,1,0.998590225
+peter appleyard,1,0.995732575
+intronaut,1,0.990712074
+dojo cuts,1,0.792671276
+whethan,1,0.994152046
+the 49ers,1,0.964748848
+cachao,1,0.976730011
+fort knox five,1,0.768776826
+dnce,1,0.897095705
+dodie,1,0.950306769
+twenty88,1,0.886099899
+duke dumont,1,0.998538012
+the souljazz orchestra,1,0.998245614
+kalabrese,1,0.995951417
+james tillman,1,0.994736842
+zaz,1,0.964635081
+lizzo,1,0.998564593
+quinn xcii,1,0.93806829
+mocky,1,0.953509985
+miia,1,0.964938178
+madeintyo,1,0.876874521
+el gran combo de puerto rico,1,0.996842105
+villain park,1,0.954135012
+degiheugi,1,0.941641178
+abul mogard,1,0.783706114
+hayden james,1,0.997975708
+the rosenberg trio,1,0.996904025
+butcher brown,1,0.979582163
+slowy,1,0.895719679
+sungazer,1,0.985645933
+ookay,1,0.971546868
+brent faiyaz,1,0.998705781
+buttering trio,1,0.995065789
+anti-lilly & phoniks,1,0.984613523
+matthew halsall,1,0.640370456
+damu the fudgemunk,1,0.837346331
+shaun escoffery,1,0.996052632
+toco,1,0.998320268
+nubiyan twist,1,0.990345137
+birdtalker,1,0.627937925
+william basinski,1,0.890927381
+curtis stigers,1,0.994152047
+horst jankowski and his studio orchestra,1,0.957229223
+brian blade & the fellowship band,1,0.905920077
+takuya kuroda,1,0.998481781
+$uicideboy$,1,0.771550274
