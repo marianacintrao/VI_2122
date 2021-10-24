@@ -1,33 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
+    <head>
+        <meta charset="utf-8" />
 
-    <meta name="description" content="An exploration of music genres and their lyrical content" />
-    <meta name="author" content="G37" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="An exploration of music genres and their lyrical content" />
+        <meta name="author" content="G37" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Is Sad Music Really That Sad?</title>
+        <title>Is Sad Music Really That Sad?</title>
 
-    <!-- Import libraries. -->
-    <script src="https://d3js.org/d3.v7.min.js"></script>
+        <!-- Import libraries. -->
+        <script src="https://d3js.org/d3.v7.min.js"></script>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style/styles.css" />
-  </head>
+        <!-- CSS -->
+        <link rel="stylesheet" href="style/styles.css" />
+    </head>
   
-  <body>
-    <h1>IS SAD MUSIC REALLY THAT SAD?</h1>
-    <h2>an exploration of music genres and their lyrical content</h2>
-    <div id="parallelCoordinates"></div>
-    <div id="circularPacking"></div>
-    <div id="radarChart"></div>
-  </body>
+    <body>
+        <h1>IS SAD MUSIC REALLY THAT SAD?</h1>
+        <h2>an exploration of music genres and their lyrical content</h2>
+        <div id="tooltip" class="hidden">
+            <p><span id="value"></span></p>
+        </div>
+        <div id="circularPacking"></div>
+        <div id="radarChart"></div>
+        <div id="parallelCoordinates"></div>
+    </body>
 
-  <!-- JS -->
-  <script
-    language="JavaScript"
-    type="text/javascript"
-    src="scripts/behavior.js"
-  ></script>
+    <!-- JS -->
+    <script
+        language="JavaScript"
+        type="text/javascript"
+        src="scripts/constants.js"
+    ></script>
+    <script
+        language="JavaScript"
+        type="text/javascript"
+        src="scripts/parallelCoordinates.js"
+    ></script>
 </html>
