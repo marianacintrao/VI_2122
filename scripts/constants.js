@@ -1,8 +1,14 @@
+// set the dimensions and margins of the graph
+const margin = {top: 30, right: 50, bottom: 10, left: 50},
+    width = document.body.scrollWidth - margin.left - margin.right,
+    height = 275 - margin.top - margin.bottom;
+    
 const _white = "#fafcfb";
 const _grey = "#a9a9a9";
 const _red = "#e6194B";
 const _pink = "#fabed4";
-const _navy = "#000075";
+// const _navy = "#000075";
+const _lavender = "#dcbeff";
 const _orange = "#f58231";
 const _purple = "#911eb4";
 const _lime = "#bfef45";
@@ -25,7 +31,7 @@ const genres_dict = {
 	"folk" : "Folk",
     "punk" : "Punk",
     "blues" : "Blues",
-    "eletronica" : "Electronica",
+    "electronica" : "Electronica",
     "religious" : "Religious",
 	"metal" : "Metal"
 }

@@ -114,7 +114,7 @@ jazz,soul jazz,336,0.952631122
 r&b,soul blues,318,0.946617137
 pop,beatlesque,316,0.932208043
 pop,post-teen pop,315,0.932195307
-eletronica,electronica,314,0.943988338
+electronica,electronica,314,0.943988338
 r&b,doo-wop,305,0.955952855
 pop,old school dancehall,299,0.956145642
 r&b,neo soul,296,0.936034009
@@ -151,7 +151,7 @@ jazz,old school thrash,201,0.94956293
 pop,baroque pop,201,0.947331939
 pop,cowboy western,198,0.94921474
 pop,big band,198,0.953013005
-eletronica,electropop,196,0.929417585
+electronica,electropop,196,0.929417585
 pop,new jack swing,195,0.928093572
 rock,piano rock,195,0.935722428
 pop,dance rock,192,0.953194737
@@ -241,7 +241,7 @@ jazz,smooth saxophone,99,0.953005271
 hip hop,west coast rap,98,0.922842852
 hip hop,queens hip hop,98,0.936136977
 jazz,jazz guitar,98,0.957575669
-eletronica,electro swing,98,0.942166718
+electronica,electro swing,98,0.942166718
 metal,melodic metalcore,96,0.951159717
 rock,classic garage rock,95,0.947257
 pop,classic girl group,95,0.936427321
@@ -255,11 +255,11 @@ pop,crunk,92,0.933054129
 punk,ska punk,92,0.931617176
 hip hop,country rap,91,0.948728456
 reggae,west coast reggae,91,0.936670924
-eletronica,electro,91,0.911583313
+electronica,electro,91,0.911583313
 country,canadian country,90,0.94985585
 rock,bay area indie,90,0.950876434
 pop,ninja,89,0.946773984
-eletronica,edm,89,0.94706469
+electronica,edm,89,0.94706469
 rock,irish rock,88,0.938280159
 metal,metalcore,88,0.955902321
 rock,indiecoustica,88,0.922002062
@@ -357,7 +357,7 @@ country,bluegrass gospel,48,0.955499931
 pop,anthem worship,47,0.875851327
 rock,alt z,47,0.921119854
 pop,new jersey hardcore,47,0.951515661
-eletronica,piedmont blues,47,0.963119224
+electronica,piedmont blues,47,0.963119224
 jazz,jazz trio,47,0.96569487
 pop,chillwave,47,0.907134911
 pop,melodic hardcore,46,0.928567079
@@ -418,7 +418,7 @@ rock,alternative roots rock,33,0.940905906
 pop,classic bollywood,33,0.954865467
 hip hop,pittsburgh rap,33,0.960729101
 pop,desi pop,32,0.955247213
-eletronica,electro house,32,0.950214858
+electronica,electro house,32,0.950214858
 pop,afropop,32,0.965415778
 rock,indie r&b,32,0.926127823
 pop,salsa,32,0.943193051
@@ -442,7 +442,7 @@ rock,melodic thrash,30,0.955831705
 rock,rock drums,29,0.961130435
 jazz,deep adult standards,29,0.964144476
 pop,corrido,29,0.934635504
-eletronica,electronic rock,29,0.906622411
+electronica,electronic rock,29,0.906622411
 pop,no wave,29,0.935081032
 r&b,instrumental soul,29,0.927247918
 pop,chamber pop,29,0.937117991
@@ -500,7 +500,7 @@ metal,vancouver metal,21,0.91920856
 rock,celtic rock,21,0.927595598
 pop,instrumental bluegrass,21,0.952016152
 metal,uk doom metal,21,0.952603085
-eletronica,brazilian edm,21,0.953548106
+electronica,brazilian edm,21,0.953548106
 country,southern gospel,21,0.962917645
 rock,chicago indie,20,0.923615426
 punk,australian post-punk,20,0.944219853
@@ -556,7 +556,7 @@ pop,scottish new wave,17,0.950856856
 pop,swamp blues,17,0.949911321
 jazz,choral,17,0.939171605
 hip hop,viral rap,17,0.924330764
-eletronica,australian electropop,17,0.9331625
+electronica,australian electropop,17,0.9331625
 r&b,northern soul,17,0.948422925
 pop,opera,17,0.959308851
 pop,italian tenor,17,0.959308851
@@ -603,7 +603,7 @@ pop,experimental vocal,14,0.954362279
 reggae,reggaeton flow,14,0.90527809
 jazz,jazz clarinet,14,0.959512449
 pop,chicago hardcore,14,0.945597585
-eletronica,slovenian electronic,14,0.983597305
+electronica,slovenian electronic,14,0.983597305
 jazz,technical deathcore,14,0.966307514
 pop,irish singer-songwriter,14,0.990619335
 rock,north carolina indie,14,0.953598976
@@ -658,7 +658,7 @@ jazz,jazz drums,12,0.929891303
 metal,latin metal,12,0.945919969
 pop,opm,12,0.964227529
 pop,underground power pop,12,0.930667998
-eletronica,bleep techno,12,0.937742347
+electronica,bleep techno,12,0.937742347
 metal,boston metal,12,0.971098895
 blues,spirituals,12,0.967759509
 pop,icelandic singer-songwriter,12,0.953033692
@@ -726,7 +726,7 @@ metal,turkish death metal,9,0.896537023
 metal,german death metal,9,0.896537023
 jazz,classical trumpet,9,0.964090824
 rock,latin rock,9,0.976933705
-eletronica,pop edm,9,0.973252146
+electronica,pop edm,9,0.973252146
 metal,atlanta metal,9,0.943981952
 rock,south carolina indie,9,0.958939423
 jazz,ska argentino,9,0.975976002
@@ -767,7 +767,7 @@ r&b,p funk,8,0.970744459
 metal,dutch metal,8,0.977314198
 metal,dutch death metal,8,0.977314198
 pop,nederpop,8,0.933210645
-eletronica,swedish electropop,8,0.897192163
+electronica,swedish electropop,8,0.897192163
 reggae,virgin islands reggae,8,0.969887021
 metal,quebec death metal,8,0.973741768
 pop,dark wave,8,0.979552095
@@ -807,7 +807,7 @@ hip hop,mexican hip hop,7,0.968089575
 country,neo-traditional country,7,0.941492228
 punk,boston punk,7,0.964000456
 pop,etherpop,7,0.930371947
-eletronica,electropowerpop,7,0.944794241
+electronica,electropowerpop,7,0.944794241
 rock,quebec indie,7,0.887654298
 rock,baltimore indie,7,0.928512293
 pop,early synthpop,7,0.969140247
@@ -893,7 +893,7 @@ pop,mandopop,5,0.980602861
 pop,one-person band,5,0.937117554
 rock,duluth indie,5,0.959962736
 rock,instrumental stoner rock,5,0.869843213
-eletronica,edmonton indie,5,0.984962855
+electronica,edmonton indie,5,0.984962855
 metal,danish metal,5,0.975878317
 blues,nashville americana,5,0.935852509
 pop,classic swedish pop,5,0.908397807
@@ -949,7 +949,7 @@ rock,ok indie,4,0.910514729
 r&b,synth funk,4,0.849578176
 metal,melodic groove metal,4,0.934488201
 hip hop,brazilian hip hop,4,0.990652515
-eletronica,dutch edm,4,0.861923421
+electronica,dutch edm,4,0.861923421
 hip hop,classic house,4,0.988248631
 jazz,tech house,4,0.968091621
 punk,icelandic post-punk,4,0.937644891
@@ -975,7 +975,7 @@ pop,neo-singer-songwriter,4,0.903082571
 rock,deep groove house,4,0.997258603
 pop,diva house,4,0.99720923
 pop,complextro,4,0.91782636
-eletronica,german techno,4,0.91782636
+electronica,german techno,4,0.91782636
 hip hop,arabic hip hop,4,0.993993953
 pop,paisley underground,4,0.957189238
 rock,canadian garage rock,4,0.925981366
@@ -1013,7 +1013,7 @@ pop,tape club,3,0.944620688
 hip hop,mississippi hip hop,3,0.965737322
 rock,instrumental math rock,3,0.93978235
 jazz,experimental r&b,3,0.858705744
-eletronica,progressive electro house,3,0.972237821
+electronica,progressive electro house,3,0.972237821
 jazz,abstract beats,3,0.828325314
 hip hop,swedish hip hop,3,0.949619866
 punk,texas pop punk,3,0.885042517
@@ -1081,7 +1081,7 @@ rock,liverpool indie,3,0.970435923
 pop,swedish americana,3,0.905135937
 rock,swedish hard rock,3,0.973476831
 religious,christian metal,3,0.99540219
-eletronica,electro-industrial,3,0.995270138
+electronica,electro-industrial,3,0.995270138
 rock,ebm,3,0.995270138
 religious,deep christian rock,3,0.994425864
 pop,anime,3,0.916867689
@@ -1116,7 +1116,7 @@ jazz,scratch,2,0.973327761
 pop,pop romantico,2,0.995300752
 jazz,german jazz rap,2,0.965614466
 jazz,jazz brass,2,0.818505497
-eletronica,proto-techno,2,0.99368916
+electronica,proto-techno,2,0.99368916
 pop,blackened deathcore,2,0.957194213
 pop,brutal deathcore,2,0.957194213
 pop,classic pakistani pop,2,0.947673344
@@ -1126,16 +1126,16 @@ jazz,chinese jazz,2,0.983870449
 jazz,jazz harp,2,0.966637463
 metal,metal guitar,2,0.977443609
 religious,christian power metal,2,0.994939271
-eletronica,polish electronica,2,0.944172026
+electronica,polish electronica,2,0.944172026
 jazz,brazilian modern jazz,2,0.921484228
 jazz,piano mpb,2,0.921484228
 pop,mainland chinese pop,2,0.983870449
 pop,intelligent dance music,2,0.839196884
-eletronica,japanese electronic,2,0.828695852
+electronica,japanese electronic,2,0.828695852
 pop,gospel r&b,2,0.939142351
 jazz,indonesian jazz,2,0.96091789
 jazz,background jazz,2,0.981206596
-eletronica,techno kayo,2,0.99368916
+electronica,techno kayo,2,0.99368916
 metal,german power metal,2,0.864612255
 metal,j-metal,2,0.902707588
 hip hop,deep german hip hop,2,0.922501518
@@ -1173,7 +1173,7 @@ jazz,sound art,2,0.837316747
 rock,neue deutsche harte,2,0.994119782
 reggae,italian reggae,2,0.945840286
 pop,samoan pop,2,0.964469291
-eletronica,electro dub,2,0.975819468
+electronica,electro dub,2,0.975819468
 metal,japanese metalcore,2,0.902707588
 jazz,brass band,2,0.984451493
 rock,ann arbor indie,2,0.977297505
@@ -1190,8 +1190,8 @@ jazz,italian contemporary jazz,2,0.952992094
 blues,memphis americana,2,0.961332798
 rock,san marcos tx indie,2,0.901780528
 rock,fort wayne indie,2,0.979117993
-eletronica,cedm,2,0.937809467
-eletronica,electronic trap,2,0.982615539
+electronica,cedm,2,0.937809467
+electronica,electronic trap,2,0.982615539
 pop,dunedin sound,2,0.869633996
 rock,minneapolis indie,2,0.919536537
 hip hop,nyc rap,2,0.90788804
@@ -1199,7 +1199,7 @@ metal,progressive death metal,2,0.994152046
 pop,classic nz pop,2,0.725802193
 pop,filter house,2,0.859562356
 folk,folktronica,2,0.991477273
-eletronica,minimal techno,2,0.81309828
+electronica,minimal techno,2,0.81309828
 jazz,minimal tech house,2,0.81309828
 pop,minecraft,2,0.946128974
 jazz,rumba,2,0.989254385
@@ -1231,7 +1231,7 @@ hip hop,lo-fi rap,2,0.985330653
 pop,cello,2,0.909096468
 jazz,detroit house,2,0.816136023
 pop,banda,2,0.94942796
-eletronica,canadian electropop,2,0.987227774
+electronica,canadian electropop,2,0.987227774
 rock,mexican rock-and-roll,2,0.941466884
 folk,swedish indie folk,2,0.970257274
 pop,australian alternative pop,2,0.977235733
@@ -1347,7 +1347,7 @@ hip hop,rap francais,1,0.937819162
 hip hop,zouk riddim,1,0.937819162
 hip hop,italian hip hop,1,0.941664101
 pop,kaneka,1,0.935179422
-eletronica,hardcore techno,1,0.884669197
+electronica,hardcore techno,1,0.884669197
 hip hop,london rap,1,0.796922521
 hip hop,aussie drill,1,0.796922521
 hip hop,hindi hip hop,1,0.692612453
@@ -1366,7 +1366,7 @@ hip hop,rap nacional antigo,1,0.995488722
 r&b,funk ostentacao,1,0.995488722
 rock,leipzig indie,1,0.951034131
 hip hop,gospel rap,1,0.972982047
-eletronica,destroy techno,1,0.998538012
+electronica,destroy techno,1,0.998538012
 hip hop,banda caliente,1,0.924371052
 rock,brisbane indie,1,0.997866287
 pop,israeli pop,1,0.938962419
@@ -1376,10 +1376,10 @@ rock,brazilian indie,1,0.973563393
 hip hop,afrofuturismo brasileiro,1,0.973563393
 blues,japanese psychedelic,1,0.98245614
 r&b,bedroom soul,1,0.997643362
-eletronica,deep pop edm,1,0.954286909
+electronica,deep pop edm,1,0.954286909
 rock,norwegian indie,1,0.940627951
 hip hop,san diego rap,1,0.998577525
-eletronica,indie electropop,1,0.98651833
+electronica,indie electropop,1,0.98651833
 hip hop,asian american hip hop,1,0.894907287
 pop,vapor pop,1,0.977289492
 pop,teen pop,1,0.964375142
@@ -1414,7 +1414,7 @@ hip hop,old school rap francais,1,0.993927125
 pop,nigerian pop,1,0.950923231
 metal,virginia metal,1,0.998695085
 pop,environmental,1,0.995215311
-eletronica,electroclash,1,0.996963563
+electronica,electroclash,1,0.996963563
 pop,balkan brass,1,0.997643362
 rock,croatian rock,1,0.997643362
 jazz,german boom bap,1,0.997368421
@@ -1465,14 +1465,14 @@ metal,dub metal,1,0.986842105
 metal,drone metal,1,0.986842105
 rock,rock in opposition,1,0.805291607
 jazz,mandible,1,0.960315389
-eletronica,indie electronica,1,0.960315389
+electronica,indie electronica,1,0.960315389
 jazz,glitch,1,0.960315389
-eletronica,electroacoustic improvisation,1,0.960315389
+electronica,electroacoustic improvisation,1,0.960315389
 rock,dunedin indie,1,0.743535418
 jazz,japanese idm,1,0.718078378
 jazz,cumbia,1,0.963480711
 jazz,j-ambient,1,0.718078378
-eletronica,dub techno,1,0.718078378
+electronica,dub techno,1,0.718078378
 pop,cancion melodica,1,0.993135011
 jazz,abstract,1,0.718078378
 metal,technical melodic death metal,1,0.996963563
@@ -1491,13 +1491,13 @@ jazz,arabic jazz,1,0.977005872
 jazz,bass music,1,0.905155279
 jazz,experimental jazz,1,0.929588253
 jazz,latin soundtrack,1,0.956552203
-eletronica,detroit techno,1,0.879480978
+electronica,detroit techno,1,0.879480978
 jazz,sambass,1,0.749583057
 jazz,audiophile vocal,1,0.996052631
-eletronica,techno,1,0.879480978
+electronica,techno,1,0.879480978
 jazz,j-pixie,1,0.937795354
 jazz,danish modern jazz,1,0.995356037
-eletronica,russian edm,1,0.993927125
+electronica,russian edm,1,0.993927125
 reggae,traditional reggae,1,0.937628931
 jazz,mallet,1,0.921052632
 punk,french punk,1,0.996052631
@@ -1548,7 +1548,7 @@ pop,american shoegaze,1,0.986842105
 jazz,classic soundtrack,1,0.962808253
 jazz,french soundtrack,1,0.962808253
 reggae,psychill,1,0.880307969
-eletronica,nz electronic,1,0.880307969
+electronica,nz electronic,1,0.880307969
 pop,latin talent show,1,0.996963563
 religious,reggaeton cristiano,1,0.996240601
 religious,rap cristiano,1,0.996240601

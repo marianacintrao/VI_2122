@@ -76,7 +76,7 @@ for index, row in genres_df.iterrows():
 
     #-- eletronic --#
     if "electro" in specific or "techno" in specific or "edm" in specific:
-        genres_df.at[index, "main_genre"] = "eletronica"
+        genres_df.at[index, "main_genre"] = "electronica"
 
     #-- r&b --#
     if "soul" in specific or "funk" in specific or "doo-wop" in specific or "blues" in specific:

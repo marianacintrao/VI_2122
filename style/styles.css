@@ -1,18 +1,18 @@
 body {
     background-color: #1d1e23;
     /* overflow-x: hidden */
+	font-family: "Lucida Console", "Courier New", monospace;
 }
 
 h1 {
     color: #fafcfb;
     text-align: center;
-    font-family: "Lucida Console", "Courier New", monospace;
 }
 
 h2 {
     color: #fafcfb;
     text-align: center;
-    font-family: "Lucida Console", "Courier New", monospace;
+    /* font-family: "Lucida Console", "Courier New", monospace; */
     font-size: 15px;
 }
 
@@ -38,7 +38,7 @@ h2 {
 
 #tooltip p {
     margin: 0;
-    font-family: sans-serif;
-    font-size: 16px;
-    line-height: 20px;
+    /* font-family: sans-serif; */
+    font-size: 14px;
+    /* line-height: 20px; */
 }
