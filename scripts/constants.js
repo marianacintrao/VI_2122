@@ -1,24 +1,27 @@
 // set the dimensions and margins of the graph
 const margin = {top: 30, right: 50, bottom: 10, left: 50},
     width = document.body.scrollWidth - margin.left - margin.right,
-    height = 275 - margin.top - margin.bottom;
+    height = document.body.scrollHeight * 2,
+    lineOpacity = "0.3",
+    lineWidth = "3",
+    parallelCoordMaxScale = 0.5;
     
-const _white = "#fafcfb";
-const _grey = "#a9a9a9";
-const _red = "#e6194B";
-const _pink = "#fabed4";
+const _white = "#fafcfb",
+    _grey = "#a9a9a9",
+    _red = "#e6194B",
+    _pink = "#fabed4",
+    _lavender = "#dcbeff",
+    _orange = "#f58231",
+    _purple = "#911eb4",
+    _lime = "#bfef45",
+    _olive = "#808000",
+    _green = "#3cb44b",
+    _yellow = "#ffe119",
+    _blue = "#4363d8",
+    _magenta = "#f032e6",
+    _teal = "#469990",
+    _cyan = "#42d4f4";
 // const _navy = "#000075";
-const _lavender = "#dcbeff";
-const _orange = "#f58231";
-const _purple = "#911eb4";
-const _lime = "#bfef45";
-const _olive = "#808000";
-const _green = "#3cb44b";
-const _yellow = "#ffe119";
-const _blue = "#4363d8";
-const _magenta = "#f032e6";
-const _teal = "#469990";
-const _cyan = "#42d4f4";
 
 const genres_dict = {
 	"rock" : "Rock",
@@ -41,7 +44,7 @@ const attributes = {
     "violence" : "Violence",
     "world/life" : "Life",
     "night/time" : "Time",
-    "shake the audience" : "Shake the Audience",
+    "shake the audience" : "Audience",
     "family/gospel" : "Family",
     "romantic" : "Romantic",
     "communication" : "Communication",
@@ -53,10 +56,4 @@ const attributes = {
     "like/girls" : "Girls",
     "sadness" : "Sadness",
     "feelings" : "Feelings",
-    "danceability" : "Danceability",
-    "loudness" : "Loudness",
-    "acousticness" : "Acousticness",
-    "instrumentalness" : "Instrumentalness",
-    "valence" : "Valence",
-    "energy" : "Energy"
 }

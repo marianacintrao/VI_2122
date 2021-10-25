@@ -1,17 +1,16 @@
+function ParallelCoordinatesChart(id, data) {
 // append the svg object to the body of the page
-var svg = d3.select("#parallelCoordinates")
-    .append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
-    .append("g")
-    .attr("transform", `translate(${margin.left},${margin.top})`);
+    var svg = d3.select(id)
+        .append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", `translate(${margin.left},${margin.top})`);
 
-// Parse the Data
-d3.csv("datasets/themes_by_main_genre.csv").then(function(data) {
-    // Color scale: give me a specie name, I return a color
+
     const color = d3.scaleOrdinal()
-        .domain(["rock", "pop", "jazz", "country", "rnb",   "hiphop", "reggae", "folk", "metal", "blues", "punk",   "electronica", "religious"])
-        .range([ _red,   _pink, _lavender,  _orange,   _purple, _lime,    _olive,   _green, _yellow, _blue,   _magenta, _teal,         _cyan])
+        .domain(["rock", "pop", "jazz",    "country", "rnb",   "hiphop", "reggae", "folk", "metal", "blues", "punk",   "electronica", "religious"])
+        .range([ _red,   _pink, _lavender, _orange,   _purple, _lime,    _olive,   _green, _yellow, _blue,   _magenta, _teal,         _cyan])
 
     // Here I set the list of dimension manually to control the order of axis:
     dimensions = ["dating", "violence", "world/life", "night/time", "shake the audience", "family/gospel", "romantic", "communication", "obscene", "music", "movement/places", "light/visual perceptions", "family/spiritual", "like/girls", "sadness", "feelings"]
@@ -20,7 +19,7 @@ d3.csv("datasets/themes_by_main_genre.csv").then(function(data) {
     for (i in dimensions) {
         name = dimensions[i]
         y[name] = d3.scaleLinear()
-            .domain([0, 0.5])
+            .domain([0, parallelCoordMaxScale])
             .range([height, 0])
     }
 
@@ -37,15 +36,18 @@ d3.csv("datasets/themes_by_main_genre.csv").then(function(data) {
         d3.selectAll(".line")
             // .transition().duration(200)
             .style("stroke", _grey)
-            .style("stroke-width", "3")
-            .style("opacity", "0.3")
-    
-    	// Second the hovered specie takes its color
+            .style("stroke-width", lineWidth)
+            .style("opacity", lineOpacity)
+            
+        // Second the hovered specie takes its color
         d3.selectAll("." + selected_genre)
             .transition().duration(200)
             .style("stroke", color(selected_genre))
+            .style("stroke-width", lineWidth)
             .style("opacity", "1")
-          
+        // Bring line forward (for better visibility)
+        d3.select(this).moveToFront();
+            
         // Tooltip
         d3.select("#tooltip")
         .style("left", event.pageX + "px")
@@ -55,14 +57,15 @@ d3.csv("datasets/themes_by_main_genre.csv").then(function(data) {
         .select("#value")
         .text(genres_dict[d.main_genre]);
     }
-
-  	// Unhighlight
+    
+    // Unhighlight
     const doNotHighlight = function(event, d) {
         d3.selectAll(".line")
-            // .transition().duration(200)
-            .style("stroke", _grey)
-            // .style("stroke", function(d) { return( color(d.main_genre))} )
-            .style("opacity", "0.3")
+        // .transition().duration(200)
+        .style("stroke", _grey)
+        // .style("stroke", function(d) { return( color(d.main_genre))} )
+        .style("stroke-width", lineWidth)
+        .style("opacity", lineOpacity)
 
         // Hide the tooltip
         d3.select("#tooltip")
@@ -99,7 +102,7 @@ d3.csv("datasets/themes_by_main_genre.csv").then(function(data) {
         .text(function(d) { return attributes[d]; })
         .style("fill", _white)
     
-  // Draw the lines
+    // Draw the lines
     svg
         .selectAll("myPath")
         .data(data)
@@ -109,8 +112,14 @@ d3.csv("datasets/themes_by_main_genre.csv").then(function(data) {
         .attr("d", path)
         .style("fill", "none")
         .style("stroke", _grey)
-        .style("stroke-width", "3")
-        .style("opacity", "0.5")
+        .style("stroke-width", lineWidth)
+        .style("opacity", lineOpacity)
         .on("mouseover", highlight)
         .on("mouseleave", doNotHighlight)
-})
+}
+
+d3.selection.prototype.moveToFront = function() {
+    return this.each(function(){
+    this.parentNode.appendChild(this);
+    });
+};

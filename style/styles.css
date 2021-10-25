@@ -16,6 +16,11 @@ h2 {
     font-size: 15px;
 }
 
+
+/*====================================*/
+/*============  Tooltip  =============*/
+/*====================================*/
+
 #tooltip {
     position: absolute;
     width: auto;
@@ -33,7 +38,7 @@ h2 {
 }
 
 #tooltip.hidden {
-	opacity: 0;
+    opacity: 0;
 }
 
 #tooltip p {
@@ -41,4 +46,13 @@ h2 {
     /* font-family: sans-serif; */
     font-size: 14px;
     /* line-height: 20px; */
+}
+
+/*====================================*/
+/*==========  Radar CHart  ===========*/
+/*====================================*/
+
+.legend {
+    font-family: 'Raleway', sans-serif;
+    fill: #333333;
 }
