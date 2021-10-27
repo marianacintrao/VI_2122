@@ -1,4 +1,4 @@
-function ParallelCoordinatesChart(id, data) {
+function ParallelCoordinatesChart(id, data, update) {
 // append the svg object to the body of the page
     var svg = d3.select(id)
         .append("svg")
