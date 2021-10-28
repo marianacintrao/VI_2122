@@ -9,9 +9,9 @@ function ParallelCoordinatesChart(id, data, update) {
 
 
     const color = d3.scaleOrdinal()
-        .domain(["rock", "pop", "jazz",    "country", "rnb",   "hiphop", "reggae", "folk", "metal", "blues", "punk",   "electronica", "religious"])
-        .range([ _red,   _pink, _lavender, _orange,   _purple, _lime,    _olive,   _green, _yellow, _blue,   _magenta, _teal,         _cyan])
-
+    .domain(["rock", "pop", "jazz",    "country", "rnb",   "hiphop", "reggae", "folk", "metal", "blues", "punk",   "electronica", "religious"])
+    .range([ _red,   _pink, _lavender, _orange,   _purple, _lime,    _olive,   _green, _yellow, _blue,   _magenta, _teal,         _cyan])
+              
     // Here I set the list of dimension manually to control the order of axis:
     dimensions = ["dating", "violence", "world/life", "night/time", "shake the audience", "family/gospel", "romantic", "communication", "obscene", "music", "movement/places", "light/visual perceptions", "family/spiritual", "like/girls", "sadness", "feelings"]
     // For each dimension, I build a linear scale. I store all in a y object
@@ -60,7 +60,7 @@ function ParallelCoordinatesChart(id, data, update) {
     
     // Unhighlight
     const doNotHighlight = function(event, d) {
-        d3.selectAll(".line")
+        d3.selectAll(".parallelCoordLine")
         // .transition().duration(200)
         .style("stroke", _grey)
         // .style("stroke", function(d) { return( color(d.main_genre))} )
@@ -108,7 +108,7 @@ function ParallelCoordinatesChart(id, data, update) {
         .data(data)
         .enter()
         .append("path")
-        .attr("class", function (d) { return "line " + d.main_genre } )
+        .attr("class", function (d) { return "parallelCoordLine " + d.main_genre } )
         .attr("d", path)
         .style("fill", "none")
         .style("stroke", _grey)
