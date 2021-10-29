@@ -20,7 +20,7 @@ function ParallelCoordinatesChart(id, data, update) {
         name = dimensions[i]
         y[name] = d3.scaleLinear()
             .domain([0, parallelCoordMaxScale])
-            .range([height, 0])
+            .range([height / 5, 0])
     }
 
     // Build the X scale -> it find the best position for each Y axis

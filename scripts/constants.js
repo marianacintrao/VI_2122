@@ -1,11 +1,12 @@
 // set the dimensions and margins of the graph
 const margin = {top: 30, right: 50, bottom: 10, left: 50},
     width = document.body.scrollWidth - margin.left - margin.right,
-    height = document.body.scrollHeight * 2,
+    height = window.screen.height,
     lineOpacity = "0.3",
     lineWidth = "3",
     parallelCoordMaxScale = 0.5;
-    
+
+    console.log(height);
 const _white = "#fafcfb",
     _grey = "#a9a9a9",
     _red = "#e6194B",

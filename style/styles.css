@@ -1,6 +1,7 @@
 body {
     background-color: #1d1e23;
-    /* overflow-x: hidden */
+    overflow-x: hidden;
+    overflow-y: hidden;
 	font-family: "Lucida Console", "Courier New", monospace;
 }
 
@@ -14,6 +15,12 @@ h2 {
     text-align: center;
     /* font-family: "Lucida Console", "Courier New", monospace; */
     font-size: 15px;
+}
+
+#searchbar {
+    position: absolute;
+    left: 50%;
+    top: 20%;
 }
 
 
