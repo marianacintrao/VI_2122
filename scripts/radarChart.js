@@ -26,6 +26,10 @@ var radarCfg = {
 function searchBar() {
     var artist = document.getElementById("searchbarvalue").value.toLowerCase();
 
+    let color = radarCfg.defaultColor;
+    d3.select("#searchbar").append('ul');
+    var ul = d3.select('ul');
+
     var radius = Math.min(radarCfg.w/2, radarCfg.h/2),
         maxValue = radarCfg.maxValue;
 
@@ -42,6 +46,20 @@ function searchBar() {
 
     data = data_themes_by_artist.filter(function (d) {
         if (d.artist_name == artist) {
+            ul.append('li')
+            .text(d.artist_name)
+            .style('color', _white)
+            .on("click", function() {
+                d3.select(this).remove();
+                d3.selectAll("path.path_" + d.artist_name.replace(/ /g,".")).remove();
+                d3.selectAll("g.g_" + d.artist_name.replace(/ /g,".")).remove();
+            })
+            .on("mouseover", function() {
+                d3.selectAll("path.path_" + d.artist_name.replace(/ /g,".")).style("fill", _purple);
+            })
+            .on("mouseleave", function() {
+                d3.selectAll("path.path_" + d.artist_name.replace(/ /g,".")).style("fill", color);
+            });
             return d;
         }
     });
@@ -78,7 +96,6 @@ function searchBar() {
 
     for (var i = 0; i < data.length; i ++) {
         let d = data[i];
-        let color = radarCfg.defaultColor;
         let coordinates = getPathCoordinates(d);
         console.log(coordinates);
         //draw the path element
@@ -92,7 +109,7 @@ function searchBar() {
             .attr("fill-opacity", radarCfg.shapeOpacity)
             .attr("stroke-opacity", radarCfg.lineOpacity)
             .on("mouseover", function() {
-                d3.select(this).style("fill", "red");
+                d3.select(this).style("fill", _purple);
             })
             .on("mouseleave", function() {
                 d3.select(this).style("fill", color);
@@ -100,6 +117,7 @@ function searchBar() {
             
             svg
             .append("g")
+            .attr("class", "g_" + artist)
             .attr("fill", color)
             .selectAll("circle")
             .data(coordinates)
@@ -237,7 +255,7 @@ function RadarChart(id, data, update) {
                 .attr("fill-opacity", radarCfg.shapeOpacity)
                 .attr("stroke-opacity", radarCfg.lineOpacity)
                 .on("mouseover", function() {
-                    d3.select(this).style("fill", "red");
+                    d3.select(this).style("fill", _purple);
                 })
                 .on("mouseleave", function() {
                     d3.select(this).style("fill", color);
