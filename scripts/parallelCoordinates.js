@@ -1,9 +1,10 @@
 function changeParallelCoorAxisColor(at_name, col) {
-    d3.selectAll("#parallel-coor-axis_" + at_name)
+    d3
+        .selectAll("#parallel-coor-axis_" + at_name)
         .style("color", col);
-    d3.selectAll("#parallel-coor-text_" + at_name)
+    d3
+        .selectAll("#parallel-coor-text_" + at_name)
         .style("fill", col);
-    
 }
 
 function ParallelCoordinatesChart(id, data, update) {
@@ -110,7 +111,7 @@ function ParallelCoordinatesChart(id, data, update) {
                 .scale(y[d])
             )
             // Axis and axis values color
-            .style("font-family", "Lucida Console")
+            .style("font-family", "Lato")
             .style("color", _grey)
             .on("mouseover", function(d) {
                 changeParallelCoorAxisColor(this.getAttribute("name"), _white);
@@ -124,7 +125,7 @@ function ParallelCoordinatesChart(id, data, update) {
         .append("text")
             .attr("id", function(i) { return "parallel-coor-text_" + attributes[i]; })
             .style("text-anchor", "middle")
-            .style("font-family", "Lucida Console")
+            .style("font-family", "Lato")
             .attr("y", -9)
             .on("mouseover", function(d) {
                 changeParallelCoorAxisColor(attributes[d], _white);

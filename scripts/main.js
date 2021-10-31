@@ -8,6 +8,16 @@ var default_theme_average = "https://raw.githubusercontent.com/marianacintrao/VI
 
 var data_themes_by_artist;
 
+//enter input
+var input = document.getElementById("searchbarvalue");
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   searchBar();
+  }
+});
+
+
 Promise
     .all([
         d3.csv(themes_by_main_genre),
