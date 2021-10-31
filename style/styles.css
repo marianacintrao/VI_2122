@@ -43,7 +43,7 @@ h2 {
     padding: 10px; */
 }
 
-/*.searchbarvalue {
+.searchbarvalue {
     color: white;
     border: 0;
     outline: 0;
@@ -52,7 +52,8 @@ h2 {
     caret-color:transparent;
     line-height: 40px;
     transition: width 0.4s linear;
-}*/
+
+}
 
 button {
     width: auto;
@@ -102,19 +103,20 @@ li {
 
 }
 
-.axisHighlight {
-    fill: #911eb4;
-    stroke: #911eb4;
+.radarAxisHighlight {
+    color: white;
+    fill: white;
+    /* stroke: #911eb4; */
 }
 
 
 .radarShapeHighlight {
-    fill-opacity: 1;
+    /* fill-opacity: 1; */
     fill: white;
     stroke: white;
     opacity: 1;
-    fill: #911eb4;
-    stroke: #911eb4;
+    /* fill: green;
+    stroke: green; */
 }
 /*====================================*/
 /*============  Tooltip  =============*/

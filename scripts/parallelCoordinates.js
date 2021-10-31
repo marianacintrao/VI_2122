@@ -1,6 +1,9 @@
 function changeParallelCoorAxisColor(at_name, col) {
-    d3.selectAll("#parallel-coor-axis_" + attributes[at_name])
+    d3.selectAll("#parallel-coor-axis_" + at_name)
         .style("color", col);
+    d3.selectAll("#parallel-coor-text_" + at_name)
+        .style("fill", col);
+    
 }
 
 function ParallelCoordinatesChart(id, data, update) {
@@ -37,6 +40,9 @@ function ParallelCoordinatesChart(id, data, update) {
 
     // Highlight the specie that is hovered
     const highlight = function(event, d) {
+        console.log("inicio de pc")
+        console.log(d)
+        console.log("fim de pc")
         selected_genre = d.main_genre
 
         // first every group turns grey
@@ -48,7 +54,6 @@ function ParallelCoordinatesChart(id, data, update) {
             
         // Second the hovered specie takes its color
         d3.selectAll("." + selected_genre)
-            .transition().duration(200)
             .style("stroke", color(selected_genre))
             .style("stroke-width", lineWidth)
             .style("opacity", "1")
@@ -63,20 +68,24 @@ function ParallelCoordinatesChart(id, data, update) {
         .style("background-color", color(selected_genre))
         .select("#value")
         .text(genres_dict[d.main_genre]);
+
+        addRadarArea(d, "parallel", color(selected_genre));
     }
     
     // Unhighlight
     const doNotHighlight = function(event, d) {
         d3.selectAll(".parallelCoordLine")
-        // .transition().duration(200)
         .style("stroke", _grey)
-        // .style("stroke", function(d) { return( color(d.main_genre))} )
         .style("stroke-width", lineWidth)
         .style("opacity", lineOpacity)
 
         // Hide the tooltip
         d3.select("#tooltip")
             .style("opacity", 0);
+
+        // Remove radar area
+        d3.selectAll("#path-hovered_" + "parallel").remove();
+        d3.selectAll("#g-hovered_" + "parallel").remove();
     }
 
     // The path function take a row of the csv as input, and return x and y coordinates of the line to draw for this raw.
@@ -102,41 +111,31 @@ function ParallelCoordinatesChart(id, data, update) {
             )
             // Axis and axis values color
             .style("font-family", "Lucida Console")
-            .style("color", _white)
+            .style("color", _grey)
             .on("mouseover", function(d) {
-                d3
-                    .select(this)
-                    .style("color", _olive)
-                changeRadarAxisColor(this.getAttribute("name"), _olive);
-                d3
-                    .selectAll("#parallel-coor-text_" + this.getAttribute("name"))
-                    .style("fill", _olive);
+                changeParallelCoorAxisColor(this.getAttribute("name"), _white);
+                changeRadarAxisColor(this.getAttribute("name"), _white);
             })
             .on("mouseleave", function(d) {
-                d3
-                    .select(this)
-                    .style("color", _white);
-                changeRadarAxisColor(this.getAttribute("name"), _white);
-                d3
-                    .selectAll("#parallel-coor-text_" + this.getAttribute("name"))
-                    .style("fill", _white);
+                changeParallelCoorAxisColor(this.getAttribute("name"), _grey);
+                changeRadarAxisColor(this.getAttribute("name"), _grey);
             })
         })
         .append("text")
-        .attr("id", function(i) { return "parallel-coor-text_" + attributes[i]; })
-        .style("text-anchor", "middle")
-        .style("font-family", "Lucida Console")
-        .attr("y", -9)
-        .on("mouseover", function(d) {
-            d3.select(this).style("fill", _olive);
-            changeRadarAxisColor(attributes[d], _olive);
-        })
-        .on("mouseleave", function(d) {
-            d3.select(this).style("fill", _white);
-            changeRadarAxisColor(attributes[d], _white);
-        })
-        .text(function(d) { return attributes[d]; })
-        .style("fill", _white)
+            .attr("id", function(i) { return "parallel-coor-text_" + attributes[i]; })
+            .style("text-anchor", "middle")
+            .style("font-family", "Lucida Console")
+            .attr("y", -9)
+            .on("mouseover", function(d) {
+                changeParallelCoorAxisColor(attributes[d], _white);
+                changeRadarAxisColor(attributes[d], _white);
+            })
+            .on("mouseleave", function(d) {
+                changeParallelCoorAxisColor(attributes[d], _grey);
+                changeRadarAxisColor(attributes[d], _grey);
+            })
+            .text(function(d) { return attributes[d]; })
+            .style("fill", _grey)
 
     // Draw the lines
     svg
@@ -151,5 +150,6 @@ function ParallelCoordinatesChart(id, data, update) {
         .style("stroke-width", lineWidth)
         .style("opacity", lineOpacity)
         .on("mouseover", highlight)
+        // .on("mouseover", function (d) { highlight })
         .on("mouseleave", doNotHighlight)
 }
