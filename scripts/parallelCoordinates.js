@@ -1,19 +1,26 @@
+function changeParallelCoorAxisColor(at_name, col) {
+    d3.selectAll("#parallel-coor-axis_" + attributes[at_name])
+        .style("color", col);
+}
+
 function ParallelCoordinatesChart(id, data, update) {
 // append the svg object to the body of the page
     var svg = d3.select(id)
         .append("svg")
         .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
+        .attr("height", height / 4)
         .append("g")
         .attr("transform", `translate(${margin.left},${margin.top})`);
 
 
-    const color = d3.scaleOrdinal()
-    .domain(["rock", "pop", "jazz",    "country", "rnb",   "hiphop", "reggae", "folk", "metal", "blues", "punk",   "electronica", "religious"])
-    .range([ _red,   _pink, _lavender, _orange,   _purple, _lime,    _olive,   _green, _yellow, _blue,   _magenta, _teal,         _cyan])
+    const color = d3
+        .scaleOrdinal()
+        .domain(["rock", "pop", "jazz",    "country", "rnb",   "hiphop", "reggae", "folk", "metal", "blues", "punk",   "electronica", "religious"])
+        .range([ _red,   _pink, _lavender, _orange,   _purple, _lime,    _olive,   _green, _yellow, _blue,   _magenta, _teal,         _cyan])
               
     // Here I set the list of dimension manually to control the order of axis:
     dimensions = ["dating", "violence", "world/life", "night/time", "shake the audience", "family/gospel", "romantic", "communication", "obscene", "music", "movement/places", "light/visual perceptions", "family/spiritual", "like/girls", "sadness", "feelings"]
+    
     // For each dimension, I build a linear scale. I store all in a y object
     const y = {}
     for (i in dimensions) {
@@ -78,10 +85,13 @@ function ParallelCoordinatesChart(id, data, update) {
     }
 
     // Draw the axis:
-    svg.selectAll("myAxis")
+    svg
+        .selectAll("myAxis")
         .data(dimensions).enter()
         .append("g")
         .attr("class", "axis")
+        .attr("id", function(i) { return "parallel-coor-axis_" + attributes[i]; })
+        .attr("name", function(i) { return attributes[i]; })
         .attr("transform", function(d) { return `translate(${x(d)})`})
         .each(function(d) { d3
             .select(this)
@@ -93,15 +103,41 @@ function ParallelCoordinatesChart(id, data, update) {
             // Axis and axis values color
             .style("font-family", "Lucida Console")
             .style("color", _white)
+            .on("mouseover", function(d) {
+                d3
+                    .select(this)
+                    .style("color", _olive)
+                changeRadarAxisColor(this.getAttribute("name"), _olive);
+                d3
+                    .selectAll("#parallel-coor-text_" + this.getAttribute("name"))
+                    .style("fill", _olive);
+            })
+            .on("mouseleave", function(d) {
+                d3
+                    .select(this)
+                    .style("color", _white);
+                changeRadarAxisColor(this.getAttribute("name"), _white);
+                d3
+                    .selectAll("#parallel-coor-text_" + this.getAttribute("name"))
+                    .style("fill", _white);
+            })
         })
-        // Axis titles
         .append("text")
+        .attr("id", function(i) { return "parallel-coor-text_" + attributes[i]; })
         .style("text-anchor", "middle")
         .style("font-family", "Lucida Console")
         .attr("y", -9)
+        .on("mouseover", function(d) {
+            d3.select(this).style("fill", _olive);
+            changeRadarAxisColor(attributes[d], _olive);
+        })
+        .on("mouseleave", function(d) {
+            d3.select(this).style("fill", _white);
+            changeRadarAxisColor(attributes[d], _white);
+        })
         .text(function(d) { return attributes[d]; })
         .style("fill", _white)
-    
+
     // Draw the lines
     svg
         .selectAll("myPath")
@@ -117,9 +153,3 @@ function ParallelCoordinatesChart(id, data, update) {
         .on("mouseover", highlight)
         .on("mouseleave", doNotHighlight)
 }
-
-d3.selection.prototype.moveToFront = function() {
-    return this.each(function(){
-    this.parentNode.appendChild(this);
-    });
-};

@@ -7,22 +7,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Is Sad Music Really That Sad?</title>
         <script src="https://d3js.org/d3.v7.min.js"></script>
-        <link rel="stylesheet" href="style/styles.css" />
+        <link rel="stylesheet" href="style/styles.css"/>
     </head>
     <body>
         <h1>IS SAD MUSIC REALLY THAT SAD?</h1>
-        <h2>an exploration of music genres and their lyrical content</h2>
         <div id="tooltip" class="hidden">
             <p><span id="value"></span></p>
         </div>
         <div id="circularPacking"></div>
+        <div id="radarChart"></div>
         <div id="searchbar">
             <input type="text" id="searchbarvalue">
             <br><br>
             <button type="button" onclick="searchBar()">Search artist</button>
         </div>
-        <!-- <input type="text" name="usrname" value="initial value"> -->
-        <div id="radarChart"></div>
         <div id="parallelCoordinates"></div>
     </body> 
     <script

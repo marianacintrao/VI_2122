@@ -1,13 +1,19 @@
 body {
     background-color: #1d1e23;
     overflow-x: hidden;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 	font-family: "Lucida Console", "Courier New", monospace;
+    padding: 0;
 }
 
 h1 {
     color: #fafcfb;
     text-align: center;
+    background-color: none;
+    background: none;
+    margin: 0;
+    /* position: absolute; */
+    /* z-index: -1; */
 }
 
 h2 {
@@ -21,7 +27,32 @@ h2 {
     position: absolute;
     left: 50%;
     top: 20%;
+    background-color: #1d1e23;
+    stroke: #fafcfb;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    padding: 10px;
+
+    /* margin-bottom: auto;
+    margin-top: auto;
+    height: 60px;
+    background-color: #353b48;
+    border-radius: 30px;
+    padding: 10px; */
 }
+
+/*.searchbarvalue {
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+}*/
 
 button {
     width: auto;
@@ -35,7 +66,56 @@ button {
     font-family: "Lucida Console", "Courier New", monospace;
 }
 
+ul {
+    margin-left: 0; 
+    padding-left: 0;
+}
 
+li {
+    list-style-type: none;
+    cursor: pointer;
+}
+
+
+#radarChart {
+    padding: 0;
+    margin: 0;
+}
+
+#radarChart svg {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    display: block;
+    margin: auto;
+}
+
+#parallelCoordinates {
+    height: 100%;
+    bottom:0;
+
+}
+
+#parallelCoordinates svg {
+    height: 100%;
+    bottom:0;
+
+}
+
+.axisHighlight {
+    fill: #911eb4;
+    stroke: #911eb4;
+}
+
+
+.radarShapeHighlight {
+    fill-opacity: 1;
+    fill: white;
+    stroke: white;
+    opacity: 1;
+    fill: #911eb4;
+    stroke: #911eb4;
+}
 /*====================================*/
 /*============  Tooltip  =============*/
 /*====================================*/

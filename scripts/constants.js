@@ -6,7 +6,6 @@ const margin = {top: 30, right: 50, bottom: 10, left: 50},
     lineWidth = "3",
     parallelCoordMaxScale = 0.5;
 
-    console.log(height);
 const _white = "#fafcfb",
     _grey = "#a9a9a9",
     _red = "#e6194B",
@@ -58,3 +57,9 @@ const attributes = {
     "sadness" : "Sadness",
     "feelings" : "Feelings",
 }
+
+d3.selection.prototype.moveToFront = function() {
+    return this.each(function(){
+    this.parentNode.appendChild(this);
+    });
+};
