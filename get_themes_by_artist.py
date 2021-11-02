@@ -8,7 +8,9 @@ artist_emotion_df.drop(['len','age'], axis=1, inplace=True)
 
 #-- remove irrelevant columns --#
 
-artist_emotion_df.drop(['Unnamed: 0','track_name','release_date','topic', 'lyrics','genre'], axis=1, inplace=True)
+artist_emotion_df.drop(['Unnamed: 0','track_name','release_date','topic', 'lyrics'], axis=1, inplace=True)
+
+artist_emotion_df.rename(columns={'genre': 'specific_genre'}, inplace=True)
 
 artist_emotion_df['occurrences'] = artist_emotion_df['artist_name'].map(artist_emotion_df['artist_name'].value_counts())
 

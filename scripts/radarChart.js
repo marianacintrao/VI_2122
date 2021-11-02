@@ -37,7 +37,7 @@ function changeRadarAxisColor(at_name, col) {
 function getPathCoordinates(data_point) {
     let coordinates = [];
     let length = Object.keys(attributes).length;
-    for (let i = 0; i < length; i++){
+    for (let i = 0; i < length; i++) {
         let at_name = Object.keys(attributes)[i];
         let angle = (Math.PI / 2) + (2 * Math.PI * i / length);
         let value = data_point[at_name];
@@ -46,10 +46,10 @@ function getPathCoordinates(data_point) {
             maxValue = value;
         }
     }
-    let at_name = Object.keys(attributes)[0];
-    let angle = (Math.PI / 2) + (2 * Math.PI * i / length);
-    let value = data_point[at_name];
-    coordinates.push(angleToCoordinate(angle, value));
+    // let at_name = Object.keys(attributes)[0];
+    // let angle = (Math.PI / 2) + (2 * Math.PI * i / length);
+    // let value = data_point[at_name];
+    // coordinates.push(angleToCoordinate(angle, value));
     return coordinates;
 }
 
@@ -74,43 +74,43 @@ function addRadarArea(data, hovered_genre, color) {
    ///// Draw the path element /////
     svg
         .append("path")
-        .datum(coordinates)
-        .attr("d", line)
-        .attr("id", "path-hovered_" + hovered_genre)
-        .attr("class", "radar-chart-path_" + hovered_genre)
-        .attr("stroke-width", 1)
-        .attr("stroke", color)
-        .attr("fill", color)
-        .attr("fill-opacity", radarCfg.shapeOpacity)
-        .attr("stroke-opacity", radarCfg.lineOpacity)
-        .on("mouseover", function() {
-            d3.select(this)
-                .moveToFront()
-                .classed("radarShapeHighlight", true);
-            d3.select(".radar-chart-g_" + d.artist_name.replace(/ /g,"."))
-                .moveToFront()
-                .classed("radarDotsHighlight", true);   
-        })
-        .on("mouseleave", function() {
-            d3.select(this)
-                .classed("radarShapeHighlight", false);
-            d3.select(".radar-chart-g_" + d.artist_name.replace(/ /g,"."))
-                .moveToFront()
-                .classed("radarDotsHighlight", false);                
-        })
+            .datum(coordinates)
+            .attr("d", line)
+            .attr("id", "path-hovered_" + hovered_genre)
+            .attr("class", "radar-chart-path_" + hovered_genre)
+            .attr("stroke-width", 1)
+            .attr("stroke", color)
+            .attr("fill", color)
+            .attr("fill-opacity", radarCfg.shapeOpacity)
+            .attr("stroke-opacity", radarCfg.lineOpacity)
+            .on("mouseover", function() {
+                d3.select(this)
+                    .moveToFront()
+                    .classed("radarShapeHighlight", true);
+                d3.select(".radar-chart-g_" + d.artist_name.replace(/ /g,"."))
+                    .moveToFront()
+                    .classed("radarDotsHighlight", true);
+            })
+            .on("mouseleave", function() {
+                d3.select(this)
+                    .classed("radarShapeHighlight", false);
+                d3.select(".radar-chart-g_" + d.artist_name.replace(/ /g,"."))
+                    .moveToFront()
+                    .classed("radarDotsHighlight", false);
+            })
 
     svg
         .append("g")
-        .attr("id", "g-hovered_" + hovered_genre)
-        .attr("class", "radar-chart-g_" + hovered_genre)
-        .attr("fill", color)
-        .selectAll("circle")
-        .data(coordinates)
-        .join("circle")
-        .attr("cx", (d) => d["x"])
-        .attr("cy", (d) => d["y"])
-        .attr("fill-opacity", radarCfg.opacityCircles)
-        .attr("r", radarCfg.dotRadius)
+            .attr("id", "g-hovered_" + hovered_genre)
+            .attr("class", "radar-chart-g_" + hovered_genre)
+            .attr("fill", color)
+            .selectAll("circle")
+            .data(coordinates)
+            .join("circle")
+            .attr("cx", (d) => d["x"])
+            .attr("cy", (d) => d["y"])
+            .attr("fill-opacity", radarCfg.opacityCircles)
+            .attr("r", radarCfg.dotRadius)
 
 }
 
@@ -156,11 +156,11 @@ function searchBar() {
                 })
                 .on("mouseover", function() {
                     d3.selectAll("path.radar-chart-path_" + d.artist_name.replace(/ /g,"."))
-                        .classed("radarShapeHighlight", true);     
-                       
+                        .classed("radarShapeHighlight", true);
+
                     d3.select(".radar-chart-g_" + d.artist_name.replace(/ /g,"."))
                         .moveToFront()
-                        .classed("radarDotsHighlight", true);              
+                        .classed("radarDotsHighlight", true);
 
                 })
                 .on("mouseleave", function() {
@@ -168,7 +168,7 @@ function searchBar() {
                         .classed("radarShapeHighlight", false);
                     d3.select(".radar-chart-g_" + d.artist_name.replace(/ /g,"."))
                         .moveToFront()
-                        .classed("radarDotsHighlight", false);                
+                        .classed("radarDotsHighlight", false);
                 });
                 return d;
             }
@@ -203,17 +203,17 @@ function searchBar() {
             .on("mouseover", function() {
                 d3.select(this)
                     .moveToFront()
-                    .classed("radarShapeHighlight", true);     
+                    .classed("radarShapeHighlight", true);
                 d3.select(".radar-chart-g_" + d.artist_name.replace(/ /g,"."))
                     .moveToFront()
-                    .classed("radarDotsHighlight", true);                
+                    .classed("radarDotsHighlight", true);
             })
             .on("mouseleave", function() {
                 d3.select(this)
-                    .classed("radarShapeHighlight", false);    
+                    .classed("radarShapeHighlight", false);
                 d3.select(".radar-chart-g_" + d.artist_name.replace(/ /g,"."))
                     .moveToFront()
-                    .classed("radarDotsHighlight", false);             
+                    .classed("radarDotsHighlight", false);
             })
 
         svg
@@ -251,6 +251,16 @@ function RadarChart(id, data, update) {
 
         ////// Plotting axes //////
         let ticks = [maxValue / 3, maxValue / 3 * 2, maxValue];
+
+        ticks.forEach(t =>
+            svg.append("text")
+            .attr("x", radarCfg.margin.left)
+            .attr("y", radarCfg.margin.top - rScale(t))
+            .text(t.toFixed(2).toString())
+            .style("fill", _grey)
+            .style("font-size", "11px")
+        );
+
         ticks.forEach(t =>
             svg
                 .append("circle")
@@ -277,7 +287,7 @@ function RadarChart(id, data, update) {
                 .style("stroke-opacity", radarCfg.gridOpacity)
                 .attr("stroke", _grey)
                 .attr("id", "radar-chart-axis_" + attributes[at_name]);
-        
+
             ////// Draw axis label //////
             svg.append("text")
                 .attr("id", "radar-chart-text_" + attributes[at_name])
@@ -291,13 +301,13 @@ function RadarChart(id, data, update) {
                 .attr("y", label_coordinate.y)
                 .text(attributes[at_name])
                 .on("mouseover", function() {
-                    d3.select(this)    
-                        changeRadarAxisColor(attributes[at_name], radarCfg.highlightColor)            
+                    d3.select(this)
+                        changeRadarAxisColor(attributes[at_name], radarCfg.highlightColor)
                         changeParallelCoorAxisColor(attributes[at_name], radarCfg.highlightColor);
                 })
                 .on("mouseleave", function() {
-                    d3.select(this)  
-                        changeRadarAxisColor(attributes[at_name], radarCfg.defaultColor)            
+                    d3.select(this)
+                        changeRadarAxisColor(attributes[at_name], radarCfg.defaultColor)
                         changeParallelCoorAxisColor(attributes[at_name], radarCfg.defaultColor);
                 })
         }
@@ -314,31 +324,31 @@ function RadarChart(id, data, update) {
 
             // Draw the path element
             svg
-                .append("path")
-                .datum(coordinates)
-                .attr("d", line)
-                .attr("class", "radar-chart-path_" + i)
-                .attr("i", i)
-                .attr("stroke-width", 1)
-                .attr("stroke", color)
-                .attr("fill", color)
-                .attr("fill-opacity", radarCfg.shapeOpacity)
-                .attr("stroke-opacity", radarCfg.lineOpacity)
-                .on("mouseover", function() {
-                    d3.select(this)
-                        .moveToFront()
-                        .classed("radarShapeHighlight", true);
-                    d3.select(".radar-chart-g_" + d3.select(this).attr("i"))
-                        .moveToFront()
-                        .classed("radarDotsHighlight", true);
-                })
-                .on("mouseleave", function() {
-                    d3.select(this)
-                        .classed("radarShapeHighlight", false);
-                    d3.select(".radar-chart-g_" + d3.select(this).attr("i"))
-                        .moveToFront()
-                        .classed("radarDotsHighlight", false);
-                })
+                .append("path") 
+                    .datum(coordinates)
+                    .attr("d", line)
+                    .attr("class", "radar-chart-path_" + i)
+                    .attr("i", i)
+                    .attr("stroke-width", 1)
+                    .attr("stroke", color)
+                    .attr("fill", color)
+                    .attr("fill-opacity", radarCfg.shapeOpacity)
+                    .attr("stroke-opacity", radarCfg.lineOpacity)
+                    .on("mouseover", function() {
+                        d3.select(this)
+                            .moveToFront()
+                            .classed("radarShapeHighlight", true);
+                        d3.select(".radar-chart-g_" + d3.select(this).attr("i"))
+                            .moveToFront()
+                            .classed("radarDotsHighlight", true);
+                    })
+                    .on("mouseleave", function() {
+                        d3.select(this)
+                            .classed("radarShapeHighlight", false);
+                        d3.select(".radar-chart-g_" + d3.select(this).attr("i"))
+                            .moveToFront()
+                            .classed("radarDotsHighlight", false);
+                    })
 
             svg
                 .append("g")
@@ -352,5 +362,6 @@ function RadarChart(id, data, update) {
                 .attr("fill-opacity", radarCfg.opacityCircles)
                 .attr("r", radarCfg.dotRadius)
         }
+
     }
 }

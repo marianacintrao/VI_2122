@@ -41,9 +41,6 @@ function ParallelCoordinatesChart(id, data, update) {
 
     // Highlight the specie that is hovered
     const highlight = function(event, d) {
-        console.log("inicio de pc")
-        console.log(d)
-        console.log("fim de pc")
         selected_genre = d.main_genre
 
         // first every group turns grey
