@@ -35,9 +35,7 @@ h2 {
     border-radius: 10px;
     font-family: "Lucida Console", "Courier New", monospace;
     padding: 10px;*/
-
 }
-
 
 #searchbarvalue {
     /*color: white;
@@ -91,7 +89,6 @@ li {
     cursor: pointer;
 }
 
-
 #radarChart {
     padding: 0;
     margin: 0;
@@ -107,14 +104,12 @@ li {
 
 #parallelCoordinates {
     height: 100%;
-    bottom:0;
-
+    bottom: 0;
 }
 
 #parallelCoordinates svg {
     height: 100%;
-    bottom:0;
-
+    bottom: 0;
 }
 
 .radarAxisHighlight {
@@ -122,7 +117,6 @@ li {
     fill: white;
     /* stroke: #911eb4; */
 }
-
 
 .radarShapeHighlight {
     /* fill-opacity: 1; */
@@ -179,3 +173,28 @@ li {
     font-family: 'Lato', sans-serif;
     fill: #333333;
 }
+
+#circularPacking {
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    display: block;
+    margin: auto;
+    padding: 0;
+    margin: 0;
+}
+
+/* #circularPacking {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+}
+
+#circularPacking svg {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    display: block;
+    margin: auto;
+} */

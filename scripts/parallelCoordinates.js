@@ -110,30 +110,34 @@ function ParallelCoordinatesChart(id, data, update) {
             // Axis and axis values color
             .style("font-family", "Lato")
             .style("color", _grey)
-            .on("mouseover", function(d) {
+            .on("mouseover", function() {
                 changeParallelCoorAxisColor(this.getAttribute("name"), _white);
                 changeRadarAxisColor(this.getAttribute("name"), _white);
             })
-            .on("mouseleave", function(d) {
+            .on("mouseleave", function() {
                 changeParallelCoorAxisColor(this.getAttribute("name"), _grey);
                 changeRadarAxisColor(this.getAttribute("name"), _grey);
             })
+            .on("click", function() {
+                changeAreaEncoding(reverse_attributes[this.getAttribute("name")]);
+            })
         })
         .append("text")
-            .attr("id", function(i) { return "parallel-coor-text_" + attributes[i]; })
-            .style("text-anchor", "middle")
-            .style("font-family", "Lato")
-            .attr("y", -9)
-            .on("mouseover", function(d) {
-                changeParallelCoorAxisColor(attributes[d], _white);
-                changeRadarAxisColor(attributes[d], _white);
-            })
-            .on("mouseleave", function(d) {
-                changeParallelCoorAxisColor(attributes[d], _grey);
-                changeRadarAxisColor(attributes[d], _grey);
-            })
-            .text(function(d) { return attributes[d]; })
-            .style("fill", _grey)
+        .attr("id", function(i) { return "parallel-coor-text_" + attributes[i]; })
+        .style("text-anchor", "middle")
+        .style("font-family", "Lato")
+        .attr("y", -9)
+        // .on("mouseover", function(d) {
+        //     console.log(attributes[d]);
+        //     changeParallelCoorAxisColor(attributes[d], _white);
+        //     changeRadarAxisColor(attributes[d], _white);
+        // })
+        // .on("mouseleave", function(d) {
+        //     changeParallelCoorAxisColor(attributes[d], _grey);
+        //     changeRadarAxisColor(attributes[d], _grey);
+        // })
+        .text(function(d) { return attributes[d]; })
+        .style("fill", _grey)
 
     // Draw the lines
     svg

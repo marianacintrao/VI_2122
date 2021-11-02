@@ -14,6 +14,7 @@ input.addEventListener("keyup", function(event) {
   if (event.keyCode === 13) {
    event.preventDefault();
    searchBar();
+   document.getElementById("searchbarvalue").value = '';
   }
 });
 
@@ -28,4 +29,5 @@ Promise
         data_themes_by_artist = themes_by_artist;
         ParallelCoordinatesChart("#parallelCoordinates", themes_by_main_genre, false);
         RadarChart("#radarChart", default_theme_average, false);
+        setup(); //circular packing
     });

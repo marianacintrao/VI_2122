@@ -21,7 +21,14 @@ const _white = "#fafcfb",
     _magenta = "#f032e6",
     _teal = "#469990",
     _cyan = "#42d4f4";
-// const _navy = "#000075";
+
+const radarColors = [
+    "#ffd8b1", //apricot
+    "#aaffc3", //mint
+    "#dcbeff", //lavender
+    "#fffac8", // beige
+    "#CCFDFF", //light blue
+]
 
 const genres_dict = {
 	"rock" : "Rock",
@@ -37,6 +44,22 @@ const genres_dict = {
     "electronica" : "Electronica",
     "religious" : "Religious",
 	"metal" : "Metal"
+}
+
+const reverse_genres_dict = {
+	"Rock" : "rock",
+	"Pop" : "pop",
+	"Country" : "country",
+	"Jazz" : "jazz",
+    "R&B" : "rnb",
+    "Hip-Hop" : "hiphop",
+    "Reggae" : "reggae",	
+	"Folk" : "folk",
+    "Punk" : "punk",
+    "Blues" : "blues",
+    "Electronica" : "electronica",
+    "Religious" : "religious",
+	"Metal" : "metal"
 }
 
 const attributes = {
@@ -55,7 +78,26 @@ const attributes = {
     "family/spiritual" : "Spiritual",
     "like/girls" : "Girls",
     "sadness" : "Sadness",
-    "feelings" : "Feelings",
+    "feelings" : "Feelings"
+}
+
+const reverse_attributes = {
+    "Dating" : "dating",
+    "Violence" : "violence",
+    "Life" : "world/life",
+    "Time" : "night/time",
+    "Audience" : "shake the audience",
+    "Family" : "family/gospel",
+    "Romantic" : "romantic",
+    "Communication" : "communication",
+    "Obscene" : "obscene",
+    "Music" : "music",
+    "Places" : "movement/places",
+    "Visual" : "light/visual perceptions",
+    "Spiritual" : "family/spiritual",
+    "Girls" : "like/girls",
+    "Sadness" : "sadness",
+    "Feelings" : "feelings"
 }
 
 d3.selection.prototype.moveToFront = function() {

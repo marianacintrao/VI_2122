@@ -1,4 +1,4 @@
-main_genre,specific_genre
+main genre,specific gen
 rock,rock
 rock,classic rock
 country,country rock
@@ -159,6 +159,7 @@ pop,neo-psychedelic
 hip hop,conscious hip hop
 r&b,memphis soul
 country,chicago blues
+religious,religious
 religious,christian alternative rock
 punk,uk post-punk
 jazz,jazz piano

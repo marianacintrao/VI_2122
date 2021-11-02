@@ -1,6 +1,8 @@
 const p = 50;
 const t = height / 3 / 2
 
+let num_artist_areas = 0;
+
 let radarCfg = {
     w: width,
     h: height / 3 - (p / 2),
@@ -111,7 +113,6 @@ function addRadarArea(data, hovered_genre, color) {
             .attr("cy", (d) => d["y"])
             .attr("fill-opacity", radarCfg.opacityCircles)
             .attr("r", radarCfg.dotRadius)
-
 }
 
 function searchBar() {
@@ -146,9 +147,10 @@ function searchBar() {
 
             ////// add artist name to list //////
             if (!artistInList) {
+                num_artist_areas += 1;
                 ul.append('li')
                 .text(d.artist_name)
-                .style('color', _white)
+                .style('color', radarColors[num_artist_areas%5])
                 .on("click", function() {
                     d3.select(this).remove();
                     d3.selectAll("path.radar-chart-path_" + d.artist_name.replace(/ /g,".")).remove();
@@ -196,8 +198,8 @@ function searchBar() {
             .attr("d", line)
             .attr("class", "radar-chart-path_" + d.artist_name)
             .attr("stroke-width", 1)
-            .attr("stroke", radarCfg.defaultColor)
-            .attr("fill", radarCfg.defaultColor)
+            .attr("stroke", radarColors[num_artist_areas%5])
+            .attr("fill",  radarColors[num_artist_areas%5])
             .attr("fill-opacity", radarCfg.shapeOpacity)
             .attr("stroke-opacity", radarCfg.lineOpacity)
             .on("mouseover", function() {
@@ -219,7 +221,7 @@ function searchBar() {
         svg
             .append("g")
             .attr("class", "radar-chart-g_" + artist)
-            .attr("fill", color)
+            .attr("fill",  radarColors[num_artist_areas%5])
             .selectAll("circle")
             .data(coordinates)
             .join("circle")
@@ -309,6 +311,9 @@ function RadarChart(id, data, update) {
                     d3.select(this)
                         changeRadarAxisColor(attributes[at_name], radarCfg.defaultColor)
                         changeParallelCoorAxisColor(attributes[at_name], radarCfg.defaultColor);
+                })
+                .on("click", function() {
+                    changeAreaEncoding(at_name);
                 })
         }
 
