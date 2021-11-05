@@ -13,7 +13,7 @@ let radarCfg = {
     },
     opacityArea: 0.35,
     dotRadius: 2,
-    opacityCircles: 0.9,
+    opacityCircles: 0.5,
     lineOpacity: 0.9,
     lineWidth: 3,
     shapeOpacity: 0.3,
@@ -147,7 +147,7 @@ function searchBar() {
     let artist = document.getElementById("searchbarvalue").value.toLowerCase();
 
     // let color = radarCfg.defaultColor;
-    let color;
+    var artist_color;
 
     ////// Find list
     d3
@@ -179,13 +179,8 @@ function searchBar() {
             if (!artistInList) {
                 num_artist_areas += 1;
 
-            //     data = data_artist_main_genre.filter(function (d) {
-            //         if (d.artist_name == artist) {
-            //             color = color(d["main_genre"]);
-            //             return d;
-            //         }
-            //     })
-                // color = getArtistColor(artist);
+                console.log(d.main_genre)
+                artist_color = color(d.main_genre)
 
                 ul.append('li')
                 .text(d.artist_name)
@@ -237,9 +232,10 @@ function searchBar() {
             .attr("d", line)
             .attr("class", "radar-chart-path_" + d.artist_name)
             .attr("stroke-width", 1)
-            .attr("stroke", radarColors[num_artist_areas%5])
-            .attr("fill",  radarColors[num_artist_areas%5])
+            .attr("stroke", artist_color)
+            .attr("fill",  artist_color)
             .attr("fill-opacity", radarCfg.shapeOpacity)
+            .attr("opacity", 0.5)
             .attr("stroke-opacity", radarCfg.lineOpacity)
             .on("mouseover", function() {
                 d3.select(this)
@@ -260,13 +256,14 @@ function searchBar() {
         svg
             .append("g")
             .attr("class", "radar-chart-g_" + artist)
-            .attr("fill",  radarColors[num_artist_areas%5])
+            .attr("fill", artist_color)
             .selectAll("circle")
             .data(coordinates)
             .join("circle")
             .attr("cx", (d) => d["x"])
             .attr("cy", (d) => d["y"])
             .attr("fill-opacity", radarCfg.opacityCircles)
+            .attr("opacity", 0.5)
             .attr("r", radarCfg.dotRadius)
             
             .on("mouseover", highlightRadarDot)
@@ -381,6 +378,7 @@ function RadarChart(id, data, update) {
                     .attr("fill", color)
                     .attr("fill-opacity", radarCfg.shapeOpacity)
                     .attr("stroke-opacity", radarCfg.lineOpacity)
+                    .attr("opacity", radarCfg.opacityCircles)
                     .on("mouseover", function() {
                         d3.select(this)
                             .moveToFront()
@@ -407,6 +405,7 @@ function RadarChart(id, data, update) {
                 .attr("cx", (d) => d["x"])
                 .attr("cy", (d) => d["y"])
                 .attr("fill-opacity", radarCfg.opacityCircles)
+                // .attr("opacity", radarCfg.opacityCircles)
                 .attr("r", radarCfg.dotRadius)
                 .on("mouseover", highlightRadarDot)
                 .on("mouseleave", doNotHighlightRadarDot)

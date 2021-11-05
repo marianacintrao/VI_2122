@@ -137,16 +137,15 @@ li {
 
 .radarShapeHighlight {
     /* fill-opacity: 1; */
-    fill: white;
-    stroke: white;
+    /* fill: white;
+    stroke: white; */
     opacity: 1;
     /* fill: green;
     stroke: green; */
 }
 .radarDotsHighlight {
-    /* fill-opacity: 1; */
-    color: white;
-    fill: white;
+    fill-opacity: 1;
+    /* /* color: white; */
     opacity: 1;
     /* fill: green;
     stroke: green; */
