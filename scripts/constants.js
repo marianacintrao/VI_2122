@@ -6,6 +6,8 @@ const margin = {top: 30, right: 50, bottom: 10, left: 50},
     lineWidth = "3",
     parallelCoordMaxScale = 0.5;
 
+const p = 70;
+
 const _white = "#fafcfb",
     _grey = "#a9a9a9",
     _red = "#e6194B",
@@ -99,6 +101,12 @@ const reverse_attributes = {
     "Sadness" : "sadness",
     "Feelings" : "feelings"
 }
+
+const color = d3
+    .scaleOrdinal()
+    .domain(["other", "rock", "pop", "jazz",    "country", "rnb",   "hiphop", "reggae", "folk", "metal", "blues", "punk",   "electronica", "religious"])
+    .range([ _grey,   _red,   _pink, _lavender, _orange,   _purple, _lime,    _olive,   _green, _yellow, _blue,   _magenta, _teal,         _cyan])
+ 
 
 d3.selection.prototype.moveToFront = function() {
     return this.each(function(){

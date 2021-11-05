@@ -1,16 +1,15 @@
-const p = 50;
 const t = height / 3 / 2
 
 let num_artist_areas = 0;
 
 let radarCfg = {
     w: width,
-    h: height / 3 - (p / 2),
+    h: height / 3 + (p / 3),
     margin: {
-        top: t + p,
+        top: t + p ,
         right: 0,
         bottom: 0,
-        left: width * 5/6
+        left: width * 14/20   
     },
     opacityArea: 0.35,
     dotRadius: 2,
@@ -44,22 +43,62 @@ function getPathCoordinates(data_point) {
         let angle = (Math.PI / 2) + (2 * Math.PI * i / length);
         let value = data_point[at_name];
         coordinates.push(angleToCoordinate(angle, value));
+        // coordinates.push();
         if (value > maxValue) {
             maxValue = value;
         }
     }
-    // let at_name = Object.keys(attributes)[0];
-    // let angle = (Math.PI / 2) + (2 * Math.PI * i / length);
-    // let value = data_point[at_name];
-    // coordinates.push(angleToCoordinate(angle, value));
     return coordinates;
 }
 
 function angleToCoordinate(angle, value) {
     let x = Math.cos(angle) * rScale(value);
     let y = Math.sin(angle) * rScale(value);
-    return {"x": radarCfg.margin.left + x, "y": radarCfg.margin.top - y};
+    return {"x": radarCfg.margin.left + x, "y": radarCfg.margin.top - y, "value": value};
 }
+
+function getArtistColor(name) {
+    // GET ARTIST MAIN GENRE TO GET COLOR
+    data_artist_main_genre.filter(function (d) {
+        if (d.artist_name == name) {
+            // return color(d["main_genre"]);
+            return d;
+        }
+    })
+}
+
+const highlightRadar = function(event, d) {  
+    d3.select(this)
+        .moveToFront()
+        .classed("radarShapeHighlight", true);
+    d3.select(".radar-chart-g_" + d.artist_name.replace(/ /g,"."))
+        .moveToFront()
+        .classed("radarDotsHighlight", true);
+}
+const doNotHighlightRadar = function(event, d) {  
+    d3.select(this)
+        .classed("radarShapeHighlight", false);
+    d3.select(".radar-chart-g_" + d.artist_name.replace(/ /g,"."))
+        .moveToFront()
+        .classed("radarDotsHighlight", false);
+}
+
+const highlightRadarDot = function(event, d) {  
+    // Tooltip
+    d3.select("#tooltip-radarChart")
+    .style("left", event.pageX + "px")
+    .style("top", event.pageY + "px")
+    .style("opacity", 1)
+    .style("background-color", _white)
+    .select("#value")
+    .text(d["value"]);
+}
+const doNotHighlightRadarDot = function(event, d) {  
+    // Hide the tooltip
+    d3.select("#tooltip-radarChart")
+        .style("opacity", 0);
+}
+
 
 function addRadarArea(data, hovered_genre, color) {
     let id = "#radarChart";
@@ -73,6 +112,7 @@ function addRadarArea(data, hovered_genre, color) {
             .y(d => d.y);
 
     let coordinates = getPathCoordinates(data);
+    // let values = getPathCoordinates(data);
    ///// Draw the path element /////
     svg
         .append("path")
@@ -85,21 +125,9 @@ function addRadarArea(data, hovered_genre, color) {
             .attr("fill", color)
             .attr("fill-opacity", radarCfg.shapeOpacity)
             .attr("stroke-opacity", radarCfg.lineOpacity)
-            .on("mouseover", function() {
-                d3.select(this)
-                    .moveToFront()
-                    .classed("radarShapeHighlight", true);
-                d3.select(".radar-chart-g_" + d.artist_name.replace(/ /g,"."))
-                    .moveToFront()
-                    .classed("radarDotsHighlight", true);
-            })
-            .on("mouseleave", function() {
-                d3.select(this)
-                    .classed("radarShapeHighlight", false);
-                d3.select(".radar-chart-g_" + d.artist_name.replace(/ /g,"."))
-                    .moveToFront()
-                    .classed("radarDotsHighlight", false);
-            })
+            .on("mouseover", highlightRadar)
+            .on("mouseleave", doNotHighlightRadar)
+
 
     svg
         .append("g")
@@ -117,7 +145,9 @@ function addRadarArea(data, hovered_genre, color) {
 
 function searchBar() {
     let artist = document.getElementById("searchbarvalue").value.toLowerCase();
-    let color = radarCfg.defaultColor;
+
+    // let color = radarCfg.defaultColor;
+    let color;
 
     ////// Find list
     d3
@@ -148,31 +178,40 @@ function searchBar() {
             ////// add artist name to list //////
             if (!artistInList) {
                 num_artist_areas += 1;
+
+            //     data = data_artist_main_genre.filter(function (d) {
+            //         if (d.artist_name == artist) {
+            //             color = color(d["main_genre"]);
+            //             return d;
+            //         }
+            //     })
+                // color = getArtistColor(artist);
+
                 ul.append('li')
                 .text(d.artist_name)
-                .style('color', radarColors[num_artist_areas%5])
-                .on("click", function() {
-                    d3.select(this).remove();
-                    d3.selectAll("path.radar-chart-path_" + d.artist_name.replace(/ /g,".")).remove();
-                    d3.selectAll("g.radar-chart-g_" + artist.replace(/ /g,".")).remove();
-                })
-                .on("mouseover", function() {
-                    d3.selectAll("path.radar-chart-path_" + d.artist_name.replace(/ /g,"."))
-                        .classed("radarShapeHighlight", true);
-
-                    d3.select(".radar-chart-g_" + d.artist_name.replace(/ /g,"."))
-                        .moveToFront()
-                        .classed("radarDotsHighlight", true);
-
-                })
-                .on("mouseleave", function() {
-                    d3.selectAll("path.radar-chart-path_" + d.artist_name.replace(/ /g,"."))
-                        .classed("radarShapeHighlight", false);
-                    d3.select(".radar-chart-g_" + d.artist_name.replace(/ /g,"."))
-                        .moveToFront()
-                        .classed("radarDotsHighlight", false);
-                });
-                return d;
+                    // .style('color', radarColors[num_artist_areas%5])
+                    .style('color', _white)
+                    .on("click", function() {
+                        d3.select(this).remove();
+                        d3.selectAll("path.radar-chart-path_" + d.artist_name.replace(/ /g,".")).remove();
+                        d3.selectAll("g.radar-chart-g_" + artist.replace(/ /g,".")).remove();
+                    })
+                    
+                    .on("mouseover", function() {
+                        d3.selectAll("path.radar-chart-path_" + d.artist_name.replace(/ /g,"."))
+                            .classed("radarShapeHighlight", true);
+                        d3.select(".radar-chart-g_" + d.artist_name.replace(/ /g,"."))
+                            .moveToFront()
+                            .classed("radarDotsHighlight", true);
+                    })
+                    .on("mouseleave", function() {
+                        d3.selectAll("path.radar-chart-path_" + d.artist_name.replace(/ /g,"."))
+                            .classed("radarShapeHighlight", false);
+                        d3.select(".radar-chart-g_" + d.artist_name.replace(/ /g,"."))
+                            .moveToFront()
+                            .classed("radarDotsHighlight", false);
+                    });
+                    return d;
             }
         }
     });
@@ -229,6 +268,9 @@ function searchBar() {
             .attr("cy", (d) => d["y"])
             .attr("fill-opacity", radarCfg.opacityCircles)
             .attr("r", radarCfg.dotRadius)
+            
+            .on("mouseover", highlightRadarDot)
+            .on("mouseleave", doNotHighlightRadarDot)
     }
 }
 
@@ -241,15 +283,15 @@ function RadarChart(id, data, update) {
         let svg = d3
                 .select(id)
                 .append("svg")
-                .attr("width",  radarCfg.w)
-                .attr("height", radarCfg.h * 1.5)
+                // .attr("width",  "50%")
+                .attr("height", radarCfg.h *1.4)
                 .attr("class", id);
 
         ////// Append a g element //////
         let g = svg
                 .append("g")
                 .style("padding", radarCfg.h)
-                .attr("transform", "translate(" + (radarCfg.margin.left) + "," + (radarCfg.margin.top) + ")");
+                // .attr("transform", "translate(" + (radarCfg.margin.left) + "," + (radarCfg.margin.top) + ")");
 
         ////// Plotting axes //////
         let ticks = [maxValue / 3, maxValue / 3 * 2, maxValue];
@@ -366,6 +408,8 @@ function RadarChart(id, data, update) {
                 .attr("cy", (d) => d["y"])
                 .attr("fill-opacity", radarCfg.opacityCircles)
                 .attr("r", radarCfg.dotRadius)
+                .on("mouseover", highlightRadarDot)
+                .on("mouseleave", doNotHighlightRadarDot)
         }
 
     }

@@ -14,14 +14,9 @@ function ParallelCoordinatesChart(id, data, update) {
         .attr("width", width + margin.left + margin.right)
         .attr("height", height / 4)
         .append("g")
-        .attr("transform", `translate(${margin.left},${margin.top})`);
+        .attr("transform", `translate(${margin.left},${margin.top+10})`);
 
-
-    const color = d3
-        .scaleOrdinal()
-        .domain(["rock", "pop", "jazz",    "country", "rnb",   "hiphop", "reggae", "folk", "metal", "blues", "punk",   "electronica", "religious"])
-        .range([ _red,   _pink, _lavender, _orange,   _purple, _lime,    _olive,   _green, _yellow, _blue,   _magenta, _teal,         _cyan])
-              
+     
     // Here I set the list of dimension manually to control the order of axis:
     dimensions = ["dating", "violence", "world/life", "night/time", "shake the audience", "family/gospel", "romantic", "communication", "obscene", "music", "movement/places", "light/visual perceptions", "family/spiritual", "like/girls", "sadness", "feelings"]
     
@@ -59,7 +54,7 @@ function ParallelCoordinatesChart(id, data, update) {
         d3.select(this).moveToFront();
             
         // Tooltip
-        d3.select("#tooltip")
+        d3.select("#tooltip-parallelCoordinates")
         .style("left", event.pageX + "px")
         .style("top", event.pageY + "px")
         .style("opacity", 1)
@@ -78,7 +73,7 @@ function ParallelCoordinatesChart(id, data, update) {
         .style("opacity", lineOpacity)
 
         // Hide the tooltip
-        d3.select("#tooltip")
+        d3.select("#tooltip-parallelCoordinates")
             .style("opacity", 0);
 
         // Remove radar area

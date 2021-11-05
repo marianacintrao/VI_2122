@@ -16,6 +16,8 @@ function setup() {
         });
 }
   
+const cirlcularPackingSize = height / 3 + (p * 1.8);
+
 function processData() {
     var stratify = d3
         .stratify()
@@ -29,7 +31,7 @@ function processData() {
 }
 
 function changeAreaEncoding(theme_name) {
-    var packLayout = d3.pack().size([500, 500]);
+    var packLayout = d3.pack().size([cirlcularPackingSize -10, cirlcularPackingSize -10]);
     var root = d3.hierarchy(nestedData).sum(function (d) {
         switch (theme_name) {
             case "dating": return d.data.dating;
@@ -61,52 +63,64 @@ function changeAreaEncoding(theme_name) {
         .data(nodes)
         .enter()
         .append("g")
-        .attr("class", "node")
-        .append("circle")
-        .attr("fill", (d) => (d.children ? color(d.depth) : "white"))
-        .attr("stroke", "#ADADAD")
-        .attr("cx", function (d) {
-            return d.x;
-        })
-        .attr("cy", function (d) {
-            return d.y;
-        })
-        .attr("r", function (d) {
-            return d.r;
-        })
-        .append("title")
-        .text(function (d) {
-            return d.data.data.child;
-        });
+            .attr("class", "node")
+            .append("circle")
+                // .attr("fill", (d) => (d.children ? "none" : "white"))
+                .attr("fill", function (d) {
+                    return color(d.data.data.child);
+                })
+                .attr("stroke", function (d) {
+                    return color(d.data.data.child);
+                })
+                .attr("stroke-width", 2)
+                .attr("fill-opacity", 0.3)
+                .attr("text-align", "center")
+                .attr("cx", function (d) {
+                    return d.x;
+                })
+                .attr("cy", function (d) {
+                    return d.y;
+                })
+                .attr("r", function (d) {
+                    // if (d.data.data.child == "genre")
+                    //     return d.r * 1
+                    // else
+                        return d.r * 0.9;
+                })
+                .append("title")
+                .text(function (d) {
+                    return d.data.data.child;
+                });
   
     g
         .selectAll(".node")
         .append("text")
-        .attr("class", "label")
-        .attr("transform", function (d) {
-            return "translate(" + d.x + "," + d.y + ")";
-        })
-        .attr("dx", "-25")
-        .attr("dy", ".5em")
-        .style("font", "8px sans-serif")
-        .style("display", (d) => (d.children ? "none" : "inline"))
-        .text(function (d) {
-            return genres_dict[d.data.data.child];
-        });
+            .attr("class", "label")
+            .attr("transform", function (d) {
+                return "translate(" + d.x + "," + d.y + ")";
+            })
+            .attr("dx", "-25")
+            .attr("dy", ".5em")
+            .style("font", "11px sans-serif")
+            .style("fill", _white)
+            .style("display", (d) => (d.children ? "none" : "inline"))
+            .text(function (d) {
+                return genres_dict[d.data.data.child];
+            });
 }
 
 function circularPacking() {
-    color = d3
-        .scaleLinear()
-        .domain([0, 5])
-        .range(["hsl(152,80%,80%)", "hsl(228,30%,40%)"])
-        .interpolate(d3.interpolateHcl);
+    // color = d3
+    //     .scaleOrdinal()
+    //     .domain(["genre", "rock", "pop", "jazz",    "country", "rnb",   "hiphop", "reggae", "folk", "metal", "blues", "punk",   "electronica", "religious"])
+    //     .range([ _grey,   _red,   _pink, _lavender, _orange,   _purple, _lime,    _olive,   _green, _yellow, _blue,   _magenta, _teal,         _cyan])
+         
   
     g = d3
         .select("#circularPacking")
         .append("svg")
-        .attr("width", 500)
-        .attr("height", 500)
+        .attr("width", cirlcularPackingSize)
+        .attr("height", cirlcularPackingSize)
         .append("g");
   
     changeAreaEncoding("theme_weight");

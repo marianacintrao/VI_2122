@@ -5,6 +5,7 @@ body {
 	/*font-family: "Lucida Console", "Courier New", monospace;*/
     font-family: 'Lato', sans-serif;
     padding: 0;
+    margin: 0;
 }
 
 h1 {
@@ -24,9 +25,25 @@ h2 {
     font-size: 15px;
 }
 
+#radarChart [id^="radar-chart-text_"] {
+    cursor: pointer;
+}
+
+#parallelCoordinates [id^="parallel-coor-text_"] {
+    cursor: pointer;
+}
+
+#circularPacking svg {
+    margin-left: 10%;
+}
+
+#radarChart {
+    position: absolute;
+}
+
 #searchbar {
     position: absolute;
-    left: 50%;
+    left: 80%;
     top: 20%;
     /*background-color: #1d1e23;
     stroke: #fafcfb;
@@ -138,7 +155,7 @@ li {
 /*============  Tooltip  =============*/
 /*====================================*/
 
-#tooltip {
+.tooltip {
     position: absolute;
     width: auto;
     height: auto;
@@ -154,15 +171,13 @@ li {
     pointer-events: none;
 }
 
-#tooltip.hidden {
+.tooltip.hidden {
     opacity: 0;
 }
 
-#tooltip p {
+.tooltip p {
     margin: 0;
-    /* font-family: sans-serif; */
     font-size: 14px;
-    /* line-height: 20px; */
 }
 
 /*====================================*/
