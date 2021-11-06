@@ -21,7 +21,6 @@ input.addEventListener("keyup", function(event) {
   }
 });
 
-
 Promise
     .all([
         d3.csv(themes_by_main_genre),
@@ -34,11 +33,10 @@ Promise
                     default_theme_average, 
                     themes_by_artist,
                     artist_main_genre,
-                    root_no_artist
-                ]) {
+                    root_no_artist]) {
         data_themes_by_artist = themes_by_artist;
         data_artist_main_genre = artist_main_genre;
         ParallelCoordinatesChart("#parallelCoordinates", themes_by_main_genre, false);
         RadarChart("#radarChart", default_theme_average, false);
-        // CircularPacking("#circularPacking", root_no_artist); //circular packing
+        CircularPacking("#circularPacking", root_no_artist);
     });
