@@ -405,10 +405,10 @@ function RadarChart(id, data, update) {
                 .attr("cx", (d) => d["x"])
                 .attr("cy", (d) => d["y"])
                 .attr("fill-opacity", radarCfg.opacityCircles)
-                // .attr("opacity", radarCfg.opacityCircles)
                 .attr("r", radarCfg.dotRadius)
                 .on("mouseover", highlightRadarDot)
                 .on("mouseleave", doNotHighlightRadarDot)
+
         }
 
     }
