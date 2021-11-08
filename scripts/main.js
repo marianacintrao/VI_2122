@@ -36,7 +36,7 @@ Promise
                     root_no_artist]) {
         data_themes_by_artist = themes_by_artist;
         data_artist_main_genre = artist_main_genre;
-        ParallelCoordinatesChart("#parallelCoordinates", themes_by_main_genre, false);
-        RadarChart("#radarChart", default_theme_average, false);
         CircularPacking("#circularPacking", root_no_artist);
+        RadarChart("#radarChart", default_theme_average, false);
+        ParallelCoordinatesChart("#parallelCoordinates", themes_by_main_genre, false);
     });

@@ -1,4 +1,4 @@
-const t = height / 3 / 2
+const t = height / 3 + (p / 3)
 
 let num_artist_areas = 0;
 
@@ -6,10 +6,13 @@ let radarCfg = {
     w: width,
     h: height / 3 + (p / 3),
     margin: {
-        top: t + p ,
+        // top: t + p ,
+        top: - t*13/20,
+        // top: 0,
         right: 0,
         bottom: 0,
         left: width * 14/20   
+        // left: 0   
     },
     opacityArea: 0.35,
     dotRadius: 2,
@@ -280,8 +283,9 @@ function RadarChart(id, data, update) {
         let svg = d3
                 .select(id)
                 .append("svg")
-                // .attr("width",  "50%")
+                // .attr("width",  "30%")
                 .attr("height", radarCfg.h *1.4)
+                // .attr ()
                 .attr("class", id);
 
         ////// Append a g element //////
