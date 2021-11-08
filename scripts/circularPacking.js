@@ -1,4 +1,23 @@
-function CircularPacking(id, data) {
+var data;
+
+// select("pop", data)
+function select(selected, data) {
+    data["children"].forEach(d => {
+        if (d["name"] == selected) {
+            console.log(d);
+            root = d;
+        }
+    });
+}
+
+function changeDataset(new_dataset) {
+    data = new_dataset;
+
+}
+
+function CircularPacking(id, data_root) {
+    data = data_root;
+    console.log(data);
     var svg = d3.select(id).select("svg"),
         margin1 = 20,
         diameter = 400,
@@ -9,32 +28,62 @@ function CircularPacking(id, data) {
         .range(["hsl(152,80%,80%)", "hsl(228,30%,40%)"])
         .interpolate(d3.interpolateHcl);
 
+    // var sizeScale = d3.scaleSqrt()
+    //     .range([0,200])
+    //     .domain([0, d=>d.theme_weight]);
+    // pack.radius(d=>sizeScale(d.theme_weight));  
+    
+    
     var pack = d3.pack()
         .size([diameter - margin1, diameter - margin1])
         .radius(function(d) {
-            console.log("radius d:", d);
-            return d.theme_weight;
-            return 10;
+            // console.log(Object.values(d.parent));
+            // console.log(d.parent.data.name);
+            console.log(d.depth);
+            // d.parent.attr("value", d.parent.value);
+            return d.value;
         })
         .padding(2);
+    
         
-        root = data;
-        root = d3.hierarchy(root)
-            .sum(function(d) {
-                console.log("sum:", d.name, d.theme_weight);
-                return d.theme_weight;
-            })
-            // .sum(function(d) {
-            //     console.log("sum:", d.name, d.theme_weight);
-            //     return d.theme_weight;
-            // })
-            .sort(function(a, b) {
-                return b.theme_weight - a.theme_weight;
-            });
+    // select("avg", data);
+    root = data;
+    root = d3.hierarchy(root)        
+        .sum(function(d) {
+            // console.log(d);
+            return d.theme_weight*d.theme_weight*d.theme_weight*d.theme_weight*d.theme_weight*6;
+        });
+        // .sum(function (d) {
+        //     switch (theme_name) {
+        //         case "dating": return d.dating;
+        //         case "violence": return d.violence;
+        //         case "world/life": return d.life;
+        //         case "night/time": return d.time;
+        //         case "shake the audience": return d.audience;
+        //         case "family/gospel": return d.family;
+        //         case "romantic": return d.romantic;
+        //         case "communication": return d.communication;
+        //         case "movement/places": return d.places;
+        //         case "music": return d.music;
+        //         case "obscene": return d.obscene;
+        //         case "light/visual perceptions": return d.visual;
+        //         case "family/spiritual": return d.spiritual;
+        //         case "like/girls": return d.girls;
+        //         case "sadness": return d.sadness;
+        //         case "feelings": return d.feelings;
+        //         default: return d.theme_weight;
+        //       }
+        // });
+        //.sort(function(a, b) {
+        //    return b.value - a.value;
+        //});
 
-    var focus = root,
-        nodes = pack(root).descendants(),
-        view;
+
+
+    var focus = root;
+    var nodes = pack(root);
+            //.descendants();
+    var view;
 
     var circle = g.selectAll("circle")
         .data(nodes)
@@ -45,6 +94,7 @@ function CircularPacking(id, data) {
         .style("fill", function(d) {
             return d.children ? color1(d.depth) : null;
         })
+        //.attr("r", function(d) { return d.parent ? 20 : d.data.theme_weight;})
         .on("click", function(event, d) {
             if (focus !== d) zoom(event, d), event.stopPropagation();
         });
