@@ -46,7 +46,7 @@ function ParallelCoordinatesChart(id, data, update) {
             .style("opacity", lineOpacity)
             
         // Second the hovered specie takes its color
-        d3.selectAll("." + selected_genre)
+        d3.selectAll("." + selected_genre.replace(/ /g,"."))
             .style("stroke", color(selected_genre))
             .style("stroke-width", lineWidth)
             .style("opacity", "1")
@@ -122,15 +122,7 @@ function ParallelCoordinatesChart(id, data, update) {
         .style("text-anchor", "middle")
         .style("font-family", "Lato")
         .attr("y", -9)
-        // .on("mouseover", function(d) {
-        //     console.log(attributes[d]);
-        //     changeParallelCoorAxisColor(attributes[d], _white);
-        //     changeRadarAxisColor(attributes[d], _white);
-        // })
-        // .on("mouseleave", function(d) {
-        //     changeParallelCoorAxisColor(attributes[d], _grey);
-        //     changeRadarAxisColor(attributes[d], _grey);
-        // })
+
         .text(function(d) { return attributes[d]; })
         .style("fill", _grey)
 
@@ -147,6 +139,5 @@ function ParallelCoordinatesChart(id, data, update) {
         .style("stroke-width", lineWidth)
         .style("opacity", lineOpacity)
         .on("mouseover", highlight)
-        // .on("mouseover", function (d) { highlight })
         .on("mouseleave", doNotHighlight)
 }

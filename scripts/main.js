@@ -4,9 +4,11 @@ var default_theme_average = "https://raw.githubusercontent.com/marianacintrao/VI
     default_themes_by_artist = "https://raw.githubusercontent.com/marianacintrao/VI_2122/main/datasets/default_themes_by_artist.csv",
     themes_by_artist = "https://raw.githubusercontent.com/marianacintrao/VI_2122/main/datasets/themes_by_artist.csv",
     themes_by_main_genre = "https://raw.githubusercontent.com/marianacintrao/VI_2122/main/datasets/themes_by_main_genre.csv",
+    // themes_by_main_genre = "datasets/themes_by_main_genre.csv",
     themes_by_specific_genre = "https://raw.githubusercontent.com/marianacintrao/VI_2122/main/datasets/themes_by_specific_genre.csv",
     artist_main_genre = "https://raw.githubusercontent.com/marianacintrao/VI_2122/main/datasets/artist_main_genre.csv"
-    root_no_artist = "https://raw.githubusercontent.com/marianacintrao/VI_2122/main/datasets/root_no_artist.json"
+    root_no_artist = "https://raw.githubusercontent.com/marianacintrao/VI_2122/main/datasets/root_no_artist_2.json"
+    // root_no_artist = "datasets/root_no_artist_2.json"
 
 var data_themes_by_artist;
 var data_artist_main_genre;

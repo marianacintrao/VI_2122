@@ -38,7 +38,7 @@ const genres_dict = {
 	"country" : "Country",
 	"jazz" : "Jazz",
     "rnb" : "R&B",
-    "hiphop" : "Hip-Hop",
+    "hip hop" : "Hip-Hop",
     "reggae" : "Reggae",	
 	"folk" : "Folk",
     "punk" : "Punk",
@@ -54,7 +54,7 @@ const reverse_genres_dict = {
 	"Country" : "country",
 	"Jazz" : "jazz",
     "R&B" : "rnb",
-    "Hip-Hop" : "hiphop",
+    "Hip-Hop" : "hip hop",
     "Reggae" : "reggae",	
 	"Folk" : "folk",
     "Punk" : "punk",
@@ -104,8 +104,8 @@ const reverse_attributes = {
 
 const color = d3
     .scaleOrdinal()
-    .domain(["other", "rock", "pop", "jazz",    "country", "rnb",   "hiphop", "reggae", "folk", "metal", "blues", "punk",   "electronica", "religious"])
-    .range([ _grey,   _red,   _pink, _lavender, _orange,   _purple, _lime,    _olive,   _green, _yellow, _blue,   _magenta, _teal,         _cyan])
+    .domain(["other", "rock", "pop", "jazz",    "country", "rnb",   "hip hop", "reggae", "folk", "metal", "blues", "punk",   "electronica", "religious"])
+    .range([ _grey,   _red,   _pink, _lavender, _orange,   _purple, _lime,     _olive,   _green, _yellow, _blue,   _magenta, _teal,         _cyan])
  
 
 d3.selection.prototype.moveToFront = function() {

@@ -117,8 +117,8 @@ print(result)
 
 original_stdout = sys.stdout # Save a reference to the original standard output
 
-# with open('root.json', 'w') as f:
-#     sys.stdout = f # Change the standard output to the file we created.
-#     print(jsonStr)
-#     sys.stdout = original_stdout
+with open('root.json', 'w') as f:
+    sys.stdout = f # Change the standard output to the file we created.
+    print(jsonStr)
+    sys.stdout = original_stdout
 

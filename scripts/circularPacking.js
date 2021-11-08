@@ -12,18 +12,25 @@ function CircularPacking(id, data) {
     var pack = d3.pack()
         .size([diameter - margin1, diameter - margin1])
         .radius(function(d) {
+            console.log("radius d:", d);
             return d.theme_weight;
+            return 10;
         })
         .padding(2);
-
-    root = data;
-    root = d3.hierarchy(root)
-        .sum(function(d) {
-            return d.theme_weight;
-        })
-        .sort(function(a, b) {
-            return b.value - a.value;
-        });
+        
+        root = data;
+        root = d3.hierarchy(root)
+            .sum(function(d) {
+                console.log("sum:", d.name, d.theme_weight);
+                return d.theme_weight;
+            })
+            // .sum(function(d) {
+            //     console.log("sum:", d.name, d.theme_weight);
+            //     return d.theme_weight;
+            // })
+            .sort(function(a, b) {
+                return b.theme_weight - a.theme_weight;
+            });
 
     var focus = root,
         nodes = pack(root).descendants(),
@@ -64,7 +71,7 @@ function CircularPacking(id, data) {
             zoom(event, root);
         });
 
-    console.log(root.x, root.y, root.r);
+    // console.log(root.x, root.y, root.r);
     zoomTo([root.x, root.y, root.r * 2 + margin1]);
     var activeNode = root;
 
