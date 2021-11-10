@@ -47,7 +47,8 @@ Promise
         data_artist_main_genre = artist_main_genre;
         data_root = root;
         data_root_by_main_genre = root_by_main_genre;
-        CircularPacking("#circularPacking", data_root);
+        circularPacking("#circularPacking", data_root);
+        // changeAreaEncoding("#circularPacking", data_root);
         RadarChart("#radarChart", default_theme_average, false);
         ParallelCoordinatesChart("#parallelCoordinates", themes_by_main_genre, false);
     });
