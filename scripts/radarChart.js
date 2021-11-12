@@ -33,7 +33,58 @@ let radius = Math.min(radarCfg.w/2, radarCfg.h/2),
             .range([0, radius])
             .domain([0, maxValue]);
 
+
+function clickRadarAxis(id, at_name) {
+    
+    // check if axis is already clicked
+    if (d3.selectAll("#radar-chart-axis_" + at_name).classed("clicked")) {
+
+        // if clicked, unlick, go back to default and return
+        d3.select(id).select("svg").selectAll("line").classed("clicked", false);
+
+        theme_name = "theme_weight";
+        return;
+    }
+
+
+    // Turn already selected axis grey and unclicking it
+    d3.select(id).select("svg").selectAll("line").each(function() {
+        if (d3.select(this).classed("clicked")) {
+
+            var id_name = d3.select(this).attr("id");
+            
+            if (id_name) {
+                var at_name = id_name.split('_')[1];
+                
+                d3
+                .selectAll("#radar-chart-axis_" + at_name)
+                .style("color", radarCfg.defaultColor)
+                .classed("clicked", false);
+                d3
+                .selectAll("#radar-chart-text_" + at_name)
+                .style("fill", radarCfg.defaultColor);
+            }
+        }
+    })
+
+    // change theme encoding
+    theme_name = reverse_attributes[at_name]
+    console.log(theme_name)
+    
+    // change axis color to highlighted
+    changeRadarAxisColor(at_name, radarCfg.highlightColor)
+
+    // this axis clicked = true
+    d3.selectAll("#radar-chart-axis_" + at_name).classed("clicked", true)
+
+}
+
 function changeRadarAxisColor(at_name, col) {
+
+    // olny change color if not clicked
+    if (d3.selectAll("#radar-chart-axis_" + at_name).classed("clicked")) {
+        return;
+    }
     d3.selectAll("#radar-chart-text_" + at_name).style("fill", col);
     d3.selectAll("#radar-chart-axis_" + at_name).attr("stroke", col);
 }
@@ -356,7 +407,11 @@ function RadarChart(id, data, update) {
                         changeParallelCoorAxisColor(attributes[at_name], radarCfg.defaultColor);
                 })
                 .on("click", function() {
-                    changeAreaEncoding(at_name);
+                    d3.select(this)
+                        clickRadarAxis(id, attributes[at_name])
+                        clickParallelCoorAxis("#parallelCoordinates", attributes[at_name])
+                        console.log("clicou!")
+                        changeAreaEncoding("#circularPacking");
                 })
         }
 

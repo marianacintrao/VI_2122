@@ -1,4 +1,51 @@
+function clickParallelCoorAxis(id, at_name) {
+    
+    // check if axis is already clicked
+    if (d3.selectAll("#parallel-coor-axis_" + at_name).classed("clicked")) {
+
+        // if clicked, unlick, go back to default and return
+        d3.select(id).select("svg").selectAll("g").selectAll(".axis").classed("clicked", false);
+        return;
+    }
+
+    // Turn already selected axis grey and unclicking it
+
+    d3.select(id).selectAll("g").each(function() {
+        if (d3.select(this).classed("clicked")) {
+
+            var id_name = d3.select(this).attr("id");
+            
+            if (id_name) {
+                var at_name = id_name.split('_')[1];
+                
+                d3
+                .selectAll("#parallel-coor-axis_" + at_name)
+                .style("color", _grey)
+                .classed("clicked", false);
+                d3
+                .selectAll("#parallel-coor-text_" + at_name)
+                .style("fill", _grey);
+            }
+        }
+    })
+    
+    // change axis color to highlighted
+    changeParallelCoorAxisColor(at_name, _white)
+
+    // this axis clicked = true
+    d3.selectAll("#parallel-coor-axis_" + at_name).classed("clicked", true)
+
+    ///////// chamar func dos atributos do circular
+}
+
+
 function changeParallelCoorAxisColor(at_name, col) {
+    
+    // olny change color if not clicked
+    if (d3.selectAll("#parallel-coor-axis_" + at_name).classed("clicked")) {
+        return;
+    }
+
     d3
         .selectAll("#parallel-coor-axis_" + at_name)
         .style("color", col);
@@ -114,17 +161,19 @@ function ParallelCoordinatesChart(id, data, update) {
                 changeRadarAxisColor(this.getAttribute("name"), _grey);
             })
             .on("click", function() {
-                changeAreaEncoding(reverse_attributes[this.getAttribute("name")]);
+                clickParallelCoorAxis(id, this.getAttribute("name"))
+                clickRadarAxis(radarChart, this.getAttribute("name"))
+                changeAreaEncoding("#circularPacking");
             })
         })
         .append("text")
-        .attr("id", function(i) { return "parallel-coor-text_" + attributes[i]; })
-        .style("text-anchor", "middle")
-        .style("font-family", "Lato")
-        .attr("y", -9)
+            .attr("id", function(i) { return "parallel-coor-text_" + attributes[i]; })
+            .style("text-anchor", "middle")
+            .style("font-family", "Lato")
+            .attr("y", -9)
 
-        .text(function(d) { return attributes[d]; })
-        .style("fill", _grey)
+            .text(function(d) { return attributes[d]; })
+            .style("fill", _grey)
 
     // Draw the lines
     svg

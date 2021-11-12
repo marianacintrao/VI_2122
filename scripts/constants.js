@@ -113,3 +113,24 @@ d3.selection.prototype.moveToFront = function() {
     this.parentNode.appendChild(this);
     });
 };
+
+const attrs_to_json = {
+    "dating" : "dating",
+    "violence" : "violence",
+    "world/life" : "life",
+    "night/time" : "time",
+    "shake the audience" : "audience",
+    "family/gospel" : "family",
+    "romantic" : "romantic",
+    "communication" : "communication",
+    "obscene" : "obscene",
+    "music" : "music",
+    "movement/places" : "places",
+    "light/visual perceptions" : "visual",
+    "family/spiritual" : "spiritual",
+    "like/girls" : "girls",
+    "sadness" : "sadness",
+    "feelings" : "feelings"
+}
+
+var theme_name = "theme_weight"

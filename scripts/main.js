@@ -17,6 +17,8 @@ var data_artist_main_genre;
 var data_root;
 var data_root_by_main_genre;
 
+var data_circular_packing;
+
 //enter input
 var input = document.getElementById("searchbarvalue");
 input.addEventListener("keyup", function(event) {

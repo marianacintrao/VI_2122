@@ -15,19 +15,21 @@ function select(selected, data) {
     });
 }
 
-function changeDataset(id, new_dataset, theme_name) {
+function changeDataset(id, new_dataset) {
     root = new_dataset;
     d3.select(id).selectAll("svg").remove();
-    changeAreaEncoding("#circularPacking", theme_name, root);
+    changeAreaEncoding("#circularPacking", root);
 }
 
-function changeAreaEncoding(id, theme_name, data_root) {
-    root = data_root;
+// function changeCircularPackingEncoding
+function changeAreaEncoding(id) {
+    root = data_circular_packing;
     var pack = d3.pack()
         .size([cirlcularPackingSize -10, cirlcularPackingSize -10]);
 
     root = d3.hierarchy(root)        
         .sum(function (d) {
+            console.log("theme_name",theme_name);
             switch (theme_name) {
                 case "dating": return d.dating;
                 case "violence": return d.violence;
@@ -51,7 +53,7 @@ function changeAreaEncoding(id, theme_name, data_root) {
         
     var nodes = pack(root);
 
-    // d3.select(id).selectAll("g.node").remove();
+    d3.select(id).selectAll("g.node").remove();
 
     g
         .selectAll("g")
@@ -76,7 +78,8 @@ function changeAreaEncoding(id, theme_name, data_root) {
                     return d.y;
                 })
                 .attr("r", function (d) {
-                        return d.r * 0.9;
+                    if (d == root) return 0;
+                    return d.r * 0.9;
                 })
                 .on("click", function(d) {
                     console.log(d.theme_name);
@@ -104,11 +107,12 @@ function changeAreaEncoding(id, theme_name, data_root) {
 
 function circularPacking(id, data) {
     g = d3
-        .select("#circularPacking")
+        .select(id)
         .append("svg")
         .attr("width", cirlcularPackingSize)
         .attr("height", cirlcularPackingSize)
         .append("g");
-  
-    changeAreaEncoding(id, "theme_weight", data);
+    
+    data_circular_packing = data;
+    changeAreaEncoding(id);
 }
