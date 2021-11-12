@@ -11,6 +11,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
         <h1>IS SAD MUSIC REALLY THAT SAD?</h1>
@@ -20,7 +21,13 @@
         <div class="tooltip hidden" id="tooltip-radarChart">
             <p><span id="value"></span></p>
         </div>
-        <div id="circularPacking" width=35%></div>
+        <div class="tooltip hidden" id="tooltip-circularPacking">
+            <p><span id="value"></span></p>
+        </div>
+        <div id="circularContainer" width=45%>
+            <span class="material-icons md-light" onclick="goBack()">arrow_back</span>
+            <div id="circularPacking" width=35%></div>
+        </div>
         <div id="radarContainer" width=45%>
             <div id="radarChart"></div>
             <div id="searchbar">

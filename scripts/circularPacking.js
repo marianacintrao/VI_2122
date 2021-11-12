@@ -4,7 +4,32 @@ var root,
     circleMargin = 10,
     scale = 30;
 
-    const cirlcularPackingSize = height / 3 + (p * 1.8);
+const cirlcularPackingSize = height / 3 + (p * 1.8);
+
+function hide(elements) {
+    elements = elements.length ? elements : [elements];
+    for (var index = 0; index < elements.length; index++) {
+        elements[index].style.display = 'none';
+    }
+}
+
+const displayTooltip = function(event, d) {
+    selected_genre = d.data.name
+    d3
+        .select("#tooltip-circularPacking")
+        .style("left", event.pageX + "px")
+        .style("top", event.pageY + "px")
+        .style("opacity", 1)
+        .style("background-color", color(selected_genre))
+        .select("#value")
+        .text(selected_genre);
+}
+
+const hideTooltip = function(event, d) {
+    d3
+        .select("#tooltip-circularPacking")
+        .style("opacity", 0);
+}
 
 // select("pop", data)
 function select(selected, data) {
@@ -15,15 +40,28 @@ function select(selected, data) {
     });
 }
 
-function changeDataset(id, new_dataset) {
-    root = new_dataset;
-    d3.select(id).selectAll("svg").remove();
+function changeLevel(name) {
+    //d3.select("#g.circle").selectAll("svg").remove();
+    d3.select("#circularPacking").selectAll("g.node").remove();
+    console.log(name)
+    select(name, root)
     changeAreaEncoding("#circularPacking", root);
+    changingLevel = false;
+}
+
+function goBack() {
+    currentLevel = "avg";
+    changeAreaEncoding("#circularPacking", currentLevel) 
 }
 
 // function changeCircularPackingEncoding
-function changeAreaEncoding(id) {
+function changeAreaEncoding(id, opt_name) {
     root = data_circular_packing;
+    
+    if (opt_name === undefined)
+        select("avg", root);
+    else select(opt_name, root); 
+    
     var pack = d3.pack()
         .size([cirlcularPackingSize -10, cirlcularPackingSize -10]);
 
@@ -55,8 +93,6 @@ function changeAreaEncoding(id) {
 
     d3.select(id).selectAll("g.node").remove();
 
-
-
     g
         .selectAll("g")
         .data(nodes)
@@ -73,44 +109,26 @@ function changeAreaEncoding(id) {
                 .attr("stroke-width", 2)
                 .attr("fill-opacity", 0.3)
                 .attr("text-align", "center")
-                .attr("cx", function (d) {
-                    return d.x;
-                })
-                .attr("cy", function (d) {
-                    return d.y;
-                })
+                .attr("cx", function (d) { return d.x; })
+                .attr("cy", function (d) { return d.y; })
                 .attr("r", function (d) {
-                    if (d == root) return 0;
+                    if (d == root)
+                        return 0;
                     return d.r * 0.9;
+                })
+                .attr("style", function(d) {
+                    if (d.depth == 1) return;
+                    return "visibility: hidden"
                 })
                 .attr("name", function (d) {
                     return d.data.name;
                 })
                 .on("click", function(d) {
-                    console.log(d.theme_name);
+                    currentLevel = this.getAttribute("name");
+                    changeAreaEncoding("#circularPacking", currentLevel) 
                 })
-                .each(function(i) { 
-                    // console.log(i)
-                    if (i == root) return;
-                        
-                    d3.select(this.parentNode)
-                        .append("text")
-                        .attr("class", "label")
-                        .attr("stroke", "none")
-                        .style("font-size", "11px")
-                        .style("fill", _grey)
-                        .style("font-family", "Lato")
-                        .attr("text-anchor", "middle")
-
-                        .attr("transform", function (i) {
-                            return "translate(" + i.x + "," + i.y + ")";
-                        })
-                        .text(function(i) {
-                            return i.data.name;
-                        })
-        
-                })
-
+                .on("mouseover", displayTooltip)
+                .on("mouseleave", hideTooltip)
 }
 
 function circularPacking(id, data) {
@@ -122,5 +140,5 @@ function circularPacking(id, data) {
         .append("g");
     
     data_circular_packing = data;
-    changeAreaEncoding(id);
+    changeAreaEncoding(id, "avg");
 }

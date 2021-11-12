@@ -1,30 +1,25 @@
 function clickParallelCoorAxis(id, at_name) {
-    
     // check if axis is already clicked
     if (d3.selectAll("#parallel-coor-axis_" + at_name).classed("clicked")) {
-
         // if clicked, unlick, go back to default and return
         d3.select(id).select("svg").selectAll("g").selectAll(".axis").classed("clicked", false);
         return;
     }
 
     // Turn already selected axis grey and unclicking it
-
     d3.select(id).selectAll("g").each(function() {
         if (d3.select(this).classed("clicked")) {
-
             var id_name = d3.select(this).attr("id");
-            
             if (id_name) {
                 var at_name = id_name.split('_')[1];
+                d3
+                    .selectAll("#parallel-coor-axis_" + at_name)
+                    .style("color", _grey)
+                    .classed("clicked", false);
                 
                 d3
-                .selectAll("#parallel-coor-axis_" + at_name)
-                .style("color", _grey)
-                .classed("clicked", false);
-                d3
-                .selectAll("#parallel-coor-text_" + at_name)
-                .style("fill", _grey);
+                    .selectAll("#parallel-coor-text_" + at_name)
+                    .style("fill", _grey);
             }
         }
     })
@@ -34,8 +29,6 @@ function clickParallelCoorAxis(id, at_name) {
 
     // this axis clicked = true
     d3.selectAll("#parallel-coor-axis_" + at_name).classed("clicked", true)
-
-    ///////// chamar func dos atributos do circular
 }
 
 
@@ -161,9 +154,10 @@ function ParallelCoordinatesChart(id, data, update) {
                 changeRadarAxisColor(this.getAttribute("name"), _grey);
             })
             .on("click", function() {
-                clickParallelCoorAxis(id, this.getAttribute("name"))
-                clickRadarAxis(radarChart, this.getAttribute("name"))
-                changeAreaEncoding("#circularPacking");
+                clickParallelCoorAxis(id, this.getAttribute("name"));
+                clickRadarAxis(radarChart, this.getAttribute("name"));
+                currentTheme = this.getAttribute("name");
+                changeAreaEncoding("#circularPacking", currentLevel);
             })
         })
         .append("text")
@@ -182,11 +176,16 @@ function ParallelCoordinatesChart(id, data, update) {
         .enter()
         .append("path")
         .attr("class", function (d) { return "parallelCoordLine " + d.main_genre } )
+        .attr("name", function(d) { return d.main_genre; })
         .attr("d", path)
         .style("fill", "none")
         .style("stroke", _grey)
         .style("stroke-width", lineWidth)
         .style("opacity", lineOpacity)
+        .on("click", function(d) {
+            currentLevel = this.getAttribute("name");
+            changeAreaEncoding("#circularPacking", currentLevel) 
+        })
         .on("mouseover", highlight)
         .on("mouseleave", doNotHighlight)
 }

@@ -12,22 +12,24 @@ const default_theme_average = "https://raw.githubusercontent.com/marianacintrao/
     // root_no_artist = "datasets/root_no_artist_2.json"
     // root_by_main_genre = "datasets/root_no_specific_genre.json"
 
-var data_themes_by_artist;
-var data_artist_main_genre;
-var data_root;
-var data_root_by_main_genre;
-
-var data_circular_packing;
+var data_themes_by_artist,
+    data_artist_main_genre,
+    data_root,
+    data_root_by_main_genre,
+    data_circular_packing;
 
 //enter input
 var input = document.getElementById("searchbarvalue");
 input.addEventListener("keyup", function(event) {
-  if (event.keyCode === 13) {
-   event.preventDefault();
-   searchBar();
-   document.getElementById("searchbarvalue").value = '';
-  }
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        searchBar();
+        document.getElementById("searchbarvalue").value = '';
+    }
 });
+
+var currentLevel = "avg",
+    currentTheme = "theme_weight";
 
 Promise
     .all([
@@ -47,7 +49,7 @@ Promise
                 ]) {
         data_themes_by_artist = themes_by_artist;
         data_artist_main_genre = artist_main_genre;
-        data_root = root;
+        data_root = root_by_main_genre;
         data_root_by_main_genre = root_by_main_genre;
         circularPacking("#circularPacking", data_root);
         // changeAreaEncoding("#circularPacking", data_root);

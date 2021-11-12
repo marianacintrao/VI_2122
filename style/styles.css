@@ -45,7 +45,6 @@ h2 {
     width: 0;
     overflow: visible;
     /* transform: translateY(50%); */
-
 }
 
 #radarChart [id^="radar-chart-text_"] {
@@ -106,18 +105,6 @@ h2 {
     box-shadow: 0 0 10px #fafcfb;
     border-bottom: 5px solid transparent;
   }
-
-/*button {
-    width: auto;
-    height: auto;
-    padding: 10px;
-    /* background-color: #fafcfb; 
-    background-color: #d9d9d9;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    font-family: "Lucida Console", "Courier New", monospace;
-}*/
 
 ul {
     margin-left: 0; 
@@ -222,44 +209,55 @@ li {
     margin: 0;
 }
 
-/* #circularPacking {
-    position: absolute;
-    padding: 0;
-    margin: 0;
-}
-
-#circularPacking svg {
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    display: block;
-    margin: auto;
-} */
-
-
-/* ///////////////////// */
 .node {
     cursor: pointer;
-  }
-  
-  .node:hover {
+}
+
+.node:hover {
     stroke: #000;
     stroke-width: 1.5px;
-  }
-  
-  .node--leaf {
+}
+
+.node--leaf {
     fill: white;
-  }
-  
-  .label {
+}
+
+.label {
     font: 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-anchor: middle;
     text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
-  }
-  
-  .label,
-  .node--root,
-  .node--leaf {
+}
+
+.label,
+.node--root,
+.node--leaf {
     pointer-events: none;
-  }
-  
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    cursor: pointer;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
