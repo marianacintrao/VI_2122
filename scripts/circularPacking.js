@@ -55,6 +55,8 @@ function changeAreaEncoding(id) {
 
     d3.select(id).selectAll("g.node").remove();
 
+
+
     g
         .selectAll("g")
         .data(nodes)
@@ -81,28 +83,34 @@ function changeAreaEncoding(id) {
                     if (d == root) return 0;
                     return d.r * 0.9;
                 })
+                .attr("name", function (d) {
+                    return d.data.name;
+                })
                 .on("click", function(d) {
                     console.log(d.theme_name);
-                });
+                })
+                .each(function(i) { 
+                    // console.log(i)
+                    if (i == root) return;
+                        
+                    d3.select(this.parentNode)
+                        .append("text")
+                        .attr("class", "label")
+                        .attr("stroke", "none")
+                        .style("font-size", "11px")
+                        .style("fill", _grey)
+                        .style("font-family", "Lato")
+                        .attr("text-anchor", "middle")
 
-    g
-        .selectAll("text")
-        .data(nodes)
-        .enter()
-        .append("text")
-            .attr("class", "label")
-            .style("fill-opacity", function(d) {
-                return d.parent === root ? 1 : 0;
-            })
-            .attr("transform", function (d) {
-                return "translate(" + d.x + "," + d.y + ")";
-            })
-            .style("display", function(d) {
-                return d.parent === root ? "inline" : "none";
-            })
-            .text(function(d) {
-                return d.data.name;
-            });
+                        .attr("transform", function (i) {
+                            return "translate(" + i.x + "," + i.y + ")";
+                        })
+                        .text(function(i) {
+                            return i.data.name;
+                        })
+        
+                })
+
 }
 
 function circularPacking(id, data) {
