@@ -103,6 +103,9 @@ function ParallelCoordinatesChart(id, data, update) {
         .text(genres_dict[d.main_genre]);
 
         addRadarArea(d, "parallel", color(selected_genre));
+
+        //for circle packing
+        highlightCircle(selected_genre);
     }
     
     // Unhighlight
@@ -119,6 +122,9 @@ function ParallelCoordinatesChart(id, data, update) {
         // Remove radar area
         d3.selectAll("#path-hovered_" + "parallel").remove();
         d3.selectAll("#g-hovered_" + "parallel").remove();
+
+        //for circle packing
+        unhighlightCircle(d.main_genre);
     }
 
     // The path function take a row of the csv as input, and return x and y coordinates of the line to draw for this raw.
@@ -156,8 +162,7 @@ function ParallelCoordinatesChart(id, data, update) {
             .on("click", function() {
                 clickParallelCoorAxis(id, this.getAttribute("name"));
                 clickRadarAxis(radarChart, this.getAttribute("name"));
-                currentTheme = this.getAttribute("name");
-                changeAreaEncoding("#circularPacking", currentLevel);
+                changeAreaEncoding("#circularPacking");
             })
         })
         .append("text")
@@ -183,8 +188,14 @@ function ParallelCoordinatesChart(id, data, update) {
         .style("stroke-width", lineWidth)
         .style("opacity", lineOpacity)
         .on("click", function(d) {
-            currentLevel = this.getAttribute("name");
-            changeAreaEncoding("#circularPacking", currentLevel) 
+            if (data_index < 2) {
+                data_index = data_index + 1;
+                previousLevel = currentLevel;
+                console.log("new level from p coor: " + this.getAttribute("name"))
+                currentLevel = this.getAttribute("name");
+                //console.log("currentLevel", currentLevel);
+                changeAreaEncoding("#circularPacking");
+            }
         })
         .on("mouseover", highlight)
         .on("mouseleave", doNotHighlight)

@@ -6,15 +6,9 @@ var root,
 
 const cirlcularPackingSize = height / 3 + (p * 1.8);
 
-function hide(elements) {
-    elements = elements.length ? elements : [elements];
-    for (var index = 0; index < elements.length; index++) {
-        elements[index].style.display = 'none';
-    }
-}
-
 const displayTooltip = function(event, d) {
-    selected_genre = d.data.name
+    selected_genre = d.data.name;
+
     d3
         .select("#tooltip-circularPacking")
         .style("left", event.pageX + "px")
@@ -29,6 +23,18 @@ const hideTooltip = function(event, d) {
     d3
         .select("#tooltip-circularPacking")
         .style("opacity", 0);
+}
+
+function highlightCircle(name) {
+    console.log(name)
+    d3.selectAll("#circle-" + name.replace(/ /g,""))
+    .attr("fill-opacity", 1);
+}
+
+function unhighlightCircle(name) {
+    console.log(name)
+    d3.selectAll("#circle-" + name.replace(/ /g,""))
+    .attr("fill-opacity", 0.3);
 }
 
 // select("pop", data)
@@ -66,9 +72,9 @@ function goBack() {
         data_index -= 1;
         if (data_index == 1) previousLevel = "avg";
         else previousLevel = "";
-        console.log("go back!")
-        console.log("previousLevel", previousLevel)
-        console.log("currentLevel", currentLevel)
+        //console.log("go back!")
+        //console.log("previousLevel", previousLevel)
+        //console.log("currentLevel", currentLevel)
         changeAreaEncoding("#circularPacking");
     }
 }
@@ -121,11 +127,12 @@ function changeAreaEncoding(id) {
         .append("g")
             .attr("class", "node")
             .append("circle")
+                .attr("id", function(d) { return "circle-" + d.data.name.replace(/ /g,"");})
                 .attr("fill", function (d) {
-                    return color(d.data.children);
+                    return color(d.data.name);
                 })
                 .attr("stroke", function (d) {
-                    return color(d.data.children);
+                    return color(d.data.name);
                 })
                 .attr("stroke-width", 2)
                 .attr("fill-opacity", 0.3)
@@ -145,15 +152,16 @@ function changeAreaEncoding(id) {
                     return d.data.name;
                 })
                 .on("click", function(d) {
-                    if (data_index < 3) {
+                    if (data_index < 2) {
                         data_index = data_index + 1;
                         previousLevel = currentLevel;
                         currentLevel = this.getAttribute("name");
-                        console.log("currentLevel", currentLevel);
+                        //console.log("currentLevel", currentLevel);
                         changeAreaEncoding("#circularPacking");
                     }
                 })
                 .on("mouseover", displayTooltip)
+                    
                 .on("mouseleave", hideTooltip)
 }
 

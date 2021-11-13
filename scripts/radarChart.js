@@ -69,7 +69,7 @@ function clickRadarAxis(id, at_name) {
 
     // change theme encoding
     currentTheme = reverse_attributes[at_name]
-    console.log(currentTheme)
+    console.log("from radar: " + currentTheme)
     
     // change axis color to highlighted
     changeRadarAxisColor(at_name, radarCfg.highlightColor)
@@ -155,6 +155,7 @@ const doNotHighlightRadarDot = function(event, d) {
 
 
 function addRadarArea(data, hovered_genre, color) {
+    console.log(data)
     let id = "#radarChart";
     let svg = d3
             .select(id)
@@ -410,7 +411,7 @@ function RadarChart(id, data, update) {
                     d3.select(this)
                         clickRadarAxis(id, attributes[at_name])
                         clickParallelCoorAxis("#parallelCoordinates", attributes[at_name])
-                        console.log("index", data_index);
+                        //console.log("index", data_index);
                         changeAreaEncoding("#circularPacking");
                 })
         }
