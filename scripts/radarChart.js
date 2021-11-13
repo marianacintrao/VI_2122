@@ -42,7 +42,7 @@ function clickRadarAxis(id, at_name) {
         // if clicked, unlick, go back to default and return
         d3.select(id).select("svg").selectAll("line").classed("clicked", false);
 
-        theme_name = "theme_weight";
+        currentTheme = "theme_weight";
         return;
     }
 
@@ -68,8 +68,8 @@ function clickRadarAxis(id, at_name) {
     })
 
     // change theme encoding
-    theme_name = reverse_attributes[at_name]
-    console.log(theme_name)
+    currentTheme = reverse_attributes[at_name]
+    console.log(currentTheme)
     
     // change axis color to highlighted
     changeRadarAxisColor(at_name, radarCfg.highlightColor)
@@ -410,7 +410,7 @@ function RadarChart(id, data, update) {
                     d3.select(this)
                         clickRadarAxis(id, attributes[at_name])
                         clickParallelCoorAxis("#parallelCoordinates", attributes[at_name])
-                        console.log("clicou!")
+                        console.log("index", data_index);
                         changeAreaEncoding("#circularPacking");
                 })
         }

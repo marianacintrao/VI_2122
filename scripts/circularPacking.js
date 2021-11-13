@@ -32,43 +32,64 @@ const hideTooltip = function(event, d) {
 }
 
 // select("pop", data)
-function select(selected, data) {
-    data["children"].forEach(d => {
-        if (d["name"] == selected) {
+function select(selected) {
+    root["children"].forEach(d => {
+        if (d["name"] == selected && data_index == 1) {
             root = d;
+            return;
+        }
+        else if (d["name"] == previousLevel && data_index == 2) {
+            root = d;
+            root["children"].forEach(d => {
+                if (d["name"] == selected) {
+                    root = d;
+                    return;
+                }
+
+            })
         }
     });
 }
 
-function changeLevel(name) {
-    //d3.select("#g.circle").selectAll("svg").remove();
-    d3.select("#circularPacking").selectAll("g.node").remove();
-    console.log(name)
-    select(name, root)
-    changeAreaEncoding("#circularPacking", root);
-    changingLevel = false;
-}
+//function changeLevel(name) {
+//    //d3.select("#g.circle").selectAll("svg").remove();
+//    d3.select("#circularPacking").selectAll("g.node").remove();
+//    console.log(name)
+//    select(name, root)
+//    changeAreaEncoding("#circularPacking", root);
+//    changingLevel = false;
+//}
 
 function goBack() {
-    currentLevel = "avg";
-    changeAreaEncoding("#circularPacking", currentLevel) 
+    if (data_index > 0) {
+        currentLevel = previousLevel;
+        data_index -= 1;
+        if (data_index == 1) previousLevel = "avg";
+        else previousLevel = "";
+        console.log("go back!")
+        console.log("previousLevel", previousLevel)
+        console.log("currentLevel", currentLevel)
+        changeAreaEncoding("#circularPacking");
+    }
 }
 
 // function changeCircularPackingEncoding
-function changeAreaEncoding(id, opt_name) {
-    root = data_circular_packing;
+function changeAreaEncoding(id) {
+    root = data_circular_packing[data_index];
+
+    // console.log("going to select: " + currentLevel + " with index " + data_index);
     
-    if (opt_name === undefined)
-        select("avg", root);
-    else select(opt_name, root); 
+    if (currentLevel === undefined)
+        select("avg");
+    else
+        select(currentLevel); 
     
     var pack = d3.pack()
         .size([cirlcularPackingSize -10, cirlcularPackingSize -10]);
 
     root = d3.hierarchy(root)        
         .sum(function (d) {
-            console.log("theme_name",theme_name);
-            switch (theme_name) {
+            switch (currentTheme) {
                 case "dating": return d.dating;
                 case "violence": return d.violence;
                 case "world/life": return d.life;
@@ -124,14 +145,19 @@ function changeAreaEncoding(id, opt_name) {
                     return d.data.name;
                 })
                 .on("click", function(d) {
-                    currentLevel = this.getAttribute("name");
-                    changeAreaEncoding("#circularPacking", currentLevel) 
+                    if (data_index < 3) {
+                        data_index = data_index + 1;
+                        previousLevel = currentLevel;
+                        currentLevel = this.getAttribute("name");
+                        console.log("currentLevel", currentLevel);
+                        changeAreaEncoding("#circularPacking");
+                    }
                 })
                 .on("mouseover", displayTooltip)
                 .on("mouseleave", hideTooltip)
 }
 
-function circularPacking(id, data) {
+function circularPacking(id) {
     g = d3
         .select(id)
         .append("svg")
@@ -139,6 +165,6 @@ function circularPacking(id, data) {
         .attr("height", cirlcularPackingSize)
         .append("g");
     
-    data_circular_packing = data;
-    changeAreaEncoding(id, "avg");
+    // data_circular_packing = data;
+    changeAreaEncoding(id);
 }
