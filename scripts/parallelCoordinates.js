@@ -49,7 +49,7 @@ function changeParallelCoorAxisColor(at_name, col) {
         .style("fill", col);
 }
 
-function changeLevel(name) {
+function changeToSubgenreLevel(name) {
     data = data_themes_by_specific_genre.filter(function(d) {
         if (d.main_genre == name) {
             return d;
@@ -60,16 +60,44 @@ function changeLevel(name) {
     drawParentLine(name);
 }
 
+function changeToArtistLevel(name) {
+    let artist_list = []
+    data_artist_specific_genre.filter(function(d) {
+        if (d.specific_genre == name) {
+            artist_list.push(d.artist_name)
+        }
+    })
+
+    data = data_themes_by_artist.filter(function(d) {
+        if (artist_list.includes(d.artist_name)) {
+            console.log(name)
+            return d;
+            
+        }});
+        
+    drawParallelCoordinatesLines();
+    drawParentLine(name);
+}
+
 function path(d) {
     return d3.line()(dimensions.map(function(p) { return [x(p), y[p](d[p])]; }));
 }
 
 function drawParentLine(name) {
-    data = data_themes_by_main_genre.filter(function(d) {
-        if (d.main_genre == name) {
-            return d;
-        }
-    })
+    if (data_index == 1) {
+        data = data_themes_by_main_genre.filter(function(d) {
+            if (d.main_genre == name) {
+                return d;
+            }
+        })
+    }
+    else if (data_index == 2) {
+        data = data_themes_by_specific_genre.filter(function(d) {
+            if (d.specific_genre == name) {
+                return d;
+            }
+        })
+    }
 
     svg
         .selectAll("myPath")
@@ -83,7 +111,7 @@ function drawParentLine(name) {
         .style("fill", "none")
         .style("stroke", color(name))
         .style("stroke-width", lineWidth)
-        .style("opacity", 1)
+        .style("opacity", 0.8)
         .moveToFront()
 }
 
@@ -106,8 +134,10 @@ function drawParallelCoordinatesLines() {
                 return "parallelCoordLine-" + d.main_genre.replace(/ /g, ""); 
             else if (data_index == 1)
                 return "parallelCoordLine-" + d.specific_genre.replace(/ /g, "");
-            else
+            else {
+                console.log("oi")
                 return "parallelCoordLine-" + d.artist_name.replace(/ /g, "");
+            }
         })
         .attr("name", function(d) { 
             if (data_index == 0)
@@ -217,8 +247,6 @@ function ParallelCoordinatesChart(id) {
     //     }
     // })
     changeDataset(data_themes_by_main_genre)
-
-    //changeLevel("avg");
 
     dimensions = ["dating", "violence", "world/life", "night/time", "shake the audience", "family/gospel", "romantic", "communication", "obscene", "music", "movement/places", "light/visual perceptions", "family/spiritual", "like/girls", "sadness", "feelings"]
     

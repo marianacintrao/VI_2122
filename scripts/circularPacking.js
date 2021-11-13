@@ -155,8 +155,10 @@ function changeAreaEncoding(id) {
                         data_index = data_index + 1;
                         previousLevel = currentLevel;
                         currentLevel = this.getAttribute("name");
+                        console.log(currentLevel);
                         changeAreaEncoding("#circularPacking");
-                        changeLevel(currentLevel);
+                        if (data_index == 1) changeToSubgenreLevel(currentLevel);
+                        else if (data_index == 2) changeToArtistLevel(currentLevel);
                     }
                 })
                 .on("mouseover", displayTooltip)
