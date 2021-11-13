@@ -21,7 +21,7 @@ let radarCfg = {
     lineWidth: 3,
     shapeOpacity: 0.3,
     gridOpacity: 0.3,
-    maxValue: 0.4,
+    maxValue: 1,
     defaultColor: _grey,
     highlightColor: _white
 };
@@ -320,7 +320,6 @@ function searchBar() {
             .attr("fill-opacity", radarCfg.opacityCircles)
             .attr("opacity", 0.5)
             .attr("r", radarCfg.dotRadius)
-            
             .on("mouseover", highlightRadarDot)
             .on("mouseleave", doNotHighlightRadarDot)
     }
