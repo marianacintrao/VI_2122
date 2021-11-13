@@ -26,23 +26,14 @@ h2 {
 }
 
 #radarContainer {
-    width: 45%;
-    height: 30%;
-    /* position: absolute; */
-    /* transform: translateX(50%);
-    display: inline-block; */
 }
 
 #radarChart {
-    height: 0;
-    width: 0;
     overflow: visible;
 }
 
 #radarChart svg {
     /* transform: translate(60%, 50%); */
-    height: 0;
-    width: 0;
     overflow: visible;
     /* transform: translateY(50%); */
 }
