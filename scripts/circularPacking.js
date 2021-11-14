@@ -36,14 +36,15 @@ const hideTooltip = function(event, d) {
 }
 
 function highlightCircle(name) {
+    console.log(name)
     d3
-        .selectAll("#circle-" + name.replace(/ /g,""))
+        .selectAll("#circle-" + name.replace(/ /g,"").replace("&", "n"))
         .attr("fill-opacity", 1);
 }
 
 function unhighlightCircle(name) {
     d3
-        .selectAll("#circle-" + name.replace(/ /g,""))
+        .selectAll("#circle-" + name.replace(/ /g,"").replace("&", "n") )
         .attr("fill-opacity", 0.3);
 }
 
@@ -108,7 +109,7 @@ function changeAreaEncoding(id) {
         .append("g")
             .attr("class", "node")
             .append("circle")
-                .attr("id", function(d) { return "circle-" + d.data.name.replace(/ /g,"");})
+                .attr("id", function(d) { return "circle-" + d.data.name.replace(/ /g,"").replace("&", "n");})
                 .attr("fill", function (d) {
                     if (data_index == 0) {
                         return color(d.data.name)

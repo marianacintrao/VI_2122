@@ -50,11 +50,13 @@ function changeParallelCoorAxisColor(at_name, col) {
 }
 
 function changeToSubgenreLevel(name) {
+    console.log("changing to " + name)
     data = data_themes_by_specific_genre.filter(function(d) {
         if (d.main_genre == name) {
             return d;
         }
     })
+    console.log(data)
 
     drawParallelCoordinatesLines();
     drawParentLine(name);
@@ -105,11 +107,15 @@ function drawParentLine(name) {
         .enter()
         .append("path")
         .attr("class", "parallelCoordLinesParent")
-        .attr("id", function (d) { return "parallelCoordLine " + d.main_genre.replace(/ /g,".") } )
+        .attr("id", function (d) { return "parallelCoordLine " + d.main_genre.replace(/ /g,"").replace("&", "n") } )
         .attr("name", function(d) { return d.main_genre; })
         .attr("d", path)
         .style("fill", "none")
-        .style("stroke", color(name))
+        .style("stroke", function() {
+            if (data_index == 2)
+                return color(previousLevel)
+            return color(name)
+        })
         .style("stroke-width", lineWidth)
         .style("opacity", 0.8)
         .moveToFront()
@@ -131,12 +137,12 @@ function drawParallelCoordinatesLines() {
         .attr("class", "parallelCoordLines")
         .attr("id", function (d) {
             if (data_index == 0)
-                return "parallelCoordLine-" + d.main_genre.replace(/ /g, ""); 
+                return "parallelCoordLine-" + d.main_genre.replace(/ /g, "").replace("&", "n") ; 
             else if (data_index == 1)
-                return "parallelCoordLine-" + d.specific_genre.replace(/ /g, "");
+                return "parallelCoordLine-" + d.specific_genre.replace(/ /g, "").replace("&", "n") ;
             else {
                 console.log("oi")
-                return "parallelCoordLine-" + d.artist_name.replace(/ /g, "");
+                return "parallelCoordLine-" + d.artist_name.replace(/ /g, "").replace("&", "n") ;
             }
         })
         .attr("name", function(d) { 
@@ -157,6 +163,12 @@ function drawParallelCoordinatesLines() {
                 data_index = data_index + 1;
                 previousLevel = currentLevel;
                 currentLevel = this.getAttribute("name");
+                if (data_index == 1) {
+                    changeToSubgenreLevel(currentLevel);
+                }
+                else if (data_index == 2) {
+                    changeToArtistLevel(currentLevel);
+                }
                 changeAreaEncoding("#circularPacking");
             }
         })
@@ -182,8 +194,13 @@ const highlight = function(event, d) {
         .style("opacity", lineOpacity)    
 
     d3
-        .select("#parallelCoordLine-" + selected.replace(/ /g,""))
-        .style("stroke", color(d.main_genre))
+        .select("#parallelCoordLine-" + selected.replace(/ /g,"").replace("&", "n"))
+        .style("stroke", function() {
+            if (data_index < 2)
+                return color(d.main_genre)
+            else
+                return color(previousLevel)
+        })
         .style("stroke-width", lineWidth)
         .style("opacity", "1")
 
@@ -196,11 +213,19 @@ const highlight = function(event, d) {
         .style("left", event.pageX + "px")
         .style("top", event.pageY + "px")
         .style("opacity", 1)
-        .style("background-color", color(d.main_genre))
+        .style("background-color", function() {
+            if (data_index < 2)
+                return color(d.main_genre)
+            return color(previousLevel)
+        })
         .select("#value")
             .text(selected);
 
-    addRadarArea(d, "parallel", color(d.main_genre));
+    addRadarArea(d, "parallel", function() {
+        if (data_index < 2)
+            return color(d.main_genre)
+        return color(previousLevel)
+    });
     highlightCircle(selected);
 }
 
@@ -225,7 +250,7 @@ const doNotHighlight = function(event, d) {
     d3.selectAll("#path-hovered_" + "parallel").remove();
     d3.selectAll("#g-hovered_" + "parallel").remove();
 
-    unhighlightCircle(selected.replace(/ /g,""));
+    unhighlightCircle(selected.replace(/ /g,"").replace("&", "n") );
 }
 
 function changeDataset(dataset_name) {

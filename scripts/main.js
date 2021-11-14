@@ -17,6 +17,7 @@ var data_themes_by_artist,
     data_themes_by_specific_genre,
     data_artist_specific_genre,
     data_circular_packing = [],
+    data_default_theme_average,
     data_index = 0,
     currentLevel = "avg",
     currentTheme = "theme_weight",
@@ -62,10 +63,11 @@ Promise
         data_artist_specific_genre = artist_specific_genre;
         data_circular_packing.push(root_by_main_genre)
         data_circular_packing.push(root_by_specific_genre)
-        data_circular_packing.push(root_by_artist)
+        data_circular_packing.push(root_by_artist);
+        data_default_theme_average = default_theme_average;
         circularPacking("#circularPacking");
-        RadarChart("#radarChart", default_theme_average, false);
-        ParallelCoordinatesChart("#parallelCoordinates", false);
+        RadarChart("#radarChart");
+        ParallelCoordinatesChart("#parallelCoordinates");
     });
 
 function goBack() {
@@ -73,16 +75,16 @@ function goBack() {
         currentLevel = previousLevel;
         data_index -= 1;
         if (data_index == 1) {
-            //previousLevel = "avg";
             changeDataset(data_themes_by_specific_genre);
+            changeToSubgenreLevel(currentLevel);
         }
         else if (data_index == 0) {
             previousLevel = "";
             changeDataset(data_themes_by_main_genre);
+            drawParallelCoordinatesLines()
         }
         changeAreaEncoding("#circularPacking");
     }
-    drawParallelCoordinatesLines()
 }
 
 // 0 = avg -> mains
