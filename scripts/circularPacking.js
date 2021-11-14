@@ -27,24 +27,34 @@ const displayTooltip = function(event, d) {
         .style("background-color", color(selected_genre))
         .select("#value")
         .text(selected_name);
+
+    highlightLine(selected_name, color(selected_genre), d);
+    getRadarArea(selected_name, "circular");
+    highlightCircle(selected_name);
 }
 
 const hideTooltip = function(event, d) {
     d3
         .select("#tooltip-circularPacking")
         .style("opacity", 0);
+
+    var selected = d.data.name;
+    unhighlightLine(selected);
+    unhighlightCircle(selected)
+
+    d3.selectAll("#path-hovered_" + "circular").remove();
+    d3.selectAll("#g-hovered_" + "circular").remove();
 }
 
 function highlightCircle(name) {
-    console.log(name)
     d3
-        .selectAll("#circle-" + name.replace(/ /g,"").replace("&", "n"))
+        .selectAll("#circle-" + name.replace(/ /g, "").replace("'", "").replace("&", "n"))
         .attr("fill-opacity", 1);
 }
 
 function unhighlightCircle(name) {
     d3
-        .selectAll("#circle-" + name.replace(/ /g,"").replace("&", "n") )
+        .selectAll("#circle-" + name.replace(/ /g, "").replace("'", "").replace("&", "n"))
         .attr("fill-opacity", 0.3);
 }
 
@@ -109,7 +119,7 @@ function changeAreaEncoding(id) {
         .append("g")
             .attr("class", "node")
             .append("circle")
-                .attr("id", function(d) { return "circle-" + d.data.name.replace(/ /g,"").replace("&", "n");})
+                .attr("id", function(d) { return "circle-" + d.data.name.replace(/ /g, "").replace("'", "").replace("&", "n");})
                 .attr("fill", function (d) {
                     if (data_index == 0) {
                         return color(d.data.name)
@@ -156,7 +166,6 @@ function changeAreaEncoding(id) {
                         data_index = data_index + 1;
                         previousLevel = currentLevel;
                         currentLevel = this.getAttribute("name");
-                        console.log(currentLevel);
                         changeAreaEncoding("#circularPacking");
                         if (data_index == 1) changeToSubgenreLevel(currentLevel);
                         else if (data_index == 2) changeToArtistLevel(currentLevel);

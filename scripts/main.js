@@ -16,8 +16,8 @@ var data_themes_by_artist,
     data_themes_by_main_genre,
     data_themes_by_specific_genre,
     data_artist_specific_genre,
-    data_circular_packing = [],
     data_default_theme_average,
+    data_circular_packing = [],
     data_index = 0,
     currentLevel = "avg",
     currentTheme = "theme_weight",
@@ -38,17 +38,17 @@ Promise
 
         d3.csv(themes_by_main_genre),
         d3.csv(themes_by_specific_genre),
-        d3.csv(default_theme_average), 
-        d3.csv(themes_by_artist), 
-        d3.csv(artist_main_genre), 
-        d3.csv(artist_specific_genre), 
-        d3.json(root_by_main_genre), 
-        d3.json(root_by_specific_genre), 
-        d3.json(root_by_artist), 
+        d3.csv(default_theme_average),
+        d3.csv(themes_by_artist),
+        d3.csv(artist_main_genre),
+        d3.csv(artist_specific_genre),
+        d3.json(root_by_main_genre),
+        d3.json(root_by_specific_genre),
+        d3.json(root_by_artist),
     ])
     .then(function([themes_by_main_genre,
                     themes_by_specific_genre,
-                    default_theme_average, 
+                    default_theme_average,
                     themes_by_artist,
                     artist_main_genre,
                     artist_specific_genre,
@@ -60,32 +60,40 @@ Promise
         data_themes_by_specific_genre = themes_by_specific_genre;
         data_themes_by_artist = themes_by_artist;
         data_artist_main_genre = artist_main_genre;
+        data_default_theme_average = default_theme_average;
         data_artist_specific_genre = artist_specific_genre;
         data_circular_packing.push(root_by_main_genre)
         data_circular_packing.push(root_by_specific_genre)
-        data_circular_packing.push(root_by_artist);
-        data_default_theme_average = default_theme_average;
+        data_circular_packing.push(root_by_artist)
         circularPacking("#circularPacking");
-        RadarChart("#radarChart");
-        ParallelCoordinatesChart("#parallelCoordinates");
+        RadarChart("#radarChart", default_theme_average, false);
+        ParallelCoordinatesChart("#parallelCoordinates", false);
     });
 
 function goBack() {
     if (data_index > 0) {
+
         currentLevel = previousLevel;
         data_index -= 1;
         if (data_index == 1) {
+            previousLevel = "avg";
             changeDataset(data_themes_by_specific_genre);
-            changeToSubgenreLevel(currentLevel);
+
         }
         else if (data_index == 0) {
             previousLevel = "";
             changeDataset(data_themes_by_main_genre);
-            drawParallelCoordinatesLines()
+
+            // RadarChart("#radarChart", default_theme_average, true);
+
         }
+        drawParallelCoordinatesLines()
         changeAreaEncoding("#circularPacking");
+        radarGoBack();
     }
 }
+
+
 
 // 0 = avg -> mains
 // 1 = mains -> spec

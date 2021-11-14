@@ -50,16 +50,35 @@ function changeParallelCoorAxisColor(at_name, col) {
 }
 
 function changeToSubgenreLevel(name) {
-    console.log("changing to " + name)
+    console.log("change to subgenre");
     data = data_themes_by_specific_genre.filter(function(d) {
         if (d.main_genre == name) {
             return d;
         }
     })
-    console.log(data)
 
     drawParallelCoordinatesLines();
-    drawParentLine(name);
+
+    var lineColor;
+    var parentData;
+    if (data_index == 1) {
+        lineColor =  color(name)
+        parentData = data_themes_by_main_genre.filter(function(d) {
+            if (d.main_genre == name) {
+                return d;
+            }
+        })
+    }
+    else if (data_index == 2) {
+        lineColor = color(previousLevel);
+        parentData = data_themes_by_specific_genre.filter(function(d) {
+            if (d.specific_genre == name) {
+                return d;
+            }
+        })
+    }
+    drawParentLine(parentData, lineColor);
+    RadarChart("#radarChart", parentData, true)
 }
 
 function changeToArtistLevel(name) {
@@ -72,51 +91,52 @@ function changeToArtistLevel(name) {
 
     data = data_themes_by_artist.filter(function(d) {
         if (artist_list.includes(d.artist_name)) {
-            console.log(name)
             return d;
             
         }});
         
     drawParallelCoordinatesLines();
-    drawParentLine(name);
-}
 
-function path(d) {
-    return d3.line()(dimensions.map(function(p) { return [x(p), y[p](d[p])]; }));
-}
-
-function drawParentLine(name) {
+    var lineColor;
+    var parentData;
     if (data_index == 1) {
-        data = data_themes_by_main_genre.filter(function(d) {
+        lineColor =  color(name)
+        parentData = data_themes_by_main_genre.filter(function(d) {
             if (d.main_genre == name) {
                 return d;
             }
         })
     }
     else if (data_index == 2) {
-        data = data_themes_by_specific_genre.filter(function(d) {
+        lineColor = color(previousLevel);
+        parentData = data_themes_by_specific_genre.filter(function(d) {
             if (d.specific_genre == name) {
                 return d;
             }
         })
     }
 
+    drawParentLine(parentData, lineColor);
+    RadarChart("#radarChart", parentData, true)
+}
+
+function path(d) {
+    return d3.line()(dimensions.map(function(p) { return [x(p), y[p](d[p])]; }));
+}
+
+function drawParentLine(data, lineColor) {
     svg
         .selectAll("myPath")
         .data(data)
         .enter()
         .append("path")
         .attr("class", "parallelCoordLinesParent")
-        .attr("id", function (d) { return "parallelCoordLine " + d.main_genre.replace(/ /g,"").replace("&", "n") } )
+        .attr("id", function (d) { return "parallelCoordLine " + d.main_genre.replace(/ /g,"") } )
         .attr("name", function(d) { return d.main_genre; })
         .attr("d", path)
         .style("fill", "none")
-        .style("stroke", function() {
-            if (data_index == 2)
-                return color(previousLevel)
-            return color(name)
-        })
-        .style("stroke-width", lineWidth)
+        .style("stroke", lineColor)
+        .style("stroke-width", 4)
         .style("opacity", 0.8)
         .moveToFront()
 }
@@ -129,6 +149,7 @@ function drawParallelCoordinatesLines() {
         .selectAll(".parallelCoordLinesParent")
         .remove();
 
+
     svg
         .selectAll("myPath")
         .data(data)
@@ -137,12 +158,12 @@ function drawParallelCoordinatesLines() {
         .attr("class", "parallelCoordLines")
         .attr("id", function (d) {
             if (data_index == 0)
-                return "parallelCoordLine-" + d.main_genre.replace(/ /g, "").replace("&", "n") ; 
+                return "parallelCoordLine-" + d.main_genre.replace(/ /g, "").replace("'", "").replace("&", "n"); 
             else if (data_index == 1)
-                return "parallelCoordLine-" + d.specific_genre.replace(/ /g, "").replace("&", "n") ;
+                return "parallelCoordLine-" + d.specific_genre.replace(/ /g, "").replace("'", "").replace("&", "n");
             else {
-                console.log("oi")
-                return "parallelCoordLine-" + d.artist_name.replace(/ /g, "").replace("&", "n") ;
+                
+                return "parallelCoordLine-" + d.artist_name.replace(/ /g, "").replace("'", "").replace("&", "n");
             }
         })
         .attr("name", function(d) { 
@@ -163,21 +184,36 @@ function drawParallelCoordinatesLines() {
                 data_index = data_index + 1;
                 previousLevel = currentLevel;
                 currentLevel = this.getAttribute("name");
-                if (data_index == 1) {
-                    changeToSubgenreLevel(currentLevel);
-                }
-                else if (data_index == 2) {
-                    changeToArtistLevel(currentLevel);
-                }
                 changeAreaEncoding("#circularPacking");
+                if (data_index == 1) changeToSubgenreLevel(currentLevel);
+                else if (data_index == 2) changeToArtistLevel(currentLevel);
             }
         })
         .on("mouseover", highlight)
         .on("mouseleave", doNotHighlight)
 }
 
+function highlightLine(name, color, d) {
+    d3
+        .select("#parallelCoordLine-" + name.replace(/ /g, "").replace("'", "").replace("&", "n"))
+        .style("stroke", color)
+        .style("stroke-width", lineWidth)
+        .style("opacity", "1")
+        .moveToFront();
+    
+    // addRadarArea(, "parallel", cssolor);
+}
+
+function unhighlightLine(name) {
+    d3
+        .select("#parallelCoordLine-" + name.replace(/ /g, "").replace("'", "").replace("&", "n"))
+        .style("stroke", _grey)
+        .style("stroke-width", lineWidth)
+        .style("opacity", 0.1)
+}
+
+
 const highlight = function(event, d) {
-    // console.log(d)
     var selected;
     if (data_index == 0)
         selected = d.main_genre
@@ -186,20 +222,22 @@ const highlight = function(event, d) {
     else 
         selected = d.artist_name
 
+    var lineColor;
 
     d3
         .selectAll(".parallelCoordLines")
         .style("stroke", _grey)
         .style("stroke-width", lineWidth)
-        .style("opacity", lineOpacity)    
+        .style("opacity", 0.1)    
 
     d3
-        .select("#parallelCoordLine-" + selected.replace(/ /g,"").replace("&", "n"))
+        .select("#parallelCoordLine-" + selected.replace(/ /g, "").replace("'", "").replace("&", "n"))
         .style("stroke", function() {
-            if (data_index < 2)
-                return color(d.main_genre)
-            else
-                return color(previousLevel)
+            if (data_index == 2)
+                lineColor = color(previousLevel)
+            else 
+                lineColor = color(d.main_genre)
+            return lineColor
         })
         .style("stroke-width", lineWidth)
         .style("opacity", "1")
@@ -213,19 +251,11 @@ const highlight = function(event, d) {
         .style("left", event.pageX + "px")
         .style("top", event.pageY + "px")
         .style("opacity", 1)
-        .style("background-color", function() {
-            if (data_index < 2)
-                return color(d.main_genre)
-            return color(previousLevel)
-        })
+        .style("background-color", lineColor)
         .select("#value")
             .text(selected);
 
-    addRadarArea(d, "parallel", function() {
-        if (data_index < 2)
-            return color(d.main_genre)
-        return color(previousLevel)
-    });
+    addRadarArea(d, "parallel", lineColor);
     highlightCircle(selected);
 }
 
@@ -238,7 +268,7 @@ const doNotHighlight = function(event, d) {
     else 
         selected = d.artist_name
     d3
-        .selectAll(".parallelCoordLines")
+        .select("#parallelCoordLine-" + selected.replace(/ /g, "").replace("'", "").replace("&", "n"))
         .style("stroke", _grey)
         .style("stroke-width", lineWidth)
         .style("opacity", 0.1)
@@ -250,11 +280,18 @@ const doNotHighlight = function(event, d) {
     d3.selectAll("#path-hovered_" + "parallel").remove();
     d3.selectAll("#g-hovered_" + "parallel").remove();
 
-    unhighlightCircle(selected.replace(/ /g,"").replace("&", "n") );
+    unhighlightCircle(selected.replace(/ /g, "").replace("'", "").replace("&", "n"));
 }
 
 function changeDataset(dataset_name) {
-    data = dataset_name;
+    if (data_index == 1) {
+        data = dataset_name.filter(function(d) {
+            if (d.main_genre == currentLevel)
+                return d;
+        });
+    }
+    else 
+        data = dataset_name
 }
 
 function ParallelCoordinatesChart(id) {

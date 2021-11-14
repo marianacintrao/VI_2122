@@ -33,8 +33,6 @@ let radius = Math.min(radarCfg.w/2, radarCfg.h/2),
             .range([0, radius])
             .domain([0, maxValue]);
 
-var data, svg;
-
 
 function clickRadarAxis(id, at_name) {
     
@@ -71,7 +69,6 @@ function clickRadarAxis(id, at_name) {
 
     // change theme encoding
     currentTheme = reverse_attributes[at_name]
-    console.log("from radar: " + currentTheme)
     
     // change axis color to highlighted
     changeRadarAxisColor(at_name, radarCfg.highlightColor)
@@ -79,6 +76,22 @@ function clickRadarAxis(id, at_name) {
     // this axis clicked = true
     d3.selectAll("#radar-chart-axis_" + at_name).classed("clicked", true)
 
+}
+
+function radarGoBack() {
+    var parentData;
+    if (data_index == 0) {
+        parentData = data_default_theme_average; 
+    }
+    else if (data_index == 1) {
+        parentData = data_themes_by_main_genre.filter(function(d) {
+            if (d.main_genre == currentLevel) {
+                return d;
+            }
+        })
+    }
+    RadarChart("#radarChart", parentData, true)
+    if (data_index == 1) {console.log("sdjfgsjdgasjdh");drawParentLine(parentData, color(currentLevel));}
 }
 
 function changeRadarAxisColor(at_name, col) {
@@ -127,14 +140,14 @@ const highlightRadar = function(event, d) {
     d3.select(this)
         .moveToFront()
         .classed("radarShapeHighlight", true);
-    d3.select(".radar-chart-g_" + d.artist_name.replace(/ /g,""))
+    d3.select(".radar-chart-g_" + d.artist_name.replace(/ /g, "").replace("'", "").replace("&", "n"))
         .moveToFront()
         .classed("radarDotsHighlight", true);
 }
 const doNotHighlightRadar = function(event, d) {  
     d3.select(this)
         .classed("radarShapeHighlight", false);
-    d3.select(".radar-chart-g_" + d.artist_name.replace(/ /g,""))
+    d3.select(".radar-chart-g_" + d.artist_name.replace(/ /g, "").replace("'", "").replace("&", "n"))
         .moveToFront()
         .classed("radarDotsHighlight", false);
 }
@@ -155,11 +168,43 @@ const doNotHighlightRadarDot = function(event, d) {
         .style("opacity", 0);
 }
 
+function getRadarArea(name, hovered_genre) {
+    var lineColor;
+    var data;
+
+    if (data_index == 0) {
+        lineColor = color(name)
+        data = data_themes_by_main_genre.filter(function(d) {
+            if (d.main_genre == name) {
+                return d;
+            }
+        })
+    }
+    else if (data_index == 1) {
+        lineColor = color(currentLevel)
+        data = data_themes_by_specific_genre.filter(function(d) {
+            if (d.specific_genre == name) {
+                return d;
+            }
+        })
+    }
+    else if (data_index == 2) {
+        lineColor = color(previousLevel);
+        data = data_themes_by_artist.filter(function(d) {
+            if (d.artist_name == name) {
+                return d;
+            }
+        })
+    }
+
+    addRadarArea(data[0], hovered_genre, lineColor)
+}
+
 
 function addRadarArea(data, hovered_genre, color) {
-    console.log(data)
+    // console.log(data);
     let id = "#radarChart";
-    svg = d3
+    let svg = d3
             .select(id)
             .select("svg");
 
@@ -236,7 +281,6 @@ function searchBar() {
             if (!artistInList) {
                 num_artist_areas += 1;
 
-                console.log(d.main_genre)
                 artist_color = color(d.main_genre)
 
                 ul.append('li')
@@ -245,21 +289,21 @@ function searchBar() {
                     .style('color', _white)
                     .on("click", function() {
                         d3.select(this).remove();
-                        d3.selectAll("path.radar-chart-path_" + d.artist_name.replace(/ /g,"")).remove();
-                        d3.selectAll("g.radar-chart-g_" + artist.replace(/ /g,"")).remove();
+                        d3.selectAll("path.radar-chart-path_" + d.artist_name.replace(/ /g, "").replace("'", "").replace("&", "n")).remove();
+                        d3.selectAll("g.radar-chart-g_" + artist.replace(/ /g, "").replace("'", "").replace("&", "n")).remove();
                     })
                     
                     .on("mouseover", function() {
-                        d3.selectAll("path.radar-chart-path_" + d.artist_name.replace(/ /g,""))
+                        d3.selectAll("path.radar-chart-path_" + d.artist_name.replace(/ /g,  "").replace("'", "").replace("&", "n"))
                             .classed("radarShapeHighlight", true);
-                        d3.select(".radar-chart-g_" + d.artist_name.replace(/ /g,""))
+                        d3.select(".radar-chart-g_" + d.artist_name.replace(/ /g, "").replace("'", "").replace("&", "n"))
                             .moveToFront()
                             .classed("radarDotsHighlight", true);
                     })
                     .on("mouseleave", function() {
-                        d3.selectAll("path.radar-chart-path_" + d.artist_name.replace(/ /g,""))
+                        d3.selectAll("path.radar-chart-path_" + d.artist_name.replace(/ /g, "").replace("'", "").replace("&", "n"))
                             .classed("radarShapeHighlight", false);
-                        d3.select(".radar-chart-g_" + d.artist_name.replace(/ /g,""))
+                        d3.select(".radar-chart-g_" + d.artist_name.replace(/ /g, "").replace("'", "").replace("&", "n"))
                             .moveToFront()
                             .classed("radarDotsHighlight", false);
                     });
@@ -269,7 +313,7 @@ function searchBar() {
     });
 
     let id = "#radarChart";
-    svg = d3
+    let svg = d3
             .select(id)
             .select("svg");
 
@@ -287,7 +331,7 @@ function searchBar() {
             .append("path")
             .datum(coordinates)
             .attr("d", line)
-            .attr("class", "radar-chart-path_" + d.artist_name.replace(/ /g,""))
+            .attr("class", "radar-chart-path_" + d.artist_name.replace(/ /g, "").replace("'", "").replace("&", "n"))
             .attr("stroke-width", 1)
             .attr("stroke", artist_color)
             .attr("fill",  artist_color)
@@ -298,21 +342,21 @@ function searchBar() {
                 d3.select(this)
                     .moveToFront()
                     .classed("radarShapeHighlight", true);
-                d3.select(".radar-chart-g_" + d.artist_name.replace(/ /g,""))
+                d3.select(".radar-chart-g_" + d.artist_name.replace(/ /g, "").replace("'", "").replace("&", "n"))
                     .moveToFront()
                     .classed("radarDotsHighlight", true);
             })
             .on("mouseleave", function() {
                 d3.select(this)
                     .classed("radarShapeHighlight", false);
-                d3.select(".radar-chart-g_" + d.artist_name.replace(/ /g,""))
+                d3.select(".radar-chart-g_" + d.artist_name.replace(/ /g, "").replace("'", "").replace("&", "n"))
                     .moveToFront()
                     .classed("radarDotsHighlight", false);
             })
 
         svg
             .append("g")
-            .attr("class", "radar-chart-g_" + artist.replace(/ /g,""))
+            .attr("class", "radar-chart-g_" + artist.replace(/ /g, "").replace("'", "").replace("&", "n"))
             .attr("fill", artist_color)
             .selectAll("circle")
             .data(coordinates)
@@ -327,11 +371,98 @@ function searchBar() {
     }
 }
 
-function changeRadarDataset(new_dataset) {
-    data = new_dataset;
-}
+function RadarChart(id, data, update) {
+    let allAxis = Object.values(attributes),
+        totalAttr = allAxis.length;
 
-function plotRadarData() {
+    var svg;
+    if (!update) {
+        ////// Initiate the radar chart SVG //////
+        svg = d3
+                .select(id)
+                .append("svg")
+                .attr("height", radarCfg.h *1.4)
+                .attr("class", id);
+
+        ////// Plotting axes //////
+        let ticks = [maxValue / 3, maxValue / 3 * 2, maxValue];
+
+        ticks.forEach(t =>
+            svg.append("text")
+            .attr("x", radarCfg.margin.left)
+            .attr("y", radarCfg.margin.top - rScale(t))
+            .text(t.toFixed(2).toString())
+            .style("fill", _grey)
+            .style("font-size", "11px")
+        );
+
+        ticks.forEach(t =>
+            svg
+                .append("circle")
+                .attr("cx", radarCfg.margin.left)
+                .attr("cy", radarCfg.margin.top)
+                .attr("fill", "none")
+                .attr("opacity", radarCfg.gridOpacity)
+                .attr("stroke", _grey)
+                .attr("r", rScale(t))
+        );
+
+        for (let i = 0; i < totalAttr; i++) {
+            let at_name = Object.keys(attributes)[i];
+            let angle = (Math.PI / 2) + (2 * Math.PI * i / totalAttr);
+            let line_coordinate = angleToCoordinate(angle, maxValue);
+            let label_coordinate = angleToCoordinate(angle, maxValue * 1.3 );
+
+            ////// Draw axis line //////
+            svg.append("line")
+                .attr("x1", radarCfg.margin.left)
+                .attr("y1", radarCfg.margin.top)
+                .attr("x2", line_coordinate.x)
+                .attr("y2", line_coordinate.y)
+                .style("stroke-opacity", radarCfg.gridOpacity)
+                .attr("stroke", _grey)
+                .attr("id", "radar-chart-axis_" + attributes[at_name]);
+
+            ////// Draw axis label //////
+            svg.append("text")
+                .attr("id", "radar-chart-text_" + attributes[at_name])
+                .style("font-size", "11px")
+                .style("fill", _grey)
+                .style("font-family", "Lato")
+                .attr("text-anchor", "middle")
+                .attr("word-break", "break-all")
+                .attr("dy", "0.30em")
+                .attr("x", label_coordinate.x)
+                .attr("y", label_coordinate.y)
+                .text(attributes[at_name])
+                .on("mouseover", function() {
+                    d3.select(this)
+                        changeRadarAxisColor(attributes[at_name], radarCfg.highlightColor)
+                        changeParallelCoorAxisColor(attributes[at_name], radarCfg.highlightColor);
+                })
+                .on("mouseleave", function() {
+                    d3.select(this)
+                        changeRadarAxisColor(attributes[at_name], radarCfg.defaultColor)
+                        changeParallelCoorAxisColor(attributes[at_name], radarCfg.defaultColor);
+                })
+                .on("click", function() {
+                    d3.select(this)
+                        clickRadarAxis(id, attributes[at_name])
+                        clickParallelCoorAxis("#parallelCoordinates", attributes[at_name])
+                        changeAreaEncoding("#circularPacking");
+                })
+        }
+    } else {
+
+        svg = d3
+            .select(id)
+            .select("svg");
+
+        svg.
+            selectAll("path").remove();
+        svg.
+            selectAll("g").remove();
+    }
     // Plotting data
     let line = d3.line()
         .x(d => d.x)
@@ -386,98 +517,6 @@ function plotRadarData() {
             .on("mouseleave", doNotHighlightRadarDot)
 
     }
-    
-}
 
-function RadarChart(id) {
-    changeRadarDataset(data_default_theme_average);
-    let allAxis = Object.values(attributes),
-        totalAttr = allAxis.length;
-
-    ////// Initiate the radar chart SVG //////
-    svg = d3
-            .select(id)
-            .append("svg")
-            // .attr("width",  "30%")
-            .attr("height", radarCfg.h *1.4)
-            // .attr ()
-            .attr("class", id);
-
-    ////// Append a g element //////
-    let g = svg
-            .append("g")
-            .style("padding", radarCfg.h)
-            // .attr("transform", "translate(" + (radarCfg.margin.left) + "," + (radarCfg.margin.top) + ")");
-
-    ////// Plotting axes //////
-    let ticks = [maxValue / 3, maxValue / 3 * 2, maxValue];
-
-    ticks.forEach(t =>
-        svg.append("text")
-        .attr("x", radarCfg.margin.left)
-        .attr("y", radarCfg.margin.top - rScale(t))
-        .text(t.toFixed(2).toString())
-        .style("fill", _grey)
-        .style("font-size", "11px")
-    );
-
-    ticks.forEach(t =>
-        svg
-            .append("circle")
-            .attr("cx", radarCfg.margin.left)
-            .attr("cy", radarCfg.margin.top)
-            .attr("fill", "none")
-            .attr("opacity", radarCfg.gridOpacity)
-            .attr("stroke", _grey)
-            .attr("r", rScale(t))
-    );
-
-    for (let i = 0; i < totalAttr; i++) {
-        let at_name = Object.keys(attributes)[i];
-        let angle = (Math.PI / 2) + (2 * Math.PI * i / totalAttr);
-        let line_coordinate = angleToCoordinate(angle, maxValue);
-        let label_coordinate = angleToCoordinate(angle, maxValue * 1.3 );
-
-        ////// Draw axis line //////
-        svg.append("line")
-            .attr("x1", radarCfg.margin.left)
-            .attr("y1", radarCfg.margin.top)
-            .attr("x2", line_coordinate.x)
-            .attr("y2", line_coordinate.y)
-            .style("stroke-opacity", radarCfg.gridOpacity)
-            .attr("stroke", _grey)
-            .attr("id", "radar-chart-axis_" + attributes[at_name]);
-
-        ////// Draw axis label //////
-        svg.append("text")
-            .attr("id", "radar-chart-text_" + attributes[at_name])
-            .style("font-size", "11px")
-            .style("fill", _grey)
-            .style("font-family", "Lato")
-            .attr("text-anchor", "middle")
-            .attr("word-break", "break-all")
-            .attr("dy", "0.30em")
-            .attr("x", label_coordinate.x)
-            .attr("y", label_coordinate.y)
-            .text(attributes[at_name])
-            .on("mouseover", function() {
-                d3.select(this)
-                    changeRadarAxisColor(attributes[at_name], radarCfg.highlightColor)
-                    changeParallelCoorAxisColor(attributes[at_name], radarCfg.highlightColor);
-            })
-            .on("mouseleave", function() {
-                d3.select(this)
-                    changeRadarAxisColor(attributes[at_name], radarCfg.defaultColor)
-                    changeParallelCoorAxisColor(attributes[at_name], radarCfg.defaultColor);
-            })
-            .on("click", function() {
-                d3.select(this)
-                    clickRadarAxis(id, attributes[at_name])
-                    clickParallelCoorAxis("#parallelCoordinates", attributes[at_name])
-                    //console.log("index", data_index);
-                    changeAreaEncoding("#circularPacking");
-            })
-    }
-
-    plotRadarData();
+   
 }

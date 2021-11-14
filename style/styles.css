@@ -191,17 +191,19 @@ li {
 }
 
 .material-icons {
+    position: absolute;
+    left: 5%;
+    top: 10%;
     font-family: 'Material Icons';
     font-weight: normal;
     font-style: normal;
-    font-size: 24px;  /* Preferred icon size */
+    /* font-size: 48px;  Preferred icon size */
     display: inline-block;
-    line-height: 1;
     text-transform: none;
     letter-spacing: normal;
     word-wrap: normal;
     white-space: nowrap;
-    direction: ltr;
+    /* direction: ltr; */
     cursor: pointer;
 
     /* Support for all WebKit browsers. */
@@ -216,4 +218,6 @@ li {
     font-feature-settings: 'liga';
 }
 
-.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light { font-size: 48px; color: #a9a9a9; }
+
+.material-icons.md-light:hover { color: rgba(255, 255, 255, 1); }
