@@ -35,7 +35,6 @@ input.addEventListener("keyup", function(event) {
 
 Promise
     .all([
-
         d3.csv(themes_by_main_genre),
         d3.csv(themes_by_specific_genre),
         d3.csv(default_theme_average),
@@ -72,20 +71,15 @@ Promise
 
 function goBack() {
     if (data_index > 0) {
-
         currentLevel = previousLevel;
         data_index -= 1;
         if (data_index == 1) {
             previousLevel = "avg";
             changeDataset(data_themes_by_specific_genre);
-
         }
         else if (data_index == 0) {
             previousLevel = "";
             changeDataset(data_themes_by_main_genre);
-
-            // RadarChart("#radarChart", default_theme_average, true);
-
         }
         drawParallelCoordinatesLines()
         changeAreaEncoding("#circularPacking");
