@@ -4,7 +4,7 @@ var root,
     circleMargin = 10,
     scale = 30;
 
-const cirlcularPackingSize = height / 3 + (p * 1.8);
+const cirlcularPackingSize = height / 3 + (p * 1.6);
 
 const displayTooltip = function(event, d) {
     var selected_name = d.data.name;

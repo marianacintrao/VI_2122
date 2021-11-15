@@ -1,6 +1,7 @@
 body {
     background-color: #1d1e23;
     overflow-x: hidden;
+    /* overflow-y: hidden; */
     font-family: 'Lato', sans-serif;
     padding: 0;
     margin: 0;
@@ -20,8 +21,15 @@ h2 {
     font-size: 15px;
 }
 
+#radarContainer {
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 5%;
+}
+
 #radarChart {
-    height: 0;
+    position: absolute;
     overflow: visible;
 }
 
@@ -47,9 +55,9 @@ h2 {
 
 #searchbar {
     position: absolute;
-    left: 80%;
-    top: 20%;
-    /* width: 200px; */
+    left: 60%;
+    top: 100px;
+    width: 40%;
 }
 
 #searchbar input {

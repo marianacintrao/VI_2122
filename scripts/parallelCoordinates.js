@@ -50,7 +50,6 @@ function changeParallelCoorAxisColor(at_name, col) {
 }
 
 function changeToSubgenreLevel(name) {
-    console.log("change to subgenre");
     data = data_themes_by_specific_genre.filter(function(d) {
         if (d.main_genre == name) {
             return d;

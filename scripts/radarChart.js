@@ -6,13 +6,10 @@ let radarCfg = {
     w: width,
     h: height / 3 + (p / 3),
     margin: {
-        // top: t + p ,
-        top: - t*13/20,
-        // top: 0,
+        top: 0,
         right: 0,
         bottom: 0,
-        left: width * 14/20   
-        // left: 0   
+        left: 0   
     },
     opacityArea: 0.35,
     dotRadius: 2,
@@ -26,12 +23,15 @@ let radarCfg = {
     highlightColor: _white
 };
 
-let radius = Math.min(radarCfg.w/2, radarCfg.h/2),
+let radius = Math.min(radarCfg.w/2, radarCfg.h/2) - 10,
     maxValue = radarCfg.maxValue,
     rScale = d3
             .scaleLinear()
             .range([0, radius])
             .domain([0, maxValue]);
+
+            
+let radarSize = radius + 90;
 
 
 function clickRadarAxis(id, at_name) {
@@ -91,7 +91,7 @@ function radarGoBack() {
         })
     }
     RadarChart("#radarChart", parentData, true)
-    if (data_index == 1) {console.log("sdjfgsjdgasjdh");drawParentLine(parentData, color(currentLevel));}
+    if (data_index == 1) { drawParentLine(parentData, color(currentLevel)); }
 }
 
 function changeRadarAxisColor(at_name, col) {
@@ -112,7 +112,6 @@ function getPathCoordinates(data_point) {
         let angle = (Math.PI / 2) + (2 * Math.PI * i / length);
         let value = data_point[at_name];
         coordinates.push(angleToCoordinate(angle, value));
-        // coordinates.push();
         if (value > maxValue) {
             maxValue = value;
         }
@@ -123,14 +122,13 @@ function getPathCoordinates(data_point) {
 function angleToCoordinate(angle, value) {
     let x = Math.cos(angle) * rScale(value);
     let y = Math.sin(angle) * rScale(value);
-    return {"x": radarCfg.margin.left + x, "y": radarCfg.margin.top - y, "value": value};
+    return {"x": radarCfg.margin.left + x + radarSize, "y": radarCfg.margin.top - y + radarSize, "value": value};
 }
 
 function getArtistColor(name) {
     // GET ARTIST MAIN GENRE TO GET COLOR
     data_artist_main_genre.filter(function (d) {
         if (d.artist_name == name) {
-            // return color(d["main_genre"]);
             return d;
         }
     })
@@ -146,6 +144,7 @@ const highlightRadar = function(event, d) {
 }
 const doNotHighlightRadar = function(event, d) {  
     d3.select(this)
+        .moveToFront()
         .classed("radarShapeHighlight", false);
     d3.select(".radar-chart-g_" + d.artist_name.replace(/ /g, "").replace("'", "").replace("&", "n"))
         .moveToFront()
@@ -153,7 +152,7 @@ const doNotHighlightRadar = function(event, d) {
 }
 
 const highlightRadarDot = function(event, d) {  
-    // Tooltip
+    ///// Tooltip
     d3.select("#tooltip-radarChart")
     .style("left", event.pageX + "px")
     .style("top", event.pageY + "px")
@@ -163,7 +162,7 @@ const highlightRadarDot = function(event, d) {
     .text(d["value"]);
 }
 const doNotHighlightRadarDot = function(event, d) {  
-    // Hide the tooltip
+    ///// Hide the tooltip
     d3.select("#tooltip-radarChart")
         .style("opacity", 0);
 }
@@ -202,7 +201,6 @@ function getRadarArea(name, hovered_genre) {
 
 
 function addRadarArea(data, hovered_genre, color) {
-    // console.log(data);
     let id = "#radarChart";
     let svg = d3
             .select(id)
@@ -214,8 +212,8 @@ function addRadarArea(data, hovered_genre, color) {
             .y(d => d.y);
 
     let coordinates = getPathCoordinates(data);
-    // let values = getPathCoordinates(data);
-   ///// Draw the path element /////
+
+    ///// Draw the path element /////
     svg
         .append("path")
             .datum(coordinates)
@@ -384,8 +382,8 @@ function RadarChart(id, data, update) {
 
         ticks.forEach(t =>
             svg.append("text")
-            .attr("x", radarCfg.margin.left)
-            .attr("y", radarCfg.margin.top - rScale(t))
+            .attr("x", radarCfg.margin.left + radarSize)
+            .attr("y", radarCfg.margin.top - rScale(t) + radarSize)
             .text(t.toFixed(2).toString())
             .style("fill", _grey)
             .style("font-size", "11px")
@@ -394,8 +392,8 @@ function RadarChart(id, data, update) {
         ticks.forEach(t =>
             svg
                 .append("circle")
-                .attr("cx", radarCfg.margin.left)
-                .attr("cy", radarCfg.margin.top)
+                .attr("cx", radarCfg.margin.left + radarSize)
+                .attr("cy", radarCfg.margin.top + radarSize)
                 .attr("fill", "none")
                 .attr("opacity", radarCfg.gridOpacity)
                 .attr("stroke", _grey)
@@ -410,8 +408,8 @@ function RadarChart(id, data, update) {
 
             ////// Draw axis line //////
             svg.append("line")
-                .attr("x1", radarCfg.margin.left)
-                .attr("y1", radarCfg.margin.top)
+                .attr("x1", radarCfg.margin.left + radarSize)
+                .attr("y1", radarCfg.margin.top + radarSize)
                 .attr("x2", line_coordinate.x)
                 .attr("y2", line_coordinate.y)
                 .style("stroke-opacity", radarCfg.gridOpacity)
@@ -426,7 +424,6 @@ function RadarChart(id, data, update) {
                 .style("font-family", "Lato")
                 .attr("text-anchor", "middle")
                 .attr("word-break", "break-all")
-                .attr("dy", "0.30em")
                 .attr("x", label_coordinate.x)
                 .attr("y", label_coordinate.y)
                 .text(attributes[at_name])
@@ -445,7 +442,6 @@ function RadarChart(id, data, update) {
                         clickRadarAxis(id, attributes[at_name])
                         clickParallelCoorAxis("#parallelCoordinates", attributes[at_name])
                         changeAreaEncoding("#circularPacking");
-                        addLabel();
                 })
         }
     } else { // if update
