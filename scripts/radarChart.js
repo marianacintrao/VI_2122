@@ -1,6 +1,8 @@
 const t = height / 3 + (p / 3)
 
-var radarCfg = {
+let num_artist_areas = 0;
+
+let radarCfg = {
     w: width,
     h: height / 3 + (p / 3),
     margin: {
@@ -24,7 +26,7 @@ var radarCfg = {
     highlightColor: _white
 };
 
-var radius = Math.min(radarCfg.w/2, radarCfg.h/2),
+let radius = Math.min(radarCfg.w/2, radarCfg.h/2),
     maxValue = radarCfg.maxValue,
     rScale = d3
             .scaleLinear()
@@ -103,12 +105,12 @@ function changeRadarAxisColor(at_name, col) {
 }
 
 function getPathCoordinates(data_point) {
-    var coordinates = [];
-    var length = Object.keys(attributes).length;
-    for (var i = 0; i < length; i++) {
-        var at_name = Object.keys(attributes)[i];
-        var angle = (Math.PI / 2) + (2 * Math.PI * i / length);
-        var value = data_point[at_name];
+    let coordinates = [];
+    let length = Object.keys(attributes).length;
+    for (let i = 0; i < length; i++) {
+        let at_name = Object.keys(attributes)[i];
+        let angle = (Math.PI / 2) + (2 * Math.PI * i / length);
+        let value = data_point[at_name];
         coordinates.push(angleToCoordinate(angle, value));
         // coordinates.push();
         if (value > maxValue) {
@@ -119,8 +121,8 @@ function getPathCoordinates(data_point) {
 }
 
 function angleToCoordinate(angle, value) {
-    var x = Math.cos(angle) * rScale(value);
-    var y = Math.sin(angle) * rScale(value);
+    let x = Math.cos(angle) * rScale(value);
+    let y = Math.sin(angle) * rScale(value);
     return {"x": radarCfg.margin.left + x, "y": radarCfg.margin.top - y, "value": value};
 }
 
@@ -200,15 +202,20 @@ function getRadarArea(name, hovered_genre) {
 
 
 function addRadarArea(data, hovered_genre, color) {
-    var id = "#radarChart",
-        svg = d3
+    // console.log(data);
+    let id = "#radarChart";
+    let svg = d3
             .select(id)
-            .select("svg"),
-        line = d3
+            .select("svg");
+
+    let line = d3
             .line()
             .x(d => d.x)
-            .y(d => d.y),
-        coordinates = getPathCoordinates(data);
+            .y(d => d.y);
+
+    let coordinates = getPathCoordinates(data);
+    // let values = getPathCoordinates(data);
+   ///// Draw the path element /////
     svg
         .append("path")
             .datum(coordinates)
@@ -222,6 +229,7 @@ function addRadarArea(data, hovered_genre, color) {
             .attr("stroke-opacity", radarCfg.lineOpacity)
             .on("mouseover", highlightRadar)
             .on("mouseleave", doNotHighlightRadar)
+
 
     svg
         .append("g")
@@ -238,28 +246,32 @@ function addRadarArea(data, hovered_genre, color) {
 }
 
 function searchBar() {
-    var artist = document.getElementById("searchbarvalue").value.toLowerCase(),
-        artist_color;
+    let artist = document.getElementById("searchbarvalue").value.toLowerCase();
+    var artist_color;
 
     d3
         .select("#searchbar")
         .append('ul');
 
-    var ul = d3
+    let ul = d3
             .select('ul');
 
     data = data_themes_by_artist.filter(function (d) {
         if (d.artist_name == artist) {
-            var artistInList = false;
+
+            ///// check if artist already in artist list /////
+            let artistInList = false;
             ul.selectAll('li')["_groups"][0].forEach(function(li) {
                 try {
-                    var text = li.firstChild["data"];
+                    let text = li.firstChild["data"];
                     if (text == artist) {
                         artistInList = true;
                     }
                 }
                 catch(err) { }
             })
+
+            ////// add artist name to list //////
             if (!artistInList && ul.selectAll('li')["_groups"][0].length < 5) {
                 data_artist_main_genre.filter(function(e) {
                     if (e.artist_name == artist) {
@@ -295,19 +307,19 @@ function searchBar() {
         }
     });
 
-    var id = "#radarChart";
-    var svg = d3
+    let id = "#radarChart";
+    let svg = d3
             .select(id)
             .select("svg");
 
-    var line = d3
+    let line = d3
             .line()
             .x(d => d.x)
             .y(d => d.y);
 
-    for (var i = 0; i < data.length; i ++) {
-        var d = data[i];
-        var coordinates = getPathCoordinates(d);
+    for (let i = 0; i < data.length; i ++) {
+        let d = data[i];
+        let coordinates = getPathCoordinates(d);
 
         ////// Draw the path element //////
         svg
@@ -355,7 +367,7 @@ function searchBar() {
 }
 
 function RadarChart(id, data, update) {
-    var allAxis = Object.values(attributes),
+    let allAxis = Object.values(attributes),
         totalAttr = allAxis.length;
 
     var svg;
@@ -368,7 +380,7 @@ function RadarChart(id, data, update) {
                 .attr("class", id);
 
         ////// Plotting axes //////
-        var ticks = [maxValue / 3, maxValue / 3 * 2, maxValue];
+        let ticks = [maxValue / 3, maxValue / 3 * 2, maxValue];
 
         ticks.forEach(t =>
             svg.append("text")
@@ -390,11 +402,11 @@ function RadarChart(id, data, update) {
                 .attr("r", rScale(t))
         );
 
-        for (var i = 0; i < totalAttr; i++) {
-            var at_name = Object.keys(attributes)[i];
-            var angle = (Math.PI / 2) + (2 * Math.PI * i / totalAttr);
-            var line_coordinate = angleToCoordinate(angle, maxValue);
-            var label_coordinate = angleToCoordinate(angle, maxValue * 1.3 );
+        for (let i = 0; i < totalAttr; i++) {
+            let at_name = Object.keys(attributes)[i];
+            let angle = (Math.PI / 2) + (2 * Math.PI * i / totalAttr);
+            let line_coordinate = angleToCoordinate(angle, maxValue);
+            let label_coordinate = angleToCoordinate(angle, maxValue * 1.3 );
 
             ////// Draw axis line //////
             svg.append("line")
@@ -447,14 +459,14 @@ function RadarChart(id, data, update) {
             selectAll(".average-g").remove();
     }
     // Plotting data
-    var line = d3.line()
+    let line = d3.line()
         .x(d => d.x)
         .y(d => d.y);
 
-    for (var i = 0; i < data.length; i ++) {
-        var d = data[i];
-        var color = radarCfg.highlightColor;
-        var coordinates = getPathCoordinates(d);
+    for (let i = 0; i < data.length; i ++) {
+        let d = data[i];
+        let color = radarCfg.highlightColor;
+        let coordinates = getPathCoordinates(d);
 
         // Draw the path element
         svg
@@ -498,5 +510,8 @@ function RadarChart(id, data, update) {
             .attr("r", radarCfg.dotRadius)
             .on("mouseover", highlightRadarDot)
             .on("mouseleave", doNotHighlightRadarDot)
+
     }
+
+   
 }
