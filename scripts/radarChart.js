@@ -445,6 +445,7 @@ function RadarChart(id, data, update) {
                         clickRadarAxis(id, attributes[at_name])
                         clickParallelCoorAxis("#parallelCoordinates", attributes[at_name])
                         changeAreaEncoding("#circularPacking");
+                        addLabel();
                 })
         }
     } else { // if update

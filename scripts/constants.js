@@ -48,22 +48,6 @@ const genres_dict = {
 	"metal" : "Metal"
 }
 
-const reverse_genres_dict = {
-	"Rock" : "rock",
-	"Pop" : "pop",
-	"Country" : "country",
-	"Jazz" : "jazz",
-    "R&B" : "rnb",
-    "Hip-Hop" : "hip hop",
-    "Reggae" : "reggae",	
-	"Folk" : "folk",
-    "Punk" : "punk",
-    "Blues" : "blues",
-    "Electronica" : "electronica",
-    "Religious" : "religious",
-	"Metal" : "metal"
-}
-
 const attributes = {
     "dating" : "Dating",
     "violence" : "Violence",

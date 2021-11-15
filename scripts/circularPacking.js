@@ -173,6 +173,9 @@ function changeAreaEncoding(id) {
                 })
                 .on("mouseover", displayTooltip)
                 .on("mouseleave", hideTooltip)
+
+    
+    updateLabel();
 }
 
 function circularPacking(id) {

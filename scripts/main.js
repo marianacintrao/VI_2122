@@ -67,6 +67,7 @@ Promise
         circularPacking("#circularPacking");
         RadarChart("#radarChart", default_theme_average, false);
         ParallelCoordinatesChart("#parallelCoordinates", false);
+        updateLabel();
     });
 
 function goBack() {
@@ -84,11 +85,52 @@ function goBack() {
         drawParallelCoordinatesLines()
         changeAreaEncoding("#circularPacking");
         radarGoBack();
+        updateLabel();
     }
 }
 
+function updateLabel() {
+    var sentence1 = d3.select("#sentence1")
+    var sentence2 = d3.select("#sentence2")
+    
+    sentence1.selectAll("text").remove()
+    sentence2.selectAll("text").remove()
+    
+    sentence1
+        .append("text")
+        .style("font-size", "20px")
+        .style("color", _grey)
+        .style("font-family", "Lato")
+        .style("padding", "30px")
+        // .attr("text-anchor", "middle")
+        .attr("word-break", "break-all")
+        .attr("dy", "0.30em")
+        .attr("x", 0)
+        .attr("y", 0)
+        .text(function() {
+            if (data_index == 0)
+                return "No genre selected"
+            else if (data_index == 1)
+                return genres_dict[currentLevel] + " is selected"
+            else
+                return currentLevel.charAt(0).toUpperCase() + currentLevel.slice(1) + " is selected"
+            });
 
-
-// 0 = avg -> mains
-// 1 = mains -> spec
-// 2 = spec -> artist
+    sentence2
+        .append("text")
+        .style("font-size", "20px")
+        .style("color", _grey)
+        .style("font-family", "Lato")
+        .style("padding", "30px")
+        // .attr("text-anchor", "middle")
+        .attr("word-break", "break-all")
+        .attr("dy", "0.30em")
+        .attr("x", 0)
+        .attr("y", 0)
+        .text(function() {
+            if (currentTheme == "theme_weight")
+                return "No theme selected"
+            else
+                return attributes[currentTheme] + " is selected"
+        });
+}
